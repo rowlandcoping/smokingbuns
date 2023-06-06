@@ -126,15 +126,17 @@ layer menu, with every page on the site available through a single tap or click.
  With only 4 menu options there is no reason not to display them all on any size of screen.  
  Positioning the logo above them would enable them to be made more prominent and accessible.  This could of course be adjusted for larger screen 
  sizes but mobile considerations have to come first.
- - On hover menu buttons will show some form of transition to add interactivity and positive user feel.  This needs to be in keeping with the theme of the restaurant.
+ - On hover/active menu buttons will show some form of transition to add interactivity and positive user feel.  This needs to be in keeping with the theme of the restaurant.
 
  ### Header and Navigation (Additional)
 
  - There is potential to include additional links to core site areas (menu, restaurant, contact) on the homepage with heightened interactivity.  
  This would take the form of either an old school shooting gallery with rotating images or bullet holes in a wooden wall, using CSS transitions. 
+ Edited:  as this would be desktop only and this site is mobile led it is unlikely this will be happening
  Less elaborate options may need to be reverted to (not so much technically, but because these options may be reliant on audio to actually be any good.)
  - The mouse pointer could change to a cross-hair on mousing over these elements (or indeed the permanent navigation elements).  
- But we don't want to get too gimmicky here.  This is a quality restaurant, not kids' parties. It would be a fine line.
+ But we don't want to get too gimmicky here.
+ Edited -  This would not work on mobile, which would lead to inconsistent experiences.
 
  ### Footer (core)
 
@@ -151,17 +153,17 @@ layer menu, with every page on the site available through a single tap or click.
  ### Homepage (additional)
 
  - Fancy navigation elements outlining different key areas of the site (see navigation).  My big question mark is whether there is room for this. Even though it's a nice to have, it may just end up pushing far too much below the fold on a mobile device to the point where it is detrimental.
- I do not want to put anything on the desktop site that is not on the mobile site.  This is a mobile first website.
+ I do not want to put anything on the desktop site that is not on the mobile site.
 
  ### Menu (core)
 
  - Information about what is on the menu, themed
- - Menu info must be easily digestible, but it can't take up too much space either.  People don't want to be scrolling down 
+ - The food menu must be easily digestible, but it can't take up too much space either.  People don't want to be scrolling down 
  forever to find out what's for pudding, or transitioning through multiple pages.
 
  ### Menu (additional)
 
- - Mouse-over transitions.  the vision is to have some kind of image of a cowboy making suitably cowboyish comments on the indicated menu item.  
+ - Active / Mouse-over(on desktop) transitions.  the vision is to have some kind of image of a cowboy making suitably cowboyish comments on the indicated menu item.  
  This is technically easy enough, but the menu might not be the best place for it.
 
  ### Our Restaurant (core)
@@ -171,6 +173,7 @@ layer menu, with every page on the site available through a single tap or click.
 
  ### Our Restaurant (additional)
  - this may actually be a better place for the talking cowboy head concept.
+ Edited to add: representations of various members of the team is the design concept I decided on - how it is represented will be dependent on the image work.
 
  ### Contact (core)
 
@@ -183,3 +186,40 @@ layer menu, with every page on the site available through a single tap or click.
  - may be worth adding the social links again, but it ought not be necessary because I expect them to be very prominent in the footer.
 
  ## UX - Skeleton
+
+ ### Design Choices
+
+  - As this is imagined as a site predominently used on mobile and will be programmed with Bootstrap with that in mind, I began with the mobile layout and scaled from there.
+  - I have attempted to keep the layout as consistent as possible with some amends for the landscape format of most desktop devices, keeping in mind people may well access the site on multoiple devices this familiarity is important.
+  - In line with the gathered requirements, the menu is prominent on the screen and visibile at all times; nothing is hidden behind sub-menus or drop-downs.
+  - I have kept the content of each page very simple and precisely on point with the menu descriptions.  The only doubt is the 'about' section which for me doesn't describe the content well enough.  Unfortunately longer alternatives may break the layout.
+  - Main content layout on each page is consistent with no more than two vertical sections.
+  - The homepage is kept the simples of all;  as the landing point it is intended to provide instand value with clear description of what the site is about, re-inforced by visual style and independent reviews.
+  - I have named the contact button 'book'. This means the main call to action tops every page and does not need to be placed elsewhere.  Likewise the first thing on that page is a form to book a table.  
+  - As identifying where a restaruant is could be considered important information, this shoudl be included in the callout considering the 'contact' section is a call to action to book. 
+  Likewise it may be worth including the address beneath the social and review links in the footer.
+  - in order to retain clarity of content for each page, I decided it was best to include links to tripadvisor etc in the footer.  This is possible with the call to action in the header and groups well with the social links.
+  - I chose 4 sections in the 'about restaurant' section to ensure balance on larger screens where they may be displayed side-by-side (Bootstrap XXL)
+
+  ### Wireframes
+
+  NOTE: In the 1200px versions I have included a red dotted line as an indication of roughly where the fold would be on a 1200px screen.
+  Although, for clarity, I have provided visual representation of the various mobile devices, I would not expect all content to be above the fold as depicted; it will also not be as important on mobile as long as the site retains clarity regarding the content on each page.
+
+  #### Default Screen Size (576px)
+
+  ![image](assets/images/wireframes/Home_576.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![image](assets/images/wireframes/Menu_576.png)
+  <br>  
+  ![image](assets/images/wireframes/About_576.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![image](assets/images/wireframes/Contact_576.png)   
+
+  #### Tablet Screen Size (768px)
+
+  ![image](assets/images/wireframes/Home_768.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![image](assets/images/wireframes/Menu_768.png)
+  <br>  
+  ![image](assets/images/wireframes/About_768.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![image](assets/images/wireframes/Contact_768.png)
+
+  #### Small Desktop/Laptop Screen Size (1200px)
+
+  ![image](assets/images/wireframes/Home_1200.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![image](assets/images/wireframes/Menu_1200.png)
+  <br>  
+  ![image](assets/images/wireframes/About_1200.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![image](assets/images/wireframes/Contact_1200.png)
