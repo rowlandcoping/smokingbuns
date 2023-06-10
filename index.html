@@ -15,14 +15,18 @@
 
 <body>
     <header class="container-fluid text-center" id="header-container">
-        <div class="row">
-            <h1 class="col-12 col-xl-6">
+        <div class="row d-flex align-items-center">
+            <img class="col-3 col-sm-2 col-xl-1 logo-left" src="assets/images/logos/gun-left.svg"
+                alt="A smoking pistol sandwiched in a burger bun, pointing right">
+            <h1 class="col-6 col-sm-8 col-xl-4">
                 Smoking Buns
             </h1>
-            <nav class="col-12 col-xl-6">
+            <img class="col-3 col-sm-2 col-xl-1 logo-right" src="assets/images/logos/gun-right.svg"
+                alt="A smoking pistol sandwiched in a burger bun, pointing left">
+            <nav class="col-12 col-xl-6 nav-wrapper">
                 <ul id="navigation" class="list-group list-group-horizontal flex-fill">
                     <li class="col-3 list-group-item">
-                        <a href="index.html">Home</a>
+                        <a id="current" href="index.html">Home</a>
                     </li>
                     <li class="col-3 list-group-item">
                         <a href="menu.html">Menu</a>
@@ -37,11 +41,12 @@
             </nav>
         </div>
     </header>
-    <section class="container-fluid" id="callout-container">
-        <div class="row">
-            <div class="col">
+    <section class="container-fluid text-center" id="callout-container">
+        <div class="row h-100">
+            <div class="col-12 my-auto mx-auto w-75 callout-text">
                 <h2>Welcome to Aberystwyth's BEST Western-themed burger restaurant.</h2>
-                <h3>All our burgers are made with FSA approved prime beef, grilled to perfection and served in a smoking
+
+                <h3>Our burgers are made with FSA approved prime beef, grilled to perfection and served in a smoking
                     bun.</h3>
             </div>
         </div>
