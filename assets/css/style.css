@@ -45,7 +45,7 @@ body {
 }
 
 .menu-main a:hover,
-a:active {
+.menu-main a:active {
     background-image: url("/assets/images/backgrounds/star.svg");
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -100,10 +100,11 @@ header {
     width: 100%;
     align-items: center;
     justify-content: center;
-    border-radius: 6px;
+    border-radius: 20%;
 }
 
-#footer-container a:hover {
+#footer-container a:hover,
+#footer-container a:active {
     background-color: #fff;
     background-size: auto 100%;
 }
@@ -116,7 +117,7 @@ header {
     background-image: url("/assets/images/backgrounds/callout-image.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom 60% left 0;
+    background-position: bottom 60% left 0px;
     height: 50dvh;
     border-bottom: 6px groove silver;
     border-top: 6px groove silver;
@@ -126,6 +127,10 @@ header {
     font-family: main;
     color: #fff;
     background-color: #48290Abf;
+}
+
+.callout-text h2 {
+    font-size: 40px;
 }
 
 .callout-text h3 {
@@ -151,13 +156,94 @@ header {
 }
 
 #review-container h2 {
-    font-family: title;
+    font-family: main;
     font-size: 220%;
 }
 
 .review {
     margin-top: 10px;
 }
+
+/*-----------------Menu Page Styling*/
+.menu-wrapper {
+    width: 100%;
+    border-bottom: 6px groove silver;
+    border-top: 6px groove silver;
+}
+
+.menu-container {
+    width: 85%;
+    display: grid;
+    text-align: center;
+    margin: 20px auto;
+    grid-template-columns: 20%, 20%, 20%, 20%, 20%;
+    grid-auto-rows: min-content;
+    grid-auto-flow: row;
+    background-image: url("/assets/images/backgrounds/parchment.jpg");
+    font-family: main;
+    padding: 10px;
+}
+
+.menu-container h2 {
+    font-size: 180%;
+    font-weight: 700;
+}
+
+.menu-container h3 {
+    font-size: 160%;
+}
+
+.menu-container h4 {
+    font-size: 140%;
+}
+
+.menu-container h5 {
+    font-size: 110%;
+
+}
+
+.menu-container p {
+    font-size: 100%;
+}
+
+
+.title {
+    grid-column: 1 / 6;
+}
+
+.course-title {
+    grid-column: 1 / 6;
+    padding-top: 20px;
+}
+
+.course-subtitle {
+    grid-column: 1 / 6;
+    margin-top: -0.6em;
+}
+
+.food-item {
+    grid-column: 1 / 6;
+    padding: 0;
+    margin-bottom: -0.4em;
+}
+
+.food-description {
+    grid-column: 1 / 6;
+    line-height: 1em;
+}
+
+.spacer-menu {
+    grid-column: 1 / 6;
+    justify-self: center;
+}
+
+
+
+
+
+
+
+
 
 /*-----------MEDIA QUERIES*/
 
@@ -185,6 +271,22 @@ header {
         padding: 0 8px;
     }
 
+    .menu-container h2 {
+        font-size: 200%;
+    }
+
+    .menu-container h3 {
+        font-size: 170%;
+    }
+
+    .menu-container h4 {
+        font-size: 150%;
+    }
+
+    .menu-container h5 {
+        font-size: 120%;
+    }
+
 }
 
 @media screen and (min-width:576px) {
@@ -196,6 +298,22 @@ header {
     #footer-container a {
         height: 55px;
         padding: 0 10px;
+    }
+
+    .menu-container h2 {
+        font-size: 210%;
+    }
+
+    .menu-container h3 {
+        font-size: 180%;
+    }
+
+    .menu-container h4 {
+        font-size: 150%;
+    }
+
+    .menu-container h5 {
+        font-size: 120%;
     }
 
 }
@@ -224,6 +342,10 @@ header {
         padding: 0 12px;
     }
 
+    .menu-container {
+        width: 80%;
+    }
+
 }
 
 @media screen and (min-width:768px) {
@@ -245,6 +367,26 @@ header {
         height: 80px;
         padding: 0 12px;
     }
+
+    .menu-container h2 {
+        font-size: 230%;
+    }
+
+    .menu-container h3 {
+        font-size: 190%;
+    }
+
+    .menu-container h4 {
+        font-size: 160%;
+    }
+
+    .menu-container h5 {
+        font-size: 130%;
+    }
+
+    .menu-container p {
+        font-size: 110%;
+    }
 }
 
 @media screen and (min-width:900px) {
@@ -262,6 +404,14 @@ header {
         padding: 0 15px;
     }
 
+    .menu-container h2 {
+        font-size: 250%;
+    }
+
+    .menu-container h3 {
+        font-size: 200%;
+    }
+
 }
 
 @media screen and (min-width:936px) {
@@ -271,8 +421,8 @@ header {
     }
 
     #footer-container a {
-        height: 100px;
-        padding: 0 17px;
+        height: 110px;
+        padding: 0 18px;
     }
 }
 
@@ -299,6 +449,10 @@ header {
         height: 130px;
         padding: 0 20px;
     }
+
+    .menu-container {
+        width: 70%;
+    }
 }
 
 @media screen and (min-width:1400px) {
@@ -321,6 +475,31 @@ header {
         padding: 0 25px;
     }
 
+    .menu-container {
+        width: 60%;
+        +
+    }
+
+    .menu-container h2 {
+        font-size: 250%;
+    }
+
+    .menu-container h3 {
+        font-size: 210%;
+    }
+
+    .menu-container h4 {
+        font-size: 180%;
+    }
+
+    .menu-container h5 {
+        font-size: 140%;
+    }
+
+    .menu-container p {
+        font-size: 120%;
+    }
+
 }
 
 @media screen and (min-width:1800px) {
@@ -337,5 +516,30 @@ header {
     #footer-container a {
         height: 200px;
         padding: 0 30px;
+    }
+
+    .menu-container {
+        width: 50%;
+
+    }
+
+    .menu-container h2 {
+        font-size: 280%;
+    }
+
+    .menu-container h3 {
+        font-size: 240%;
+    }
+
+    .menu-container h4 {
+        font-size: 200%;
+    }
+
+    .menu-container h5 {
+        font-size: 160%;
+    }
+
+    .menu-container p {
+        font-size: 140%;
     }
 }
