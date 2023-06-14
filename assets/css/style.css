@@ -130,7 +130,7 @@ header {
 }
 
 .callout-text h2 {
-    font-size: 40px;
+    font-size: 180%;
 }
 
 .callout-text h3 {
@@ -237,7 +237,88 @@ header {
     justify-self: center;
 }
 
+/*-----------------ABOUT SECTION */
 
+.about-container {
+    border-bottom: 6px groove silver;
+    border-top: 6px groove silver;
+}
+
+.spacer-about {
+    text-align: center;
+}
+
+.spacer-about .spacer {
+    width: 50%;
+}
+
+.about-section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center safe;
+    color: white;
+    font-family: main;
+    margin: 25px;
+    padding: 10px;
+    text-align: center;
+    background-color: #48290AB3;
+}
+
+.about-section h3 {
+    font-size: 180%;
+}
+
+.about-image img {
+    width: 280px;
+    border: 4px ridge #818589;
+    border-radius: 50%;
+    height: auto;
+}
+
+.about-info {
+    display: flex;
+    flex-flow: row;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.about-profile {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+
+}
+
+.about-profile img {
+    width: 75%;
+    border: 4px ridge #818589;
+    border-radius: 10%;
+}
+
+.profile-pic img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px
+}
+
+.profile-bio hr {
+    height: 0.2rem;
+    background: #fff;
+    margin: -2px auto 5px auto;
+    padding: 0;
+    width: 30%;
+    text-align: center;
+}
+
+.profile-bio h4 {}
+
+.profile-bio h5 {}
+
+.about-image-text {
+    flex: 2;
+    padding: 0 10px;
+    font-size: 110%;
+}
 
 
 
@@ -257,6 +338,11 @@ header {
         font-size: 180%;
         height: 100px;
     }
+
+    .callout-text h2 {
+        font-size: 200%;
+    }
+
 
     .spacer {
         width: 40%;
@@ -287,6 +373,21 @@ header {
         font-size: 120%;
     }
 
+
+
+
+    .about-image img {
+        width: 320px;
+    }
+
+    .profile-pic img {
+        width: 140px;
+        height: auto;
+    }
+
+    .spacer-about .spacer {
+        width: 40%;
+    }
 }
 
 @media screen and (min-width:576px) {
@@ -316,6 +417,38 @@ header {
         font-size: 120%;
     }
 
+
+    .spacer-about .spacer {
+        width: 35%;
+    }
+
+    .about-image img {
+        width: 400px;
+    }
+
+    .profile-pic img {
+        width: 160px;
+        height: auto;
+    }
+
+    .profile-bio h4 {
+        font-size: 170%;
+    }
+
+    .about-image-text {
+        font-size: 125%;
+        padding: 0 20px;
+    }
+
+    .about-section h3 {
+        font-size: 200%;
+    }
+
+    .about-section {
+        margin: 20px 35px;
+        padding: 10px;
+    }
+
 }
 
 @media screen and (min-width:600px) {
@@ -327,6 +460,10 @@ header {
     .menu-main {
         font-size: 210%;
         height: 120px;
+    }
+
+    .callout-text h2 {
+        font-size: 220%;
     }
 
     .spacer {
@@ -346,6 +483,24 @@ header {
         width: 80%;
     }
 
+
+
+    .about-image img {
+        width: 500px;
+    }
+
+    .about-image-text {
+        font-size: 130%;
+    }
+
+    .about-section h3 {
+        font-size: 230%;
+    }
+
+    .profile-bio h5 {
+        font-size: 140%;
+    }
+
 }
 
 @media screen and (min-width:768px) {
@@ -358,6 +513,7 @@ header {
         font-size: 270%;
         height: 150px;
     }
+
 
     .spacer {
         width: 25%;
@@ -387,12 +543,53 @@ header {
     .menu-container p {
         font-size: 110%;
     }
+
+
+    .spacer-about .spacer {
+        width: 25%;
+    }
+
+    .about-image img {
+        width: 600px;
+    }
+
+    .profile-pic img {
+        width: 200px;
+        height: auto;
+
+    }
+
+    .profile-bio h4 {
+        font-size: 220%;
+    }
+
+    .profile-bio h5 {
+        font-size: 170%;
+    }
+
+    .about-image-text {
+        font-size: 140%;
+        padding: 0 20px;
+    }
+
+    .about-section h3 {
+        font-size: 280%;
+    }
+
+    .about-section {
+        margin: 20px 45px;
+        padding: 20px;
+    }
 }
 
 @media screen and (min-width:900px) {
 
     h1 {
         font-size: 700%
+    }
+
+    .callout-text h2 {
+        font-size: 250%;
     }
 
     .spacer {
@@ -410,6 +607,20 @@ header {
 
     .menu-container h3 {
         font-size: 200%;
+    }
+
+    .spacer-about .spacer {
+        width: 20%;
+    }
+
+    .about-section {
+        margin: 30px 100px;
+        padding: 20px;
+    }
+
+    .about-image-text {
+        font-size: 160%;
+        padding: 0 20px;
     }
 
 }
@@ -453,6 +664,57 @@ header {
     .menu-container {
         width: 70%;
     }
+
+    .about-image {
+        flex: 2;
+    }
+
+    .about-info {
+        flex-flow: column;
+        flex: 1;
+    }
+
+    .about-section {
+        flex-flow: row wrap;
+        margin: 20px 45px;
+        padding: 20px;
+    }
+
+
+
+    .about-image img {
+        width: 700px;
+    }
+
+    .profile-pic img {
+        width: 200px;
+        height: auto;
+
+    }
+
+    .profile-bio h4 {
+        font-size: 220%;
+        padding-top: 5px;
+    }
+
+    .profile-bio h5 {
+        font-size: 170%;
+    }
+
+    .about-image-text {
+        font-size: 140%;
+        padding: 0 20px;
+    }
+
+    .about-section h3 {
+        font-size: 280%;
+        padding-bottom: 10px;
+    }
+
+
+
+
+
 }
 
 @media screen and (min-width:1400px) {
@@ -477,11 +739,6 @@ header {
 
     .menu-container {
         width: 60%;
-        +
-    }
-
-    .menu-container h2 {
-        font-size: 250%;
     }
 
     .menu-container h3 {
@@ -500,6 +757,46 @@ header {
         font-size: 120%;
     }
 
+
+
+
+
+
+    .about-section {
+        margin: 20px 75px;
+        padding: 20px;
+    }
+
+
+
+    .about-image img {
+        width: 800px;
+    }
+
+    .profile-pic img {
+        width: 250px;
+        height: auto;
+
+    }
+
+    .profile-bio h4 {
+        font-size: 250%;
+    }
+
+    .profile-bio h5 {
+        font-size: 190%;
+    }
+
+    .about-image-text {
+        font-size: 160%;
+        padding: 0 20px;
+    }
+
+    .about-section h3 {
+        font-size: 280%;
+        padding-bottom: 10px;
+    }
+
 }
 
 @media screen and (min-width:1800px) {
@@ -511,6 +808,10 @@ header {
     .menu-main {
         font-size: 305%;
         height: 170px;
+    }
+
+    .callout-text h2 {
+        font-size: 280%;
     }
 
     #footer-container a {
@@ -541,5 +842,44 @@ header {
 
     .menu-container p {
         font-size: 140%;
+    }
+
+    .spacer-about .spacer {
+        width: 15%;
+    }
+
+    .about-section {
+        margin: 20px 100px;
+        padding: 20px;
+    }
+
+
+
+    .about-image img {
+        width: 900px;
+    }
+
+    .profile-pic img {
+        width: 300px;
+        height: auto;
+
+    }
+
+    .profile-bio h4 {
+        font-size: 250%;
+    }
+
+    .profile-bio h5 {
+        font-size: 190%;
+    }
+
+    .about-image-text {
+        font-size: 160%;
+        padding: 0 20px;
+    }
+
+    .about-section h3 {
+        font-size: 300%;
+        padding-bottom: 10px;
     }
 }
