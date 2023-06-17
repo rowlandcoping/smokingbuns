@@ -304,15 +304,12 @@ header {
 .profile-bio hr {
     height: 0.2rem;
     background: #fff;
-    margin: -2px auto 5px auto;
+    margin: -2px auto 10px auto;
     padding: 0;
     width: 30%;
     text-align: center;
+    opacity: 1;
 }
-
-.profile-bio h4 {}
-
-.profile-bio h5 {}
 
 .about-image-text {
     flex: 2;
@@ -320,16 +317,166 @@ header {
     font-size: 110%;
 }
 
+/*-----------------Booking Page*/
 
+.bookings-wrapper {
+    border-bottom: 6px groove silver;
+    border-top: 6px groove silver;
+}
 
+/* -- form section*/
 
+.bookings-wrapper {
+    font-family: main;
+}
 
+.form-wrapper {
+    width: 75%;
+    margin: 40px auto;
+    background-image:url("/assets/images/backgrounds/parchment.jpg");
+    padding-bottom: 20px;
+}
 
+.booking-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.button-wrap {
+    display:flex;
+    flex:row;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-wrapper h2 {
+    margin-top: 20px;
+}
+
+.form-wrapper h2, .location-wrapper h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    font-size: 200%;
+    background-color: #48290AB3;    
+}
+
+.form-personal, .form-visit {
+    padding:20px;
+}
+
+.form-personal h3, .form-visit h3, .map-details h3, .address-details h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 160%
+}
+
+.form-personal ul, .form-visit ul{
+    margin: 0; 
+    padding: 0;
+}
+
+.red-text {
+    color: red;
+}
+
+.list-details li {
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: center;
+}
+
+.list-details > li > label {
+    flex: 1 0 100px;
+    max-width: 376px;
+    text-align: center;
+}
+
+.list-details li {
+    font-size: 130%;
+}
+
+.list-details > li > label + * {
+    flex: 1 0 200px;
+  }
+
+.list-details > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+.book-button {
+ width: 50%;
+ margin:10px auto;
+ background-color:#48290A;
+ color: #fff;
+ padding: 10px 0;
+ Font-Size: 180%;
+}
+
+.book-button:hover {
+    background-color:#fff;
+    border:2px solid #48290A;
+    color: #48290A;
+}
+
+input:focus, textarea:focus {
+    outline:#48290A;
+}
+
+/* -- address section*/
+
+.location-wrapper {
+    width:75%;
+    margin: 40px auto;
+    background-image:url("/assets/images/backgrounds/parchment.jpg");
+}
+.location-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;   
+    text-align: center;
+}
+
+.address-details, .map-details {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.address-details {
+    margin:0;
+    padding:0;
+    flex:1;
+    width:100%;
+}
+
+.address-details p {
+    font-size: 130%;
+}
+
+.booking-divider {
+    height: 0.2rem;
+    background: #000;
+    opacity: 1;
+    margin: -8px auto 14px auto;
+    padding: 0;
+    width: 20%;
+    text-align: center;
+}
+
+.map-details {
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    width:100%;
+    height:300px;
+    margin-bottom:10px;
+}
 
 /*-----------MEDIA QUERIES*/
 
 @media screen and (min-width:450px) {
-
+/*home page , header, footer*/
     h1 {
         font-size: 450%;
     }
@@ -357,6 +504,8 @@ header {
         padding: 0 8px;
     }
 
+/*menu page*/
+
     .menu-container h2 {
         font-size: 200%;
     }
@@ -374,7 +523,7 @@ header {
     }
 
 
-
+/*about page*/
 
     .about-image img {
         width: 320px;
@@ -388,6 +537,14 @@ header {
     .spacer-about .spacer {
         width: 40%;
     }
+
+/*booking page*/
+
+.form-personal, .form-visit, .address-details, .map-details {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
 }
 
 @media screen and (min-width:576px) {
@@ -449,6 +606,13 @@ header {
         padding: 10px;
     }
 
+    /*booking page*/
+
+.form-personal, .form-visit, .address-details, .map-details {
+    padding-right: 75px;
+    padding-left: 75px;
+}
+
 }
 
 @media screen and (min-width:600px) {
@@ -483,8 +647,6 @@ header {
         width: 80%;
     }
 
-
-
     .about-image img {
         width: 500px;
     }
@@ -499,6 +661,30 @@ header {
 
     .profile-bio h5 {
         font-size: 140%;
+    }
+
+    /*booking page*/
+
+    .list-details > li > label {
+        text-align:left;
+        padding-right: 10px;
+    }
+
+    .form-personal, .form-visit, .address-details, .map-details {
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+
+    .form-visit {
+        padding-bottom: 20px;
+    }
+
+    .location-wrapper {
+        padding-top: 0;
+    }
+
+    .form-wrapper {
+        margin-bottom: 20px;
     }
 
 }
@@ -580,6 +766,42 @@ header {
         margin: 20px 45px;
         padding: 20px;
     }
+
+    /*booking page*/
+
+    .form-personal, .form-visit, .address-details, .map-details {
+        padding-right: 55px;
+        padding-left: 55px;
+    }
+
+    .form-personal {
+        margin-bottom:0;
+    }
+
+    .location-wrapper, .form-wrapper {
+        width: 70%;
+    }
+    .form-wrapper h2, .location-wrapper h2 {
+        font-size: 240%;
+    }
+    .form-personal h3, .form-visit h3, .map-details h3, .address-details h3 {
+        font-size: 180%;
+    }
+
+    .booking-divider {
+        margin-bottom: 18px;
+    }
+
+    .list-details > li {
+        font-size: 150%;
+    }
+
+    .address-details p {
+        font-size: 150%;
+    }
+
+
+
 }
 
 @media screen and (min-width:900px) {
@@ -621,6 +843,13 @@ header {
     .about-image-text {
         font-size: 160%;
         padding: 0 20px;
+    }
+
+     /*booking page*/
+
+     .form-personal, .form-visit, .address-details, .map-details {
+        padding-right: 65px;
+        padding-left: 65px;
     }
 
 }
@@ -711,7 +940,46 @@ header {
         padding-bottom: 10px;
     }
 
+     /*booking page*/
 
+     .booking-container, .location-container {
+        flex-flow: row wrap;
+        flex:1;
+     }
+
+     .form-personal, .form-visit, .address-details, .map-details {
+        flex:1;
+        padding: 30px 20px;
+    }
+
+    .address-details, .map-details {
+        background-image: none;
+        height:100%;
+        padding-top: 10px;
+    }
+    .location-wrapper {
+        margin: 40px auto;
+    }
+
+    .map-details {
+        padding-right: 40px;
+    }
+
+    .form-personal h3, .form-visit h3, .map-details h3, .address-details h3 {
+        font-size: 190%;
+    }
+
+    .booking-divider {
+        margin-bottom: 20px;
+    }
+
+    .list-details > li {
+        font-size: 150%;
+    }
+
+    .address-details p {
+        font-size: 170%;
+    }
 
 
 
