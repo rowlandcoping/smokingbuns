@@ -1,15 +1,15 @@
 @font-face {
     font-family: title;
-    src: url("../assets/fonts/CarnivaleeFreakshow-DLrm.ttf");
+    src: url("/smokingbuns/assets/fonts/CarnivaleeFreakshow-DLrm.ttf");
 }
 
 @font-face {
     font-family: main;
-    src: url("../assets/fonts/MaidenOrange-BXXV.ttf");
+    src: url("/smokingbuns/assets/fonts/MaidenOrange-BXXV.ttf");
 }
 
 body {
-    background-image: url("../images/backgrounds/wooden.jpg");
+    background-image: url("/smokingbuns/assets/images/backgrounds/wooden.jpg");
     background-size: 100%;
 }
 
@@ -333,7 +333,7 @@ header {
 .form-wrapper {
     width: 75%;
     margin: 40px auto;
-    background-image:url("../images/backgrounds/parchment.jpg");
+    background-image:url("/smokingbuns/assets/images/backgrounds/parchment.jpg");
     padding-bottom: 20px;
 }
 
@@ -429,7 +429,7 @@ input:focus, textarea:focus {
 .location-wrapper {
     width:75%;
     margin: 40px auto;
-    background-image:url("../images/backgrounds/parchment.jpg");
+    background-image:url("/smokingbuns/assets/images/backgrounds/parchment.jpg");
 }
 .location-container {
     display: flex;
