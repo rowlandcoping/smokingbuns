@@ -11,6 +11,8 @@
 body {
     background-image: url("../images/backgrounds/wooden.jpg");
     background-size: 100%;
+    padding:0;
+    margin:0;
 }
 
 /*-----------------Header styling*/
@@ -62,6 +64,7 @@ h1 {
 
 header {
     padding: 10px 0;
+    
 }
 
 #current {
@@ -80,9 +83,14 @@ header {
     padding: 5px 0 10px 0;
 }
 
+
+
+#footer-container .row {
+    width:100%;
+}
+
 .review-links img {
     width: 100%;
-    margin: 0 4px;
 }
 
 .social-links img {
@@ -106,7 +114,10 @@ header {
 #footer-container a:hover,
 #footer-container a:active {
     background-color: #fff;
-    background-size: auto 100%;
+    background-size: auto 90%;
+}
+
+.social{
 }
 
 
