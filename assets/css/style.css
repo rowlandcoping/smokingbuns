@@ -282,7 +282,6 @@ header {
     width: 280px;
     border: 4px ridge #818589;
     border-radius: 50%;
-    height: auto;
 }
 
 .about-info {
@@ -293,10 +292,8 @@ header {
 }
 
 .about-profile {
-    display: flex;
     flex-flow: column;
     flex: 1;
-
 }
 
 .about-profile img {
@@ -307,8 +304,7 @@ header {
 
 .profile-pic img {
     width: 100px;
-    height: auto;
-    margin-bottom: 5px
+    margin-bottom: 5px;
 }
 
 .profile-bio hr {
