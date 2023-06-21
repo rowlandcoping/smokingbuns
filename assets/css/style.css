@@ -92,6 +92,7 @@ header {
 
 .review-links img {
    width: 100%;
+   border-radius: 12px;
 }
 
 .social-links img {
@@ -109,14 +110,7 @@ header {
     width: 100%;
     align-items: center;
     justify-content: center;
-}
-
-.social-links a {
-    border-radius: 20%;
-}
-
-.review-links a {
-    border-radius: 8%;
+    border-radius: 12px;
 }
 
 #footer-container a:hover,
@@ -124,10 +118,6 @@ header {
     background-color: #fff;
     background-size: auto 90%;
 }
-
-.social{
-}
-
 
 
 /*-----------------Callout Styling*/
@@ -143,6 +133,7 @@ header {
 }
 
 .callout-text {
+    padding: 20px 0;
     font-family: main;
     color: #fff;
     background-color: #48290Abf;
@@ -485,6 +476,23 @@ iframe {
     width:100%;
     height:300px;
     margin-bottom:10px;
+}
+
+/*-----------Submit Page*/
+
+#submit-container {
+    height: 50dvh;
+    border-bottom: 6px groove silver;
+    border-top: 6px groove silver;
+    font-family: main;
+    color:#48290A;
+}
+
+.submit-text {
+    padding: 20px 0;
+    background-image: url("../images/backgrounds/parchment.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*-----------MEDIA QUERIES*/
@@ -968,7 +976,7 @@ iframe {
 
     .address-details, .map-details {
         background-image: none;
-        height:100%;
+        height:325px;
         padding-top: 10px;
     }
     .location-wrapper {

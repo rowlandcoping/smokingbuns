@@ -379,11 +379,11 @@ This page contains multiple images that whilst not licensed for use on Smoking B
 
   ### Code (book.html)
 
-  I used [this guide](https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767) when creating the booking form in order to help with media break points and text alignment for the form list elements.  Although the majority of my code on this page doesn't come from the guide, it provided a good template for me to build around.
+  I used [this guide](https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767) when creating the booking form in order to help with media break points and text alignment for the form list elements.  Although the majority of my code on this page doesn't come from the guide, it provided a good foundation for me to build around.
 
   ### Advice
 
-Many thanks to my mentor Mitko Bachvarov for all the help and advice he has offered, which I want to give credit for here:
+Many thanks to my mentor Mitko Bachvarov for all the help and advice he has offered - I've outlined the parts that have directly influenced the site.
 
 - advising on the proper syntax for git commits.
 - suggesting css methods that might be appropriate for certain pages based on my wireframes.
