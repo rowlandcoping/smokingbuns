@@ -318,7 +318,7 @@ If you wish to deploy this website yourself, here is how to go about it.
 
 2:  Using source files
 
-Because this website is built using nothing but html and css you can deploy it in any web browser from local files.  Please note at the time of writing you will require internet access as the site uses a CDN to access bootstrap 5 files.
+Because this website is built using nothing but html and css you can deploy it in any web browser from local files.
 
 - Go to the Smoking Buns repository [HERE](https://github.com/rowlandcoping/smokingbuns) 
 - Download all the files in the repository except for the '.devcontainer' folder and the '.gitignore' file to a folder on your local machine.
@@ -326,4 +326,72 @@ Because this website is built using nothing but html and css you can deploy it i
 
 NB If you wish you could also deploy these files by copying and pasting them to the 'www' folder of your own web host, but keep in mind that the method of deployment will vary depending on the web hosting package you use.
 
-NBB If you are using a Linux operating system running Apache you can simply save the files in your local '/var/www/html' folder and deploy by typing 'localhost' into a browser window. Please see instructions for installing Apache [HERE](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview) if you haven't already.  
+NBB If you are using a Linux operating system running Apache you can simply save the files in your local '/var/www/html' folder and deploy by typing 'localhost' into a browser window. Please see instructions for installing Apache [HERE](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview) if you haven't already.
+
+## Credits
+
+Please see below for sources, inspirations and any other credits for the creative and technical work on this website:
+
+### Fonts
+
+Both fonts downloaded from Fontspace:
+ - [Carnivale Freakshow](https://www.fontspace.com/carnivalee-freakshow-font-f5278)
+ - [Maiden Orange](https://www.fontspace.com/maiden-orange-font-f11465)
+
+### Main Logo
+
+The Smoking Buns logo was created from scratch using Inkscape, but drew heavy inspiration from multiple sources:
+ - [Pistol](https://www.dreamstime.com/western-pistol-revolver-vector-illustration-western-pistol-revolver-vector-illustration-detailed-monochrome-style-image201452854#_)
+ - [Burger bun](https://www.alamy.com/burger-vector-icon-fast-food-sign-graph-symbol-for-cooking-web-site-and-apps-design-logo-app-ui-image398212071.html)
+ - [Smoke](https://www.shutterstock.com/image-vector/steam-vector-symbol-on-white-600w-1554375650.jpg)
+
+### Menu 'Sheriff Star' background
+
+This image was created using Inkscape, but the design for a Sheriff badge seems to be universal:
+ - [Sheriff Badge array](https://www.google.com/search?q=sheriff+badge&tbm=isch&ved=2ahUKEwig4I_9hNP_AhUunCcCHd1vAH4Q2-cCegQIABAA&oq=sheriff+badge&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEIoFEEM6BAgAEAM6CAgAEIAEELEDOggIABCxAxCDAToKCAAQigUQsQMQQzoLCAAQgAQQsQMQgwFQAFjME2D0FWgAcAB4AIABYIgBmAmSAQIxM5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=MDuSZKCIC664nsEP3d-B8Ac&bih=782&biw=1501&client=firefox-b-d)
+
+### Hero Image
+
+This image (also used in the 'About Our Food' section) was found on rawpixel - the image was itself taken from Wikimedia commons which attributes it to Unsplash (originally published before 05/06/17 and therefore not licensable).
+ - [Hero Image](https://www.rawpixel.com/image/3286349/free-photo-image-burger-french-fries-food)
+
+### Main Background
+
+The wood background is derived from the following Shutterstock image - I compressed it significantly for web use and darkened it in GIMP.
+ - [Wood background](https://image.shutterstock.com/image-photo/old-wood-texture-background-wooden-260nw-1405830665.jpg)
+
+### About Page
+
+This page contains multiple images that whilst not licensed for use on Smoking Buns are in the public domain.  Of course were this a commercial site I wouldn't use any of them; they are there at present to add completeness and colour.
+ - [Clint Eastwood](https://www.google.com/imgres?imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FM%2FMV5BMTc1ODA2MzQyNV5BMl5BanBnXkFtZTcwODQ5MjkzNA%40%40._V1_.jpg&tbnid=cfR8oA2Z00bSiM&vet=12ahUKEwjKtJHfgtP_AhXDsEwKHStwD0oQMygAegUIARCUAQ..i&imgrefurl=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0061747%2F&docid=wkGvtJr-oClWIM&w=804&h=1023&q=clint%20eastwood%20hang%20em%20high&client=firefox-b-d&ved=2ahUKEwjKtJHfgtP_AhXDsEwKHStwD0oQMygAegUIARCUAQ) image copyright Metro-Goldwyn-Mayer Studios Inc, found on IMDB.
+  - [Jamie Oliver](https://i.guim.co.uk/img/media/5a5250cd6c465b13d9f6fa6766f037aedee0abd0/0_0_1382_922/master/1382.jpg?width=620&quality=85&dpr=1&s=none) image found on the Guardian website, courtesy of Ella Miller/jamieoliver.com.
+  - [Barbara Windsor](https://i2-prod.mirror.co.uk/incoming/article22393553.ece/ALTERNATES/s1200d/0_MAIN-Barbara-Windsor.jpg) image was found on the Mirror website, courtesy of the PA/bbc.
+  - The Restaurant image is a screengrab taken from the video game 'Red Dead Redemption 2' by Rockstar Games.
+
+  ### Logos
+
+  I have listed the sources for the logos in the footer below.  They are not as downloaded; all logos listed were amended to ensure they were the same shade of black and to replace any internal transparencies with a white background.  The Tripadvisor and Google logo backgrounds were amended so that both logos are the same size.  All this imagework undertaken using GIMP.
+   - [Facebook](https://www.clipartmax.com/download/m2i8A0m2m2N4i8b1_facebook-icon-facebook-logo-black-vector/) - clipartmax.com
+   - [Instagram](https://www.pngegg.com/en/png-kzypz/) - pngegg.com
+   - [Snapchat](https://pngtree.com/freepng/snapchat-icon_3584910.html) - pngtree.com
+   - [Tripadvisor](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfMgn4ae09WcEjCXwyPaZ7zH_M_6p-AIi_AQ&usqp=CAU) - found on the Rock and Sole Place website.
+   - [Google](https://commons.wikimedia.org/wiki/File:Transparent_google_logo_2015.png) foudn on wikimedia commons.
+
+  ### Code (book.html)
+
+  I used [this guide](https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767) when creating the booking form in order to help with media break points and text alignment for the form list elements.  Although the majority of my code on this page doesn't come from the guide, it provided a good template for me to build around.
+
+  ### Advice
+
+Many thanks to my mentor Mitko Bachvarov for all the help and advice he has offered, which I want to give credit for here:
+
+- advising on the proper syntax for git commits.
+- suggesting css methods that might be appropriate for certain pages based on my wireframes.
+- suggesting the elegent solution for form submission on a static site.
+- advising on the footer look and feel.
+- noticing the horizontal scroll issue (I thought it was a product of web developer tools!)
+- answering all my questions no matter how stupid they were!
+
+
+
+
