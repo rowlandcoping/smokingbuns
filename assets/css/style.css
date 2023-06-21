@@ -78,7 +78,7 @@ header {
 /*-----------------Footer Styling*/
 
 #footer-container {
-    background-color: #ffffff99;
+    background-color: #ffffff4d;
     height: 100%;
     padding: 5px 0 10px 0;
 }
@@ -89,8 +89,9 @@ header {
     width:100%;
 }
 
+
 .review-links img {
-    width: 100%;
+   width: 100%;
 }
 
 .social-links img {
@@ -108,7 +109,14 @@ header {
     width: 100%;
     align-items: center;
     justify-content: center;
+}
+
+.social-links a {
     border-radius: 20%;
+}
+
+.review-links a {
+    border-radius: 8%;
 }
 
 #footer-container a:hover,
@@ -292,19 +300,14 @@ header {
 }
 
 .about-profile {
-    flex-flow: column;
     flex: 1;
-}
-
-.about-profile img {
-    width: 75%;
-    border: 4px ridge #818589;
-    border-radius: 10%;
 }
 
 .profile-pic img {
     width: 100px;
     margin-bottom: 5px;
+    border: 4px ridge #818589;
+    border-radius: 10%;
 }
 
 .profile-bio hr {
