@@ -11,7 +11,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("../images/backgrounds/wooden.jpg");
+    background-image: url("../images/backgrounds/wooden.webp");
     background-size: 100%;
     padding:0;
     margin:0;
@@ -203,7 +203,7 @@ header {
     margin: 20px auto;
     grid-auto-rows: min-content;
     grid-auto-flow: row;
-    background-image: url("../images/backgrounds/parchment.jpg");
+    background-image: url("../images/backgrounds/parchment.webp");
     font-family: main;
     padding: 10px;
 }
@@ -360,7 +360,7 @@ header {
 .form-wrapper {
     width: 85%;
     margin: 40px auto;
-    background-image:url("../images/backgrounds/parchment.jpg");
+    background-image:url("../images/backgrounds/parchment.webp");
     padding-bottom: 20px;
 }
 
@@ -463,7 +463,7 @@ iframe {
 .location-wrapper {
     width:85%;
     margin: 40px auto;
-    background-image:url("../images/backgrounds/parchment.jpg");
+    background-image:url("../images/backgrounds/parchment.webp");
 }
 .location-container {
     display: flex;
@@ -519,7 +519,7 @@ iframe {
 
 .submit-text {
     padding: 20px;
-    background-image: url("../images/backgrounds/parchment.jpg");
+    background-image: url("../images/backgrounds/parchment.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
