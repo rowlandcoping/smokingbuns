@@ -75,20 +75,4 @@ I have chosen to manually test using 3 screen sizes:
 
 360px (Chrome on Samsung Galaxy S8)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Return to [README](README.md).

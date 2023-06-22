@@ -131,7 +131,7 @@ header {
 .footer-container a:active {
     background-color: #fff;
     margin: -2px 0 0 0;
-    padding:4px 3px 3px 3px;
+    padding:3px;
 }
 
 
@@ -214,20 +214,24 @@ header {
 }
 
 .menu-container h3 {
-    font-size: 160%;
+    font-size: 150%;
 }
 
 .menu-container h4 {
-    font-size: 140%;
+    font-size: 130%;
 }
 
-.menu-container h5 {
-    font-size: 110%;
-
+.course-subtitle h4 {
+    font-size: 100%;
+    font-style: italic;
+    font-weight:bold;
+    color:#48290A;
 }
 
 .menu-container p {
     font-size: 100%;
+    color:#48290A;
+    font-style: italic;
 }
 
 
@@ -288,8 +292,16 @@ header {
     background-color: #48290AB3;
 }
 
+.about-section h2 {
+    font-size: 160%;
+}
+
 .about-section h3 {
-    font-size: 180%;
+    font-size: 140%;
+}
+
+.about-section h4 {
+    font-size: 120%;
 }
 
 .about-image img {
@@ -425,7 +437,7 @@ header {
  margin:10px auto;
  background-color:#48290A;
  color: #fff;
- padding: 12px 0 5px 0;
+ padding:8px;
  Font-Size: 180%;
 }
 
@@ -541,11 +553,6 @@ iframe {
         height:22px;
     }
     
-    .footer-container a:hover,
-    .footer-container a:active {
-        padding:5px 3px 3px 3px;
-    }
-
     /*about page*/
 
     .about-image img {
@@ -596,7 +603,7 @@ iframe {
     
     .footer-container a:hover,
     .footer-container a:active {
-        padding:7px 4px 4px 4px;
+        padding:5px;
     }
 
 /*menu page*/
@@ -613,7 +620,7 @@ iframe {
         font-size: 150%;
     }
 
-    .menu-container h5 {
+    .course-subtitle h4 {
         font-size: 120%;
     }
 
@@ -625,7 +632,7 @@ iframe {
     }
 
     .profile-pic img {
-        width: 140px;
+        width: 130px;
         height: auto;
     }
 
@@ -633,17 +640,26 @@ iframe {
         width: 40%;
     }
 
+    .about-section h2 {
+        font-size: 180%;
+    }
+
+    .about-section h3 {
+        font-size: 160%;
+    }
+    
+    .about-section h4 {
+        font-size: 140%;
+    }
+
 /*booking page*/
 
 .form-personal, .form-visit, .address-details, .map-details {
     padding-right: 40px;
     padding-left: 40px;
+    }
 }
 
-}
-@media screen and (min-width:507px) {
-
-}
 @media screen and (min-width:576px) {
 
     .nav-wrapper {
@@ -665,7 +681,7 @@ iframe {
     
     .footer-container a:hover,
     .footer-container a:active {
-        padding:9px 6px 6px 6px;
+        padding:6px;
     }
 
     .menu-container h2 {
@@ -680,7 +696,7 @@ iframe {
         font-size: 150%;
     }
 
-    .menu-container h5 {
+    .course-subtitle h4 {
         font-size: 120%;
     }
 
@@ -694,8 +710,7 @@ iframe {
     }
 
     .profile-pic img {
-        width: 160px;
-        height: auto;
+        width: 140px;
     }
 
     .profile-bio h4 {
@@ -707,8 +722,16 @@ iframe {
         padding: 0 20px;
     }
 
+    .about-section h2 {
+        font-size: 190%;
+    }
+
     .about-section h3 {
-        font-size: 200%;
+        font-size: 160%;
+    }
+    
+    .about-section h4 {
+        font-size: 150%;
     }
 
     .about-section {
@@ -759,17 +782,28 @@ iframe {
     .menu-container {
         width: 80%;
     }
+    .profile-pic img {
+        width: 145px;
+    }
 
     .about-image img {
-        width: 500px;
+        width: 490px;
     }
 
     .about-image-text {
         font-size: 130%;
     }
 
+    .about-section h2 {
+        font-size: 210%;
+    }
+
     .about-section h3 {
-        font-size: 230%;
+        font-size: 170%;
+    }
+    
+    .about-section h4 {
+        font-size: 160%;
     }
 
     .profile-bio h5 {
@@ -834,7 +868,7 @@ iframe {
         font-size: 160%;
     }
 
-    .menu-container h5 {
+    .course-subtitle h4 {
         font-size: 130%;
     }
 
@@ -870,8 +904,16 @@ iframe {
         padding: 0 20px;
     }
 
+    .about-section h2 {
+        font-size: 260%;
+    }
+
     .about-section h3 {
-        font-size: 280%;
+        font-size: 200%;
+    }
+    
+    .about-section h4 {
+        font-size: 180%;
     }
 
     .about-section {
@@ -944,7 +986,7 @@ iframe {
     .footer-container a:hover,
     .footer-container a:active {
         border-radius: 12px;
-        padding:11px 6px 5px 6px;
+        padding:8px;
     }
 
     .menu-container h2 {
@@ -1017,7 +1059,7 @@ iframe {
     .footer-container a:hover,
     .footer-container a:active {
         border-radius: 12px;
-        padding:10px 6px 6px 6px;
+        padding:10px;
     }
 
     .menu-container {
@@ -1065,9 +1107,12 @@ iframe {
         padding: 0 20px;
     }
 
-    .about-section h3 {
-        font-size: 280%;
+    .about-section h2 {
         padding-bottom: 10px;
+    }
+       
+    .about-section h4 {
+        font-size: 180%;
     }
 
      /*booking page*/
@@ -1146,7 +1191,7 @@ iframe {
         font-size: 180%;
     }
 
-    .menu-container h5 {
+    .course-subtitle h4 {
         font-size: 140%;
     }
 
@@ -1185,13 +1230,20 @@ iframe {
     }
 
     .about-image-text {
-        font-size: 160%;
+        font-size: 140%;
         padding: 0 20px;
     }
 
-    .about-section h3 {
+    .about-section h2 {
         font-size: 280%;
-        padding-bottom: 10px;
+    }
+
+   .about-section h3 {
+        font-size: 220%;
+    }
+    
+    .about-section h4 {
+        font-size: 200%;
     }
 
 }
@@ -1232,7 +1284,7 @@ iframe {
         font-size: 200%;
     }
 
-    .menu-container h5 {
+    .course-subtitle h4 {
         font-size: 160%;
     }
 
@@ -1270,12 +1322,19 @@ iframe {
     }
 
     .about-image-text {
-        font-size: 160%;
+        font-size: 150%;
         padding: 0 20px;
     }
 
-    .about-section h3 {
-        font-size: 300%;
-        padding-bottom: 10px;
+    .about-section h2 {
+        font-size: 280%;
+    }
+
+   .about-section h3 {
+        font-size: 230%;
+    }
+    
+    .about-section h4 {
+        font-size: 210%;
     }
 }

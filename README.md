@@ -282,32 +282,37 @@ I've documented here the major problems I encourtered during the course of the b
 
 GENERAL:
 
-- Horizontal scrolling issue
-- There is a small horizontal scroll across all pages. I traced the issue to the footer using web developer tools. One by one I eliminated all the child elements as the cause and found the source of the problem to be a bootstrap row element taking up more than the viewport's width across all screen sizes.  This was fixed by setting the width of the row to 100%.                     
+- Horizontal scrolling issue:
+  - There is a small horizontal scroll across all pages. I traced the issue to the footer using web developer tools. One by one I eliminated all the child elements as the cause and found the source of the problem to be a bootstrap row element taking up more than the viewport's width across all screen sizes.  This was fixed by setting the width of the row to 100%.                     
 
 HEADER / FOOTER / HOMEPAGE:
 
 - Background Hover Image not centered in element
-- There were a number of issues centering the background hover image (sheriff star) over the text of the menu options.  This was eventually solved by setting the width of the image to 100% and the height to auto, to keep the aspect ratio.  I foudn that I was then able to adjust the size of the image by setting a fixed height for the parent element.  Final adjustments were made by adjusting the size of the menu text.  All these values are then adjusted according to screen width.
-- Callout image positioning
-- I found that on larger screen sizes the hero image in the callout section focussed on the chips rather than the burger as intented.  This was overcome in 2 ways - firstly by changing the absolute positioning of 0 to the bottom of the element to a percentage, to ensure the image was focussed on the correct area even as the screen size grew.  I also reduced the size of the image so that you could see more of it on larger screen sizes.
-- Footer background positioning
-- I found that the background change on hover wasn't encompassing the whole height of the element.  I fixed this by changing the display property of the container to flex.  I was also then able to justify and align the various icons.
+  - There were a number of issues centering the background hover image (sheriff star) over the text of the menu options.  This was eventually solved by setting the width of the image to 100% and the height to auto, to keep the aspect ratio.  I foudn that I was then able to adjust the size of the image by setting a fixed height for the parent element.  Final adjustments were made by adjusting the size of the menu text.  All these values are then adjusted according to screen width.
+
+- Callout image positioning:
+  - I found that on larger screen sizes the hero image in the callout section focussed on the chips rather than the burger as intented.  This was overcome in 2 ways - firstly by changing the absolute positioning of 0 to the bottom of the element to a percentage, to ensure the image was focussed on the correct area even as the screen size grew.  I also reduced the size of the image so that you could see more of it on larger screen sizes.
+
+- Footer background positioning:
+  - I found that the background change on hover wasn't encompassing the whole height of the element.  I fixed this by changing the display property of the container to flex.  I was also then able to justify and align the various icons.
+
+- Footer sizing (part 2):
+    - After discussions with my mentor I re-built the footer to stop the images scaling with the screen width to become outsized on larger desktop monitors.  I achived this by setting fixed values for the image height and wrapping the container to the image.  This was unfortunately not compatible with the previous fix. The solution I came upon was expanding the padding for the hover pseudo element until the background took up the desired amount of space.  This is not a solution I'm particularly happy with but I think it may be the best one as long as the footer is built in Bootstrap.
 
 ABOUT PAGE:
 
-- Images overflowing their containing elements.
-- I had a number of issues caused by the main image of each section overflowing its container, which revealed itself as I scaled up the site.  I noticed that it only applied to the lower resolutuion of the images, and so was able to resolve it by setting by fixed sizes for the container.
+- Images overflowing their containing elements:
+  - I had a number of issues caused by the main image of each section overflowing its container, which revealed itself as I scaled up the site.  I noticed that it only applied to the lower resolutuion of the images, and so was able to resolve it by setting by fixed sizes for the container.
 
 BOOK PAGE:
 
-- Flex Container not working as expected
-- On expanding to the landscape break point (where the main axis should have reverted to column) the booking elements remained in rows.  The mistake I made was positioning the form element as the first child of the flexbox container.  By moving the form element outside of the container and ensuring the flex elements were the only children I resolved this.
+- Flex Container not working as expected:
+  - On expanding to the landscape break point (where the main axis should have reverted to column) the booking elements remained in rows.  The mistake I made was positioning the form element as the first child of the flexbox container.  By moving the form element outside of the container and ensuring the flex elements were the only children I resolved this.
 
 SUBMISSION PAGE:
 
 - Footer was stranded halfway up the page, relative/absolute positioning did not solve the problem.
-- setting the body display properties to flex and the footer's top margin to auto solved this.
+  - Setting the body display properties to flex and the footer's top margin to auto solved this.
 
 ## Deployment
 ([back to top](#smoking-buns))
@@ -381,6 +386,7 @@ This page contains multiple images that whilst not licensed for use on Smoking B
 - [Jamie Oliver](https://i.guim.co.uk/img/media/5a5250cd6c465b13d9f6fa6766f037aedee0abd0/0_0_1382_922/master/1382.jpg?width=620&quality=85&dpr=1&s=none) image found on the Guardian website, courtesy of Ella Miller/jamieoliver.com.
 - [Barbara Windsor](https://i2-prod.mirror.co.uk/incoming/article22393553.ece/ALTERNATES/s1200d/0_MAIN-Barbara-Windsor.jpg) image was found on the Mirror website, courtesy of the PA/bbc.
 - The Restaurant image is a screengrab taken from the video game 'Red Dead Redemption 2' by Rockstar Games.
+- The [staff image](https://dl6pgk4f88hky.cloudfront.net/2021/09/peggy2-1038x778.jpg) is taken from a New Statesman online tribute to the late Barbara Windsor.
 
 ### Logos
 
@@ -389,11 +395,11 @@ I have listed the sources for the logos in the footer below.  They are not as do
 - [Instagram](https://www.pngegg.com/en/png-kzypz/) - pngegg.com
 - [Snapchat](https://pngtree.com/freepng/snapchat-icon_3584910.html) - pngtree.com
 - [Tripadvisor](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfMgn4ae09WcEjCXwyPaZ7zH_M_6p-AIi_AQ&usqp=CAU) - found on the Rock and Sole Place website.
-- [Google](https://commons.wikimedia.org/wiki/File:Transparent_google_logo_2015.png) foudn on wikimedia commons.
+- [Google](https://commons.wikimedia.org/wiki/File:Transparent_google_logo_2015.png) found on wikimedia commons.
 
 ### Code (book.html)
 
-I used [this guide](https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767) when creating the booking form in order to help with media break points and text alignment for the form list elements.  Although the majority of my code on this page doesn't come from the guide, it provided a good foundation for me to build around.
+I used [this guide](https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767) when creating the booking form, in order to help with media break points and text alignment for the form list elements.  Although the majority of my code on this page doesn't come from the guide, it provided a good foundation for me to build around.
 
 ### Advice
 
