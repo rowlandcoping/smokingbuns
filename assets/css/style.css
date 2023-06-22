@@ -22,10 +22,10 @@ body {
     background: transparent;
     color: #fff;
     font-family: main;
-    height: 80px;
+    height: 73px;
     position: relative;
     padding: 0;
-    font-size: 150%;
+    font-size: 130%;
 }
 
 .current {
@@ -75,48 +75,56 @@ header {
     color: #48290A;
 }
 
+#header-container hr {
+    height: 0.4rem;
+    background: #fff;
+    margin: 12px auto 10px auto;
+    padding: 0;
+    width: 75%;
+    text-align: center;
+    opacity: 1;
+}
+
 /*-----------------Footer Styling*/
+
 
 #footer-container {
     background-color: #ffffff4d;
     height: 100%;
-    padding: 5px 0 10px 0;
+    padding: 10px 0 10px 0;
 }
 
 
 
 #footer-container .row {
-    width:100%;
+    width: 100%;
 }
 
 
 .review-links img {
-   width: 100%;
-   border-radius: 12px;
+   border-radius: 6px;
 }
 
-.social-links img {
-    width: 100%;
+.social-links img, .review-links img {
+    height:20px;
 }
+
 
 #footer-container li {
     height: 100%;
 }
 
 #footer-container a {
-    display: flex;
-    height: 37px;
-    padding: 0 6px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
+    width:100%;
+    border-radius: 6px;
+    padding:4px;
 }
 
 #footer-container a:hover,
 #footer-container a:active {
     background-color: #fff;
-    background-size: auto 90%;
+    margin: -2px 0 0 0;
+    padding:4px 3px 3px 3px;
 }
 
 
@@ -127,13 +135,13 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom 60% left 0px;
-    height: 50dvh;
+    height: 60dvh;
     border-bottom: 6px groove silver;
     border-top: 6px groove silver;
 }
 
 .callout-text {
-    padding: 20px 0;
+    padding: 20px;
     font-family: main;
     color: #fff;
     background-color: #48290Abf;
@@ -162,11 +170,11 @@ header {
     background-color: #48290AB3;
     color: #fff;
     text-align: center;
-    margin: 20px auto;
+    margin: 40px auto;
+    padding:20px;
 }
 
 #review-container h2 {
-    font-family: main;
     font-size: 220%;
 }
 
@@ -496,7 +504,25 @@ iframe {
 }
 
 /*-----------MEDIA QUERIES*/
+@media screen and (min-width:360px) {
+    /*header*/
 
+    .list-group-item {
+        height: 80px;
+        font-size: 150%;
+    }
+
+    /*footer*/
+
+    .social-links img, .review-links img {
+        height:22px;
+    }
+    
+    #footer-container a:hover,
+    #footer-container a:active {
+        padding:5px 3px 3px 3px;
+    }
+}
 @media screen and (min-width:450px) {
 /*home page , header, footer*/
     h1 {
@@ -512,7 +538,6 @@ iframe {
         font-size: 200%;
     }
 
-
     .spacer {
         width: 40%;
     }
@@ -521,9 +546,13 @@ iframe {
         font-size: 270%;
     }
 
-    #footer-container a {
-        height: 47px;
-        padding: 0 8px;
+    .social-links img, .review-links img {
+        height:24px;
+    }
+    
+    #footer-container a:hover,
+    #footer-container a:active {
+        padding:7px 4px 4px 4px;
     }
 
 /*menu page*/
@@ -571,13 +600,26 @@ iframe {
 
 @media screen and (min-width:576px) {
 
+    .nav-wrapper {
+        width: 90%;
+        margin:auto;
+    }
+
     h1 {
         font-size: 380%;
     }
 
-    #footer-container a {
-        height: 55px;
-        padding: 0 10px;
+    #callout-container { 
+        height: 50dvh;
+    }
+
+    .social-links img, .review-links img {
+        height:28px;
+    }
+    
+    #footer-container a:hover,
+    #footer-container a:active {
+        padding:9px 6px 6px 6px;
     }
 
     .menu-container h2 {
@@ -722,6 +764,10 @@ iframe {
         height: 150px;
     }
 
+    .nav-wrapper {
+        width: 85%;
+    }
+
 
     .spacer {
         width: 25%;
@@ -832,6 +878,10 @@ iframe {
         font-size: 700%
     }
 
+    .nav-wrapper {
+        width: 80%;
+    }
+
     .callout-text h2 {
         font-size: 250%;
     }
@@ -839,10 +889,18 @@ iframe {
     .spacer {
         width: 20%;
     }
-
-    #footer-container a {
-        height: 90px;
-        padding: 0 15px;
+    .review-links img {
+        border-radius: 12px;
+    }
+    .social-links img, .review-links img {
+        height:30px;
+        
+    }
+    
+    #footer-container a:hover,
+    #footer-container a:active {
+        border-radius: 12px;
+        padding:11px 6px 5px 6px;
     }
 
     .menu-container h2 {
@@ -882,10 +940,6 @@ iframe {
         font-size: 780%
     }
 
-    #footer-container a {
-        height: 110px;
-        padding: 0 18px;
-    }
 }
 
 @media screen and (min-width:1200px) {
@@ -893,6 +947,15 @@ iframe {
     h1 {
         font-size: 480%
     }
+
+    .nav-wrapper {
+        width:50%;
+    }
+
+    #header-container hr {
+        display:none;
+    }
+
 
     .menu-main {
         font-size: 240%;
@@ -907,9 +970,10 @@ iframe {
         width: 15%;
     }
 
-    #footer-container a {
-        height: 130px;
-        padding: 0 20px;
+    #footer-container a:hover,
+    #footer-container a:active {
+        border-radius: 12px;
+        padding:10px 6px 6px 6px;
     }
 
     .menu-container {
@@ -1018,6 +1082,10 @@ iframe {
         height: 150px;
     }
 
+    .nav-wrapper {
+        width:47%;
+    }
+
     .spacer {
         width: 10%;
     }
@@ -1098,6 +1166,10 @@ iframe {
     .menu-main {
         font-size: 305%;
         height: 170px;
+    }
+
+    .nav-wrapper {
+        width:41%;
     }
 
     .callout-text h2 {
