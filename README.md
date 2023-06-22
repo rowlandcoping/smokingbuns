@@ -1,8 +1,29 @@
 # Smoking Buns
 
-Please see below for full documentation for this project.  Any additional files will be linked where necessary.
+Welcome to the documentation for 'Smoking Buns', a responsive mobile-first website built in HTML and CSS.
 
-## UX - Strategy
+## Contents:
+
+### UX Design
+
+[UX - Strategy](#ux---strategy)\
+[UX - Scope](#ux---scope)\
+[UX - Structure](#ux---structure)\
+[UX - Skeleton](#ux---skeleton)\
+[UX - Surface](#ux---surface)
+
+### Testing and Deployment
+
+[Testing and Issues](#testing-and-issues)\
+[Deployment](#deployment)
+
+### Credits and Technical
+
+[Credits](#credits)\
+[Technical Information](#technical-information)
+
+## UX - Strategy 
+([back to top](#smoking-buns))
 
 ### 1) Project Goals
 
@@ -59,6 +80,7 @@ The customer base will be people looking for a unique, high quality dining exper
   This will make identifying essential elements for the website relatively straightforward.
 
 ## UX - Scope
+([back to top](#smoking-buns))
 
 ### Core Elements
 
@@ -111,7 +133,8 @@ These elements are beyond the scope of this project, but I would definitely like
 - online booking system:  Absolutely essential element of any modern restaurant site, either imported from a widget or built ground-up.
 - customer registration / rewards system:  can track customer visits, offer things like loyalty rewards, birthday specials, generic offers, etc.
 
-## UX - Structure
+## UX - Structure 
+([back to top](#smoking-buns))
 
 ### Header and Navigation (Core)
 
@@ -185,6 +208,7 @@ layer menu, with every page on the site available through a single tap or click.
  - may be worth adding the social links again, but it ought not be necessary because I expect them to be very prominent in the footer.
 
  ## UX - Skeleton
+ ([back to top](#smoking-buns))
 
  ### Design Choices
 
@@ -206,102 +230,91 @@ layer menu, with every page on the site available through a single tap or click.
       - Flexbox for the 'About' and 'Book' pages. (discovered that using nested flexboxes and changing the axis made for great responsiveness.)
   - Booking form button - In a full deployment I would use a POST method to process the form using PhP, Javascript or such like, then write the contents to a relational database (potentially integrated with an online booking system). Keeping in mind the limited scope of this project, for the purposes of this deployment I have used a GET method to ensure the form will not work unless filled out correctly.  The page the values are passed to does nothing to process them, but it does link to a static page with a success message and route back to the homepage.  Keep in mind that this is not a secure solution, and therefore do not enter any sensitive data through the 'Book' page on this website.  Please note that this page does not feature in the wireframes because it was not conceived of until later in the project's development cycle.
 
-  ### Wireframes
+### Wireframes
 
-  NOTE: In the 1200px versions I have included a red dotted line as an indication of roughly where the fold would be on a 1200px screen.
-  Although, for clarity, I have provided visual representation of the various mobile devices, I would not expect all content to be above the fold as depicted; it will also not be as important on mobile as long as the site retains clarity regarding the content on each page.
+Please find the wireframes [HERE](WIREFRAMES.md).
 
-  #### Default Screen Size (576px)
+## UX - Surface
+([back to top](#smoking-buns))
 
-  ![image](assets/images/wireframes/Home_576.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![image](assets/images/wireframes/Menu_576.png)
-  <br>  
-  ![image](assets/images/wireframes/About_576.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![image](assets/images/wireframes/Contact_576.png)   
+### Color - backgrounds
 
-  #### Tablet Screen Size (768px)
+The color scheme is intended to be evocative of the Wild West. For me the idea of a wood background began with the header but made sense as a background for the page from both a design and technical standpoint. I made sure it was a dark brown and actually darkened the wallpaper image I initially downloaded using GIMP to ensure legiblity of text and to ensure the look and feel was as I intended.  The general style of all pages is intended to invoke either text embossed in a wooden frame or messages pinned to a noticeboard- hence the cream colored old-style parchment which works excellently with the dark brown.  The transparency is intended to help readability of other sections of the site.  The footer uses a white transparency to differentiate itself from the main sections.
 
-  ![image](assets/images/wireframes/Home_768.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![image](assets/images/wireframes/Menu_768.png)
-  <br>  
-  ![image](assets/images/wireframes/About_768.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![image](assets/images/wireframes/Contact_768.png)
+### Text and Fonts
 
-  #### Small Desktop/Laptop Screen Size (1200px)
+To keep things simple and readable I opted for white text against the dark brown background.  This is inverted to black text upon the various noticeboard sections.
 
-  ![image](assets/images/wireframes/Home_1200.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![image](assets/images/wireframes/Menu_1200.png)
-  <br>  
-  ![image](assets/images/wireframes/About_1200.png)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![image](assets/images/wireframes/Contact_1200.png)
+The main font was chosen for its legibility above some of the alternatives.  It is intended to represent a classic Western Style script and to be instantly recognisable as such.  The title font is a more eloborate extension of the theme - because the size of the title area using a more intricate font does not affect its legibility and I think adds greatly to the look and feel.  All fonts are stored locally with future-proofing in mind.  Additionally I feel like using fonts outside of google significantly increased my options.
 
-   ## UX - Surface
+### Images
 
-   ### Color - backgrounds
+The various images used are influenced by there being little collaterol for the (fictional) venue.  The logos either side of the title and the smoking gun spacer were built in Inkscape, using various sources as inspiration.  I chose to use vector images where possible because of how easily and cleanly they scale to different screen sizes without loss of resolution. 
 
-   The color scheme is intended to be evocative of the Wild West. For me the idea of a wood background began with the header but made sense as a background for the page from both a design and technical standpoint. I made sure it was a dark brown and actually darkened the wallpaper image I initially downloaded using GIMP to ensure legiblity of text and to ensure the look and feel was as I intended.  The general style of all pages is intended to invoke either text embossed in a wooden frame or messages pinned to a noticeboard- hence the cream colored old-style parchment which works excellently with the dark brown.  The transparency is intended to help readability of other sections of the site.  The footer uses a white transparency to differentiate itself from the main sections.
+I felt the main stock image had to represent the product, and whilst the look and feel of the site gets the theme across thoughout, in the end it would be nothing without a tasty burger.  I re-used this image for the about section.   I wanted to get across all aspects of the restaurant and give it some real personality in this section, hence the theme of introducing various members of staff and presenting the information as a quote from them.  Of the other images on this page, the various portraits, images and text are mostly placeholders but I think also get across very well how it is intended to be a fun venue.  I kept the menu page as simple as possible, as this page is simply about providing information as clearly as possible.  
 
-   ### Text and Fonts
+Initially the footer logos were based on the color schemes of the various brands;  I scaled this back to black and white in keeping with the mouse-over effects and the general look and feel of the site.
 
-   To keep things simple and readable I opted for white text against the dark brown background.  This is inverted to black text upon the various noticeboard sections.
+### Navigation/Effects
 
-   The main font was chosen for its legibility above some of the alternatives.  It is intended to represent a classic Western Style script and to be instantly recognisable as such.  The title font is a more eloborate extension of the theme - because the size of the title area using a more intricate font does not affect its legibility and I think adds greatly to the look and feel.  All fonts are stored locally with future-proofing in mind.  Additionally I feel like using fonts outside of google significantly increased my options.
+I immediately settled on a sheriff star to act as a visual indicator of a state change on the menu - the gold star indicates a hover/active state and the silver star indicates the current page.  I believe this gives tremendous clarity of what is going on for the user, and adds to the overall theme as well as adding value to the page.
 
-   ### Images
+Within the footer I opted for a white background in an active/hover state, to provie a contrast to both the black icons and the background wood effect/transparency.
 
-   The various images used are influenced by there being little collaterol for the (fictional) venue.  The logos either side of the title and the smoking gun spacer were built in Inkscape, using various sources as inspiration.  I chose to use vector images where possible because of how easily and cleanly they scale to different screen sizes without loss of resolution. 
-   
-   I felt the main stock image had to represent the product, and whilst the look and feel of the site gets the theme across thoughout, in the end it would be nothing without a tasty burger.  I re-used this image for the about section.   I wanted to get across all aspects of the restaurant and give it some real personality in this section, hence the theme of introducing various members of staff and presenting the information as a quote from them.  Of the other images on this page, the various portraits, images and text are mostly placeholders but I think also get across very well how it is intended to be a fun venue.  I kept the menu page as simple as possible, as this page is simply about providing information as clearly as possible.  
+I have not added any css transitions or effects, for the main reason that I don't believe they would add a lot of value to the target audience, ie users on mobile devices with smaller screens.   I also think the look and feel of the site has a strong enough identity already.
 
-   Initially the footer logos were based on the color schemes of the various brands;  I scaled this back to black and white in keeping with the mouse-over effects and the general look and feel of the site.
+### Responsiveness
 
-   ### Navigation/Effects
+In addition to basic bootstrap classes, I relied heavily upon media queries to hone page design and layout as the website scaled to different screen sizes. Given that the venerable Samsung Galaxy S8 has a CSS screen width of 360 pixels, In order to be safe I designed the site with page sizes from 320px to 1800px in mind.
 
-   I immediately settled on a sheriff star to act as a visual indicator of a state change on the menu - the gold star indicates a hover/active state and the silver star indicates the current page.  I believe this gives tremendous clarity of what is going on for the user, and adds to the overall theme as well as adding value to the page.
-
-   Within the footer I opted for a white background in an active/hover state, to provie a contrast to both the black icons and the background wood effect/transparency.
-
-   I have not added any css transitions or effects, for the main reason that I don't believe they would add a lot of value to the target audience, ie users on mobile devices with smaller screens.   I also think the look and feel of the site has a strong enough identity already.
-
-   ### Responsiveness
-
-   In addition to basic bootstrap classes, I relied heavily upon media queries to hone page design and layout as the website scaled to different screen sizes. Given that the venerable Samsung Galaxy S8 has a CSS screen width of 360 pixels, In order to be safe I designed the site with page sizes from 320px to 1800px in mind.
-
-   Generally speaking as the pages scaled up, I increased margins and padding, and increased font and image sizes to maintain optimal look and feel.  On desktop I used Bootstrap to change the position of content on the page in the header.  I also used Flexbox to adjust the layout for desktop on the 'About' and 'Book' pages.
+Generally speaking as the pages scaled up, I increased margins and padding, and increased font and image sizes to maintain optimal look and feel.  On desktop I used Bootstrap to change the position of content on the page in the header.  I also used Flexbox to adjust the layout for desktop on the 'About' and 'Book' pages.
 
 ## Testing and Issues
+([back to top](#smoking-buns))
 
 ### Testing
 
-Testing Documentation [HERE](TESTING.md)
+Please find all post-deployment testing documentation [HERE](TESTING.md).
 
 ### Issues
 
-I've documented here the major problems I encourtered during the course of the initial build (prior to testing) and the measures I took to overcome them.
+I've documented here the major problems I encourtered during the course of the build (prior to testing) and the measures I took to overcome them.
 
 GENERAL:
 
- - Horizontal scrolling issue
-    - There is a small horizontal scroll across all pages. I traced the issue to the footer using web developer tools. One by one I eliminated all the child elements as the cause and found the source of the problem to be a bootstrap row element taking up more than the viewport's width across all screen sizes.  This was fixed by setting the width of the row to 100%.                     
+- Horizontal scrolling issue
+- There is a small horizontal scroll across all pages. I traced the issue to the footer using web developer tools. One by one I eliminated all the child elements as the cause and found the source of the problem to be a bootstrap row element taking up more than the viewport's width across all screen sizes.  This was fixed by setting the width of the row to 100%.                     
 
 HEADER / FOOTER / HOMEPAGE:
 
- - Background Hover Image not centered in element
-    - There were a number of issues centering the background hover image (sheriff star) over the text of the menu options.  This was eventually solved by setting the width of the image to 100% and the height to auto, to keep the aspect ratio.  I foudn that I was then able to adjust the size of the image by setting a fixed height for the parent element.  Final adjustments were made by adjusting the size of the menu text.  All these values are then adjusted according to screen width.
- - Callout image positioning
-    - I found that on larger screen sizes the hero image in the callout section focussed on the chips rather than the burger as intented.  This was overcome in 2 ways - firstly by changing the absolute positioning of 0 to the bottom of the element to a percentage, to ensure the image was focussed on the correct area even as the screen size grew.  I also reduced the size of the image so that you could see more of it on larger screen sizes.
+- Background Hover Image not centered in element
+- There were a number of issues centering the background hover image (sheriff star) over the text of the menu options.  This was eventually solved by setting the width of the image to 100% and the height to auto, to keep the aspect ratio.  I foudn that I was then able to adjust the size of the image by setting a fixed height for the parent element.  Final adjustments were made by adjusting the size of the menu text.  All these values are then adjusted according to screen width.
+- Callout image positioning
+- I found that on larger screen sizes the hero image in the callout section focussed on the chips rather than the burger as intented.  This was overcome in 2 ways - firstly by changing the absolute positioning of 0 to the bottom of the element to a percentage, to ensure the image was focussed on the correct area even as the screen size grew.  I also reduced the size of the image so that you could see more of it on larger screen sizes.
 - Footer background positioning
-    - I found that the background change on hover wasn't encompassing the whole height of the element.  I fixed this by changing the display property of the container to flex.  I was also then able to justify and align the various icons.
+- I found that the background change on hover wasn't encompassing the whole height of the element.  I fixed this by changing the display property of the container to flex.  I was also then able to justify and align the various icons.
 
 ABOUT PAGE:
 
 - Images overflowing their containing elements.
-    - I had a number of issues caused by the main image of each section overflowing its container, which revealed itself as I scaled up the site.  I noticed that it only applied to the lower resolutuion of the images, and so was able to resolve it by setting by fixed sizes for the container.
+- I had a number of issues caused by the main image of each section overflowing its container, which revealed itself as I scaled up the site.  I noticed that it only applied to the lower resolutuion of the images, and so was able to resolve it by setting by fixed sizes for the container.
 
 BOOK PAGE:
 
 - Flex Container not working as expected
-    - On expanding to the landscape break point (where the main axis should have reverted to column) the booking elements remained in rows.  The mistake I made was positioning the form element as the first child of the flexbox container.  By moving the form element outside of the container and ensuring the flex elements were the only children I resolved this.
+- On expanding to the landscape break point (where the main axis should have reverted to column) the booking elements remained in rows.  The mistake I made was positioning the form element as the first child of the flexbox container.  By moving the form element outside of the container and ensuring the flex elements were the only children I resolved this.
+
+SUBMISSION PAGE:
+
+- Footer was stranded halfway up the page, relative/absolute positioning did not solve the problem.
+- setting the body display properties to flex and the footer's top margin to auto solved this.
 
 ## Deployment
+([back to top](#smoking-buns))
 
 ### Initial Deployment
 
-The website has been deployed [HERE](https://github.com/rowlandcoping/smokingbuns/) via github pages.
+The website has been deployed [HERE](https://rowlandcoping.github.io/smokingbuns/) via github pages.
 
 ### Deployment Instructions
 
@@ -329,68 +342,78 @@ NB If you wish you could also deploy these files by copying and pasting them to 
 NBB If you are using a Linux operating system running Apache you can simply save the files in your local '/var/www/html' folder and deploy by typing 'localhost' into a browser window. Please see instructions for installing Apache [HERE](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview) if you haven't already.
 
 ## Credits
+([back to top](#smoking-buns))
 
 Please see below for sources, inspirations and any other credits for the creative and technical work on this website:
 
 ### Fonts
 
 Both fonts downloaded from Fontspace:
- - [Carnivale Freakshow](https://www.fontspace.com/carnivalee-freakshow-font-f5278)
- - [Maiden Orange](https://www.fontspace.com/maiden-orange-font-f11465)
+- [Carnivale Freakshow](https://www.fontspace.com/carnivalee-freakshow-font-f5278)
+- [Maiden Orange](https://www.fontspace.com/maiden-orange-font-f11465)
 
 ### Main Logo
 
 The Smoking Buns logo was created from scratch using Inkscape, but drew heavy inspiration from multiple sources:
- - [Pistol](https://www.dreamstime.com/western-pistol-revolver-vector-illustration-western-pistol-revolver-vector-illustration-detailed-monochrome-style-image201452854#_)
- - [Burger bun](https://www.alamy.com/burger-vector-icon-fast-food-sign-graph-symbol-for-cooking-web-site-and-apps-design-logo-app-ui-image398212071.html)
- - [Smoke](https://www.shutterstock.com/image-vector/steam-vector-symbol-on-white-600w-1554375650.jpg)
+- [Pistol](https://www.dreamstime.com/western-pistol-revolver-vector-illustration-western-pistol-revolver-vector-illustration-detailed-monochrome-style-image201452854#_)
+- [Burger bun](https://www.alamy.com/burger-vector-icon-fast-food-sign-graph-symbol-for-cooking-web-site-and-apps-design-logo-app-ui-image398212071.html)
+- [Smoke](https://www.shutterstock.com/image-vector/steam-vector-symbol-on-white-600w-1554375650.jpg)
 
 ### Menu 'Sheriff Star' background
 
 This image was created using Inkscape, but the design for a Sheriff badge seems to be universal:
- - [Sheriff Badge array](https://www.google.com/search?q=sheriff+badge&tbm=isch&ved=2ahUKEwig4I_9hNP_AhUunCcCHd1vAH4Q2-cCegQIABAA&oq=sheriff+badge&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEIoFEEM6BAgAEAM6CAgAEIAEELEDOggIABCxAxCDAToKCAAQigUQsQMQQzoLCAAQgAQQsQMQgwFQAFjME2D0FWgAcAB4AIABYIgBmAmSAQIxM5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=MDuSZKCIC664nsEP3d-B8Ac&bih=782&biw=1501&client=firefox-b-d)
+- [Sheriff Badge array](https://www.google.com/search?q=sheriff+badge&tbm=isch&ved=2ahUKEwig4I_9hNP_AhUunCcCHd1vAH4Q2-cCegQIABAA&oq=sheriff+badge&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEIoFEEM6BAgAEAM6CAgAEIAEELEDOggIABCxAxCDAToKCAAQigUQsQMQQzoLCAAQgAQQsQMQgwFQAFjME2D0FWgAcAB4AIABYIgBmAmSAQIxM5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=MDuSZKCIC664nsEP3d-B8Ac&bih=782&biw=1501&client=firefox-b-d)
 
 ### Hero Image
 
 This image (also used in the 'About Our Food' section) was found on rawpixel - the image was itself taken from Wikimedia commons which attributes it to Unsplash (originally published before 05/06/17 and therefore not licensable).
- - [Hero Image](https://www.rawpixel.com/image/3286349/free-photo-image-burger-french-fries-food)
+- [Hero Image](https://www.rawpixel.com/image/3286349/free-photo-image-burger-french-fries-food)
 
 ### Main Background
 
 The wood background is derived from the following Shutterstock image - I compressed it significantly for web use and darkened it in GIMP.
- - [Wood background](https://image.shutterstock.com/image-photo/old-wood-texture-background-wooden-260nw-1405830665.jpg)
+- [Wood background](https://image.shutterstock.com/image-photo/old-wood-texture-background-wooden-260nw-1405830665.jpg)
 
 ### About Page
 
 This page contains multiple images that whilst not licensed for use on Smoking Buns are in the public domain.  Of course were this a commercial site I wouldn't use any of them; they are there at present to add completeness and colour.
- - [Clint Eastwood](https://www.google.com/imgres?imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FM%2FMV5BMTc1ODA2MzQyNV5BMl5BanBnXkFtZTcwODQ5MjkzNA%40%40._V1_.jpg&tbnid=cfR8oA2Z00bSiM&vet=12ahUKEwjKtJHfgtP_AhXDsEwKHStwD0oQMygAegUIARCUAQ..i&imgrefurl=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0061747%2F&docid=wkGvtJr-oClWIM&w=804&h=1023&q=clint%20eastwood%20hang%20em%20high&client=firefox-b-d&ved=2ahUKEwjKtJHfgtP_AhXDsEwKHStwD0oQMygAegUIARCUAQ) image copyright Metro-Goldwyn-Mayer Studios Inc, found on IMDB.
-  - [Jamie Oliver](https://i.guim.co.uk/img/media/5a5250cd6c465b13d9f6fa6766f037aedee0abd0/0_0_1382_922/master/1382.jpg?width=620&quality=85&dpr=1&s=none) image found on the Guardian website, courtesy of Ella Miller/jamieoliver.com.
-  - [Barbara Windsor](https://i2-prod.mirror.co.uk/incoming/article22393553.ece/ALTERNATES/s1200d/0_MAIN-Barbara-Windsor.jpg) image was found on the Mirror website, courtesy of the PA/bbc.
-  - The Restaurant image is a screengrab taken from the video game 'Red Dead Redemption 2' by Rockstar Games.
+- [Clint Eastwood](https://www.google.com/imgres?imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FM%2FMV5BMTc1ODA2MzQyNV5BMl5BanBnXkFtZTcwODQ5MjkzNA%40%40._V1_.jpg&tbnid=cfR8oA2Z00bSiM&vet=12ahUKEwjKtJHfgtP_AhXDsEwKHStwD0oQMygAegUIARCUAQ..i&imgrefurl=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0061747%2F&docid=wkGvtJr-oClWIM&w=804&h=1023&q=clint%20eastwood%20hang%20em%20high&client=firefox-b-d&ved=2ahUKEwjKtJHfgtP_AhXDsEwKHStwD0oQMygAegUIARCUAQ) image copyright Metro-Goldwyn-Mayer Studios Inc, found on IMDB.
+- [Jamie Oliver](https://i.guim.co.uk/img/media/5a5250cd6c465b13d9f6fa6766f037aedee0abd0/0_0_1382_922/master/1382.jpg?width=620&quality=85&dpr=1&s=none) image found on the Guardian website, courtesy of Ella Miller/jamieoliver.com.
+- [Barbara Windsor](https://i2-prod.mirror.co.uk/incoming/article22393553.ece/ALTERNATES/s1200d/0_MAIN-Barbara-Windsor.jpg) image was found on the Mirror website, courtesy of the PA/bbc.
+- The Restaurant image is a screengrab taken from the video game 'Red Dead Redemption 2' by Rockstar Games.
 
-  ### Logos
+### Logos
 
-  I have listed the sources for the logos in the footer below.  They are not as downloaded; all logos listed were amended to ensure they were the same shade of black and to replace any internal transparencies with a white background.  The Tripadvisor and Google logo backgrounds were amended so that both logos are the same size.  All this imagework undertaken using GIMP.
-   - [Facebook](https://www.clipartmax.com/download/m2i8A0m2m2N4i8b1_facebook-icon-facebook-logo-black-vector/) - clipartmax.com
-   - [Instagram](https://www.pngegg.com/en/png-kzypz/) - pngegg.com
-   - [Snapchat](https://pngtree.com/freepng/snapchat-icon_3584910.html) - pngtree.com
-   - [Tripadvisor](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfMgn4ae09WcEjCXwyPaZ7zH_M_6p-AIi_AQ&usqp=CAU) - found on the Rock and Sole Place website.
-   - [Google](https://commons.wikimedia.org/wiki/File:Transparent_google_logo_2015.png) foudn on wikimedia commons.
+I have listed the sources for the logos in the footer below.  They are not as downloaded; all logos listed were amended to ensure they were the same shade of black and to replace any internal transparencies with a white background.  The Tripadvisor and Google logo backgrounds were amended so that both logos are the same size.  All this imagework undertaken using GIMP.
+- [Facebook](https://www.clipartmax.com/download/m2i8A0m2m2N4i8b1_facebook-icon-facebook-logo-black-vector/) - clipartmax.com
+- [Instagram](https://www.pngegg.com/en/png-kzypz/) - pngegg.com
+- [Snapchat](https://pngtree.com/freepng/snapchat-icon_3584910.html) - pngtree.com
+- [Tripadvisor](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfMgn4ae09WcEjCXwyPaZ7zH_M_6p-AIi_AQ&usqp=CAU) - found on the Rock and Sole Place website.
+- [Google](https://commons.wikimedia.org/wiki/File:Transparent_google_logo_2015.png) foudn on wikimedia commons.
 
-  ### Code (book.html)
+### Code (book.html)
 
-  I used [this guide](https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767) when creating the booking form in order to help with media break points and text alignment for the form list elements.  Although the majority of my code on this page doesn't come from the guide, it provided a good foundation for me to build around.
+I used [this guide](https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767) when creating the booking form in order to help with media break points and text alignment for the form list elements.  Although the majority of my code on this page doesn't come from the guide, it provided a good foundation for me to build around.
 
-  ### Advice
+### Advice
 
-Many thanks to my mentor Mitko Bachvarov for all the help and advice he has offered - I've outlined the parts that have directly influenced the site.
+Many thanks to my mentor Mitko Bachvarov for all the help and advice he has offered, including:
 
 - advising on the proper syntax for git commits.
 - suggesting css methods that might be appropriate for certain pages based on my wireframes.
 - suggesting the elegent solution for form submission on a static site.
 - advising on the footer look and feel.
+- advising on the correct testing format.
 - noticing the horizontal scroll issue (I thought it was a product of web developer tools!)
 - answering all my questions no matter how stupid they were!
+
+## Technical Information
+([back to top](#smoking-buns))
+
+Version Control: git and github\
+Languages: HTML and CSS\
+Libraries: Bootstrap 5.3.0\
+Development Environment:  VS Code on Windows and Linux
 
 
 

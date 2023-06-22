@@ -9,10 +9,13 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-image: url("../images/backgrounds/wooden.jpg");
     background-size: 100%;
     padding:0;
     margin:0;
+    min-height:100vh;
 }
 
 /*-----------------Header styling*/
@@ -26,6 +29,11 @@ body {
     position: relative;
     padding: 0;
     font-size: 130%;
+}
+
+#title-main, #title-main:hover, #title-main:active {
+    text-decoration: none;
+    color:#fff;
 }
 
 .current {
@@ -57,7 +65,6 @@ body {
 
 h1 {
     font-family: title;
-    color: #fff;
     font-size: 300%;
     line-height: 0.9em;
 }
@@ -76,7 +83,7 @@ header {
 }
 
 #header-container hr {
-    height: 0.4rem;
+    height: 0.2rem;
     background: #fff;
     margin: 12px auto 10px auto;
     padding: 0;
@@ -88,7 +95,7 @@ header {
 /*-----------------Footer Styling*/
 
 
-#footer-container {
+.footer-container {
     background-color: #ffffff4d;
     height: 100%;
     padding: 10px 0 10px 0;
@@ -96,7 +103,7 @@ header {
 
 
 
-#footer-container .row {
+.footer-container .row {
     width: 100%;
 }
 
@@ -106,22 +113,22 @@ header {
 }
 
 .social-links img, .review-links img {
-    height:20px;
+    height:18px;
 }
 
 
-#footer-container li {
+.footer-container li {
     height: 100%;
 }
 
-#footer-container a {
+.footer-container a {
     width:100%;
     border-radius: 6px;
     padding:4px;
 }
 
-#footer-container a:hover,
-#footer-container a:active {
+.footer-container a:hover,
+.footer-container a:active {
     background-color: #fff;
     margin: -2px 0 0 0;
     padding:4px 3px 3px 3px;
@@ -286,7 +293,7 @@ header {
 }
 
 .about-image img {
-    width: 280px;
+    width: 250px;
     border: 4px ridge #818589;
     border-radius: 50%;
 }
@@ -303,7 +310,7 @@ header {
 }
 
 .profile-pic img {
-    width: 100px;
+    width: 80px;
     margin-bottom: 5px;
     border: 4px ridge #818589;
     border-radius: 10%;
@@ -339,7 +346,7 @@ header {
 }
 
 .form-wrapper {
-    width: 75%;
+    width: 85%;
     margin: 40px auto;
     background-image:url("../images/backgrounds/parchment.jpg");
     padding-bottom: 20px;
@@ -396,7 +403,7 @@ header {
 }
 
 .list-details > li > label {
-    flex: 1 0 100px;
+    flex: 1 0 150px;
     max-width: 376px;
     text-align: center;
 }
@@ -418,7 +425,7 @@ header {
  margin:10px auto;
  background-color:#48290A;
  color: #fff;
- padding: 10px 0;
+ padding: 12px 0 5px 0;
  Font-Size: 180%;
 }
 
@@ -427,7 +434,9 @@ header {
     border:2px solid #48290A;
     color: #48290A;
 }
-
+input, textarea {
+    width: 100%;
+}
 input:focus, textarea:focus {
     outline:#48290A;
 }
@@ -440,7 +449,7 @@ iframe {
 }
 
 .location-wrapper {
-    width:75%;
+    width:85%;
     margin: 40px auto;
     background-image:url("../images/backgrounds/parchment.jpg");
 }
@@ -489,7 +498,7 @@ iframe {
 /*-----------Submit Page*/
 
 #submit-container {
-    height: 50dvh;
+    height: 40dvh;
     border-bottom: 6px groove silver;
     border-top: 6px groove silver;
     font-family: main;
@@ -497,12 +506,24 @@ iframe {
 }
 
 .submit-text {
-    padding: 20px 0;
+    padding: 20px;
     background-image: url("../images/backgrounds/parchment.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
+.submit-text h2{
+    font-size: 130%;
+}
+.submit-text h3{
+    margin-top:15px;
+    font-size: 110%;
+}
+
+#submit-footer {
+    margin-top: auto;
+}
 /*-----------MEDIA QUERIES*/
 @media screen and (min-width:360px) {
     /*header*/
@@ -512,16 +533,39 @@ iframe {
         font-size: 150%;
     }
 
+    
+
     /*footer*/
 
     .social-links img, .review-links img {
         height:22px;
     }
     
-    #footer-container a:hover,
-    #footer-container a:active {
+    .footer-container a:hover,
+    .footer-container a:active {
         padding:5px 3px 3px 3px;
     }
+
+    /*about page*/
+
+    .about-image img {
+        width: 280px;
+    }
+
+    .profile-pic img {
+        width: 100px;
+    }
+
+    /*book page*/
+
+    .form-wrapper {
+        width: 75%;
+    }
+
+    .location-wrapper {
+        width:75%;
+    }
+
 }
 @media screen and (min-width:450px) {
 /*home page , header, footer*/
@@ -550,8 +594,8 @@ iframe {
         height:24px;
     }
     
-    #footer-container a:hover,
-    #footer-container a:active {
+    .footer-container a:hover,
+    .footer-container a:active {
         padding:7px 4px 4px 4px;
     }
 
@@ -597,7 +641,9 @@ iframe {
 }
 
 }
+@media screen and (min-width:507px) {
 
+}
 @media screen and (min-width:576px) {
 
     .nav-wrapper {
@@ -617,8 +663,8 @@ iframe {
         height:28px;
     }
     
-    #footer-container a:hover,
-    #footer-container a:active {
+    .footer-container a:hover,
+    .footer-container a:active {
         padding:9px 6px 6px 6px;
     }
 
@@ -677,6 +723,14 @@ iframe {
     padding-left: 75px;
 }
 
+.submit-text h2{
+    font-size: 160%;
+}
+.submit-text h3{
+    margin-top:15px;
+    font-size: 140%;
+}
+
 }
 
 @media screen and (min-width:600px) {
@@ -700,11 +754,6 @@ iframe {
 
     #review-container h2 {
         font-size: 300%;
-    }
-
-    #footer-container a {
-        height: 62px;
-        padding: 0 12px;
     }
 
     .menu-container {
@@ -735,8 +784,8 @@ iframe {
     }
 
     .form-personal, .form-visit, .address-details, .map-details {
-        padding-right: 45px;
-        padding-left: 45px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
 
     .form-visit {
@@ -771,11 +820,6 @@ iframe {
 
     .spacer {
         width: 25%;
-    }
-
-    #footer-container a {
-        height: 80px;
-        padding: 0 12px;
     }
 
     .menu-container h2 {
@@ -897,8 +941,8 @@ iframe {
         
     }
     
-    #footer-container a:hover,
-    #footer-container a:active {
+    .footer-container a:hover,
+    .footer-container a:active {
         border-radius: 12px;
         padding:11px 6px 5px 6px;
     }
@@ -970,8 +1014,8 @@ iframe {
         width: 15%;
     }
 
-    #footer-container a:hover,
-    #footer-container a:active {
+    .footer-container a:hover,
+    .footer-container a:active {
         border-radius: 12px;
         padding:10px 6px 6px 6px;
     }
@@ -1090,11 +1134,6 @@ iframe {
         width: 10%;
     }
 
-    #footer-container a {
-        height: 160px;
-        padding: 0 25px;
-    }
-
     .menu-container {
         width: 60%;
     }
@@ -1174,11 +1213,6 @@ iframe {
 
     .callout-text h2 {
         font-size: 280%;
-    }
-
-    #footer-container a {
-        height: 200px;
-        padding: 0 30px;
     }
 
     .menu-container {
