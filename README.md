@@ -14,7 +14,7 @@ Welcome to the documentation for 'Smoking Buns', a responsive mobile-first websi
 
 ### Testing and Deployment
 
-[Testing and Issues](#testing-and-issues)\
+[Testing and Issues](#testing)\
 [Deployment](#deployment)
 
 ### Credits and Technical
@@ -269,57 +269,24 @@ In addition to basic bootstrap classes, I relied heavily upon media queries to h
 
 Generally speaking as the pages scaled up, I increased margins and padding, and increased font and image sizes to maintain optimal look and feel.  On desktop I used Bootstrap to change the position of content on the page in the header.  I also used Flexbox to adjust the layout for desktop on the 'About' and 'Book' pages.
 
-## Testing and Issues
+## Testing
 ([back to top](#smoking-buns))
 
-### Testing
-
-Please find all post-deployment testing documentation [HERE](TESTING.md).
-
-### Issues
-
-I've documented here the major problems I encourtered during the course of the build (prior to testing) and the measures I took to overcome them.
-
-GENERAL:
-
-- Horizontal scrolling issue:
-  - There is a small horizontal scroll across all pages. I traced the issue to the footer using web developer tools. One by one I eliminated all the child elements as the cause and found the source of the problem to be a bootstrap row element taking up more than the viewport's width across all screen sizes.  This was fixed by setting the width of the row to 100%.                     
-
-HEADER / FOOTER / HOMEPAGE:
-
-- Background Hover Image not centered in element
-  - There were a number of issues centering the background hover image (sheriff star) over the text of the menu options.  This was eventually solved by setting the width of the image to 100% and the height to auto, to keep the aspect ratio.  I foudn that I was then able to adjust the size of the image by setting a fixed height for the parent element.  Final adjustments were made by adjusting the size of the menu text.  All these values are then adjusted according to screen width.
-
-- Callout image positioning:
-  - I found that on larger screen sizes the hero image in the callout section focussed on the chips rather than the burger as intented.  This was overcome in 2 ways - firstly by changing the absolute positioning of 0 to the bottom of the element to a percentage, to ensure the image was focussed on the correct area even as the screen size grew.  I also reduced the size of the image so that you could see more of it on larger screen sizes.
-
-- Footer background positioning:
-  - I found that the background change on hover wasn't encompassing the whole height of the element.  I fixed this by changing the display property of the container to flex.  I was also then able to justify and align the various icons.
-
-- Footer sizing (part 2):
-    - After discussions with my mentor I re-built the footer to stop the images scaling with the screen width to become outsized on larger desktop monitors.  I achived this by setting fixed values for the image height and wrapping the container to the image.  This was unfortunately not compatible with the previous fix. The solution I came upon was expanding the padding for the hover pseudo element until the background took up the desired amount of space.  This is not a solution I'm particularly happy with but I think it may be the best one as long as the footer is built in Bootstrap.
-
-ABOUT PAGE:
-
-- Images overflowing their containing elements:
-  - I had a number of issues caused by the main image of each section overflowing its container, which revealed itself as I scaled up the site.  I noticed that it only applied to the lower resolutuion of the images, and so was able to resolve it by setting by fixed sizes for the container.
-
-BOOK PAGE:
-
-- Flex Container not working as expected:
-  - On expanding to the landscape break point (where the main axis should have reverted to column) the booking elements remained in rows.  The mistake I made was positioning the form element as the first child of the flexbox container.  By moving the form element outside of the container and ensuring the flex elements were the only children I resolved this.
-
-SUBMISSION PAGE:
-
-- Footer was stranded halfway up the page, relative/absolute positioning did not solve the problem.
-  - Setting the body display properties to flex and the footer's top margin to auto solved this.
+Please find all testing documentation [HERE](TESTING.md).
 
 ## Deployment
 ([back to top](#smoking-buns))
 
 ### Initial Deployment
 
-The website has been deployed [HERE](https://rowlandcoping.github.io/smokingbuns/) via github pages.
+The website has been deployed [HERE](https://rowlandcoping.github.io/smokingbuns/) via github pages, using the method below:
+
+- I logged in to my github account.
+- I opened the Smoking Buns repository.
+- From within the repository I selected 'Settings'
+- From the settings page I selected 'Pages' from the 'Code and automation' section of the left menu.
+- I selected 'deploy from a branch' from the 'source menu' and then select the 'main' branch of the repository, along with 'root' as the folder.
+- On pressing 'Save' the site deployed.
 
 ### Deployment Instructions
 
@@ -344,7 +311,7 @@ Because this website is built using nothing but html and css you can deploy it i
 
 NB If you wish you could also deploy these files by copying and pasting them to the 'www' folder of your own web host, but keep in mind that the method of deployment will vary depending on the web hosting package you use.
 
-NBB If you are using a Linux operating system running Apache you can simply save the files in your local '/var/www/html' folder and deploy by typing 'localhost' into a browser window. Please see instructions for installing Apache [HERE](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview) if you haven't already.
+NNB If you are using a Linux operating system running Apache you can simply save the files in your local '/var/www/html' folder and deploy by typing 'localhost' into a browser window. Please see instructions for installing Apache [HERE](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview) if you haven't already.
 
 ## Credits
 ([back to top](#smoking-buns))
