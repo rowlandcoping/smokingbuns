@@ -1199,17 +1199,10 @@ iframe {
         font-size: 120%;
     }
 
-
-
-
-
-
     .about-section {
         margin: 20px 75px;
         padding: 20px;
     }
-
-
 
     .about-image img {
         width: 800px;
@@ -1297,18 +1290,18 @@ iframe {
     }
 
     .about-section {
-        margin: 20px 100px;
-        padding: 20px;
+        margin: 20px 200px;
+        padding: 40px;
     }
 
 
 
     .about-image img {
-        width: 900px;
+        width: 700px;
     }
 
     .profile-pic img {
-        width: 300px;
+        width: 200px;
         height: auto;
 
     }
