@@ -1,6 +1,5 @@
-Return to [README](README.md).
-
 # Testing Documentation
+([return to README](README.md))
 
 ## Contents
 
@@ -23,7 +22,7 @@ Return to [README](README.md).
 ## Code Validation
 
 ### HTML Validation
-[(back to top)](#contents)
+([back to top](#testing-documentation))
 
 I have completed a final validation of all HTML pages using the [W3C HTML validator](https://validator.w3.org/).\
 I found two errors on the 'book.html' page:
@@ -32,14 +31,14 @@ I found two errors on the 'book.html' page:
 
 Both errors were easily rectified; all other pages showed no errors.
 
-### Css Validation
-[(back to top)](#contents)
+### CSS Validation
+([back to top](#testing-documentation))
 
 I have completed a final validation of my 'style.css' file using the [W3C CSS validator](https://jigsaw.w3.org/css-validator/).\
 No errors were found.
 
 ### Lighthouse Audit
-[(back to top)](#contents)
+([back to top](#testing-documentation))
 
 The Lighthouse audits I initially ran had one common theme, that I needed to add meta-descriptions and reduce image sizes across the board.  The background and footer images in particular were over-sized and needed serious slimming down. On the 'about' and 'menu' page I did not have header elements in correct sequential order.
 
@@ -67,7 +66,7 @@ Here are the Lighthouse results following my remedial work:
 ## User Story Validation
 
 ### Restauranteur User Stories
-[(back to top)](#contents)
+([back to top](#testing-documentation))
 
 *"Grow online presence: The website must be highly compliant and SEO friendly..."*\
 Site uses semantic elements throughout, contains appropriate meta elements, clean code and looks great on any device.
@@ -88,7 +87,7 @@ The footer on every page not only contains social links but also contains links 
 The eyecatching logos and fun 'sheriff star' menu backgrounds along with the attractive fonts, eyecatching images and intuitive layout ought to result in people coming to visit the site even when they're not hungry!
 
 ### Customer User Stories
-[(back to top)](#contents)
+([back to top](#testing-documentation))
 
 *"Mobile Functionality: ... They need the site to look just as good on their mobile devices whilst retaining full functionality."*\
 The site was build mobile upwards, starting in all cases with a 360px screen width and then adjusting upwards to desktop screen sizes.  This is reflected in some of the design choices - for example to kepe the site clean there are no transitions or features that would not be functional on mobile.
@@ -117,7 +116,7 @@ The about section contains appropriate images of the venue food as well as the s
 ## Technical Testing
 
 ### Error Testing
-[(back to top)](#contents)
+([back to top](#testing-documentation))
 
 I've documented here the major problems I encourtered during the course of building and testing the site, and the measures I have taken to overcome them.
 
@@ -142,6 +141,9 @@ HEADER / FOOTER / HOMEPAGE:
 - Footer sizing (part 2):
     - After discussions with my mentor I re-built the footer to stop the images scaling with the screen width to become outsized on larger desktop monitors.  I achived this by setting fixed values for the image height and wrapping the container to the image.  This was unfortunately not compatible with the previous fix. The solution I came upon was expanding the padding for the hover pseudo element until the background took up the desired amount of space.  This is not a solution I'm particularly happy with but I think it may be the best one as long as the footer is built in Bootstrap.
 
+- Footer sizing (part 3):
+    - I made a final attempt to have consistancy with the hover image in the footer.  I discovered the image wasn't centred in the anchor element which was causing the problwm, and solved it by settnig the anchor display property to flex and centering the content.  This also meant I could consistently control the padding by setting a height and width for the anchor element, and it didn't break the layout.  I am still unable to centre the anchor within the list element, but on substantial review I'm not sure that's possible with this site layout.
+
 ABOUT PAGE:
 
 - Images overflowing their containing elements:
@@ -158,7 +160,7 @@ SUBMISSION PAGE:
   - Setting the body display properties to flex and the footer's top margin to auto solved this.
 
 ### Manual Testing
-[(back to top)](#contents)
+([back to top](#testing-documentation))
 
 I have conducted error:
  - 360px to represent a smaller screen sizes, for which I will use Chrome on Android (Samsung Galaxy S8)
@@ -167,4 +169,4 @@ I have conducted error:
 
 360px (Chrome on Samsung Galaxy S8)
 
-Return to [README](README.md).
+([return to README](README.md))

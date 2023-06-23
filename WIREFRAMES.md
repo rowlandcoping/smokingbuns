@@ -1,4 +1,5 @@
-Return to [README](README.md).
+# Wireframes
+([return to README](README.md))
 
 For the 1200px versions I have included a red dotted line as an indication of roughly where the fold would be on a 1200px screen.
 
@@ -20,4 +21,4 @@ Although, for clarity, I have provided visual representation of the various mobi
 ![image](assets/images/wireframes/home-1200.png) ![image](assets/images/wireframes/menu-1200.png)\ 
 ![image](assets/images/wireframes/about-1200.png) ![image](assets/images/wireframes/contact-1200.png)
 
-Return to [README](README.md).
+([return to README](README.md))

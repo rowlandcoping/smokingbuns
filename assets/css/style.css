@@ -98,7 +98,7 @@ header {
 .footer-container {
     background-color: #ffffff4d;
     height: 100%;
-    padding: 10px 0 10px 0;
+    padding: 5px;
 }
 
 
@@ -113,25 +113,35 @@ header {
 }
 
 .social-links img, .review-links img {
+    padding:0;
+    margin:0;
     height:18px;
 }
 
-
-.footer-container li {
+.footer-container li{
     height: 100%;
 }
 
 .footer-container a {
-    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 6px;
-    padding:4px;
+    height:30px;
 }
+
+.social a{
+    width:30px;   
+}
+
+.reviews a{
+    width:70px;
+}
+
 
 .footer-container a:hover,
 .footer-container a:active {
     background-color: #fff;
-    margin: -2px 0 0 0;
-    padding:3px;
 }
 
 
@@ -552,6 +562,15 @@ iframe {
     .social-links img, .review-links img {
         height:22px;
     }
+
+    .social a{
+        width:34px;
+        height:34px;
+    }
+    .reviews a{
+        width:80px;
+        height:34px;
+    }
     
     /*about page*/
 
@@ -601,10 +620,7 @@ iframe {
         height:24px;
     }
     
-    .footer-container a:hover,
-    .footer-container a:active {
-        padding:5px;
-    }
+
 
 /*menu page*/
 
@@ -678,10 +694,18 @@ iframe {
     .social-links img, .review-links img {
         height:28px;
     }
+
+    .review-links img {
+        border-radius: 6px;
+    }
     
-    .footer-container a:hover,
-    .footer-container a:active {
-        padding:6px;
+    .social a{
+        width:40px;
+        height:40px;
+    }
+    .reviews a{
+        width:104px;
+        height:40px;
     }
 
     .menu-container h2 {
@@ -855,6 +879,19 @@ iframe {
     .spacer {
         width: 25%;
     }
+    
+    .social-links img, .review-links img {
+        height:30px;
+    }
+
+    .social a{
+        width:44px;
+        height:44px;
+    }
+    .reviews a{
+        width:114px;
+        height:44px;
+    }
 
     .menu-container h2 {
         font-size: 230%;
@@ -975,20 +1012,7 @@ iframe {
     .spacer {
         width: 20%;
     }
-    .review-links img {
-        border-radius: 12px;
-    }
-    .social-links img, .review-links img {
-        height:30px;
-        
-    }
-    
-    .footer-container a:hover,
-    .footer-container a:active {
-        border-radius: 12px;
-        padding:8px;
-    }
-
+   
     .menu-container h2 {
         font-size: 250%;
     }
@@ -1054,12 +1078,6 @@ iframe {
 
     .spacer {
         width: 15%;
-    }
-
-    .footer-container a:hover,
-    .footer-container a:active {
-        border-radius: 12px;
-        padding:10px;
     }
 
     .menu-container {
