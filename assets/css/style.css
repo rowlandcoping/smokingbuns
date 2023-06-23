@@ -620,7 +620,14 @@ iframe {
         height:24px;
     }
     
-
+    .social a{
+        width:36px;
+        height:36px;
+    }
+    .reviews a{
+        width:90px;
+        height:36px;
+    }
 
 /*menu page*/
 
