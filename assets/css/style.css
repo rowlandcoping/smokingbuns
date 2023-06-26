@@ -54,7 +54,7 @@ body {
 }
 
 .menu-main a h2 {
-    margin-bottom:-4%;
+    margin-bottom:-8%;
     font-size:100%;
 }
 
@@ -559,6 +559,10 @@ iframe {
         font-size: 150%;
     }
 
+    .menu-main a h2 {
+        margin-bottom:-6%;
+    }
+
     
 
     /*footer*/
@@ -810,6 +814,10 @@ iframe {
     .menu-main {
         font-size: 210%;
         height: 120px;
+    }
+
+    .menu-main a h2 {
+        margin-bottom:-5%;
     }
 
     .callout-text h2 {
