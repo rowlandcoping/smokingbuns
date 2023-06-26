@@ -143,6 +143,7 @@ HEADER / FOOTER / index.html:
 
 - Footer sizing and positioning (part 3):
 - I made a final attempt to have consistancy with the hover image in the footer.  I discovered the image wasn't centred in the anchor element which was causing the problwm, and solved it by settnig the anchor display property to flex and centering the content.  This also meant I could consistently control the padding by setting a height and width for the anchor element, and it didn't break the layout.  I am still unable to centre the anchor within the list element, but on substantial review I am not sure that it is possible when nesting images within an anchor tag within a list element without breaking the layout of the site.  Once I realised this it was either rebuild it or keep what I have, and given the minimal visual impact I prefer the semantic clarity of placing the footer navigation in an unordered list.
+- During testing I have noticed that the text in the menu is not vertically centred in the anchor element, which meant that the sheriff stars looked unbalanced.  Because of the bootstrap layout, I was unable to vertically center the text my any conventional means, but I discovered that if I wrapped the text in an h2 tag and set a small negative margin I could center it this way.  From the research I have done I can see nothing semantically wrong with this and it looks much better!
 
 about.html:
 
@@ -158,6 +159,8 @@ SUBMISSION PAGE:
 
 - Footer was stranded halfway up the page, relative/absolute positioning did not solve the problem.
   - Setting the body display properties to flex and the footer's top margin to auto solved this.
+
+
 
 ### Manual Testing
 ([back to top](#testing-documentation))
@@ -293,8 +296,5 @@ I have tested all the links and also the responsiveness across various break poi
 | 404.html responsiveness 1200px | Displays without error at 1200px | Success|
 | 404.html responsiveness 1400px | Displays without error at 1400px | Success|
 | 404.html responsiveness 1800px | Displays without error at 1800px | Success|
-
-
-
 
 ([return to README](README.md))

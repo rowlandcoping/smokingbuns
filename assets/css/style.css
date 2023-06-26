@@ -26,7 +26,6 @@ body {
     color: #fff;
     font-family: main;
     height: 73px;
-    position: relative;
     padding: 0;
     font-size: 130%;
 }
@@ -45,13 +44,18 @@ body {
 }
 
 .menu-main a {
+    display:flex;
     text-decoration: none;
     color: #fff;
-    display: flex;
     height: 100%;
     width: 100%;
     align-items: center;
     justify-content: center;
+}
+
+.menu-main a h2 {
+    margin-bottom:-4%;
+    font-size:100%;
 }
 
 .menu-main a:hover,
