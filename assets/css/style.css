@@ -519,7 +519,7 @@ iframe {
 
 /*-----------Submit Page*/
 
-#submit-container {
+.utility-container {
     height: 40dvh;
     border-bottom: 6px groove silver;
     border-top: 6px groove silver;
@@ -527,7 +527,7 @@ iframe {
     color:#48290A;
 }
 
-.submit-text {
+.utility-text {
     padding: 20px;
     background-image: url("../images/backgrounds/parchment.webp");
     background-repeat: no-repeat;
@@ -535,15 +535,15 @@ iframe {
 }
 
 
-.submit-text h2{
+.utility-text h2{
     font-size: 130%;
 }
-.submit-text h3{
+.utility-text h3{
     margin-top:15px;
     font-size: 110%;
 }
 
-#submit-footer {
+.utility-footer {
     margin-top: auto;
 }
 /*-----------MEDIA QUERIES*/
@@ -592,6 +592,8 @@ iframe {
         width:75%;
     }
 
+   
+
 }
 @media screen and (min-width:450px) {
 /*home page , header, footer*/
@@ -627,6 +629,15 @@ iframe {
     .reviews a{
         width:90px;
         height:36px;
+    }
+
+    /*submit page*/
+
+    .utility-text h2{
+        font-size: 150%;
+    }
+    .utility-text h3{
+        font-size: 120%;
     }
 
 /*menu page*/
@@ -678,8 +689,8 @@ iframe {
 /*booking page*/
 
 .form-personal, .form-visit, .address-details, .map-details {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 41px;
+    padding-left: 41px;
     }
 }
 
@@ -781,7 +792,6 @@ iframe {
     font-size: 160%;
 }
 .submit-text h3{
-    margin-top:15px;
     font-size: 140%;
 }
 
@@ -863,6 +873,15 @@ iframe {
 
     .form-wrapper {
         margin-bottom: 20px;
+    }
+
+    /*submit page*/
+
+    .utility-text h2{
+        font-size: 170%;
+    }
+    .utility-text h3{
+        font-size: 130%;
     }
 
 }
@@ -998,6 +1017,15 @@ iframe {
         font-size: 150%;
     }
 
+    /*submit page*/
+
+    .utility-text h2{
+        font-size: 190%;
+    }
+    .utility-text h3{
+        font-size: 150%;
+    }
+
 
 
 }
@@ -1047,6 +1075,15 @@ iframe {
      .form-personal, .form-visit, .address-details, .map-details {
         padding-right: 65px;
         padding-left: 65px;
+    }
+
+    /*submit page*/
+
+    .utility-text h2{
+        font-size: 210%;
+    }
+    .utility-text h3{
+        font-size: 170%;
     }
 
 }
@@ -1319,8 +1356,6 @@ iframe {
         padding: 40px;
     }
 
-
-
     .about-image img {
         width: 700px;
     }
@@ -1354,5 +1389,14 @@ iframe {
     
     .about-section h4 {
         font-size: 210%;
+    }
+
+    /*submit page*/
+
+    .utility-text h2{
+        font-size: 230%;
+    }
+    .utility-text h3{
+        font-size: 180%;
     }
 }
