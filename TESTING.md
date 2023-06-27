@@ -158,7 +158,7 @@ HEADER / FOOTER / index.html:
 - On preparing to take screengrabs in Windows I discovered that the above fix rendered differently in Windows to other devices (Linux / Android) on which I had tested it. It is interesting that the way CSS displays should be dependent on OS, it seems a Linux base gives different outcomes! This makes it hard to fix. On testing in Firefox and Chrome on Windows using dev tools setting the bottom margin at 0 perfectly centers the text in the star, but until the change is pushed it's impossible to know if this will work on mobile and Linux, and of course vice versa if I did it the other way around! See screengrabs below for the issue:
 
 Android on chrome:
-![image](assets/images/testing/star-mobile.jpg)
+![image](assets/images/testing/star-mobile.jpg)\
 Windows 10 on chrome:
 ![image](assets/images/testing/star-windows.jpg)
 
@@ -167,6 +167,13 @@ I decided that the zero margin fix was the best option for a number of reasons:
 - On Linux and mobile it is not perfect but acceptable.
 - Setting the margin at zero is a more consistent solution and doesn't require amends via media queries.
 - The assessors of this project will most likely be viewing this on Windows devices where it renders perfectly.
+
+Here are the screengrabs post-fix:
+
+Android on chrome:
+![image](assets/images/testing/fix-mobile.jpg)\
+Windows 10 on chrome:
+![image](assets/images/testing/fix-windows.jpg)
 
 about.html:
 
