@@ -14,7 +14,7 @@ Welcome to the documentation for 'Smoking Buns', a responsive mobile-first websi
 
 ### Testing and Deployment
 
-[Testing and Issues](#testing)\
+[Testing Documentation](#testing)\
 [Deployment](#deployment)
 
 ### Credits and Technical
@@ -312,6 +312,35 @@ Because this website is built using nothing but html and css you can deploy it i
 NB If you wish you could also deploy these files by copying and pasting them to the 'www' folder of your own web host, but keep in mind that the method of deployment will vary depending on the web hosting package you use.
 
 NNB If you are using a Linux operating system running Apache you can simply save the files in your local '/var/www/html' folder and deploy by typing 'localhost' into a browser window. Please see instructions for installing Apache [HERE](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview) if you haven't already.
+
+### Continuing This Project
+
+If you are a developer and wish to develop this project further, there are a number of development environments I have used, which I have outlined below.  All suggestings make the assumption you have already forked the github repository as outlined above, and don't have access to any paid-for IDEs:
+
+1: Text Editor
+
+The simplest method is to use a basic text editor.  I use notepad++ on Windows or Geany on Linux, but even something as simple as Windows Notepad will do.
+
+ - download all files from your forked repository except for the '.devcontainer' folder and the '.gitignore' file to a folder on your local machine.
+ - right click the file you wish to edit, select 'Open With' and then select your text editor of choice.
+
+ 2: Github Codespaces and VS Code, Windows
+
+ I have used VS Code throughout, either via Codespaces or directly.  The easiest way to edit the code is by creating a codespace in Github, which will provide you with a limited number of hours of development time free of charge.  To create a codespace in VS Code for your forked repository:
+ 
+  - Download VS Code [HERE](https://code.visualstudio.com/download)
+  - follow the instructions linked [HERE](https://docs.github.com/en/codespaces/developing-in-codespaces/using-github-codespaces-in-visual-studio-code)
+
+ Please note when using this method I found some issues connecting to the codespace in VS Code once it had been created due to the template I have used.  To counteract this you can manually select the workspace in VS code using /workspaces/--name of workspace--
+
+ 3: VS Code on Linux using local files
+
+ I have found this to be the best solution by far, on account of not being beholden to any limitations on minutes or such like, and the files being stored locally which means the project could be worked on more or less under any circumstances (barring catastrophic failure of my own machine).  Even in this scenario I recommed regular commits to mitigate against this worst case scenario.  I set up my development environment on Linux using the guide [HERE](https://www.theodinproject.com/).
+
+  - create an account at The Odin Project
+  - Navigate to 'Installation Guides' at the bottom of the page.]
+  - When it guides you how to download the repo locally, be sure to clone the forked repository of Smoking Buns.
+  - Once you have followed the guide you will have your own local development environment!
 
 ## Credits
 ([back to top](#smoking-buns))

@@ -1,3 +1,5 @@
+/*-----------UNIVERSAL STYLING*/
+
 @font-face {
     font-family: title;
     src: url("../fonts/CarnivaleeFreakshow-DLrm.ttf");
@@ -13,12 +15,10 @@ body {
     flex-direction: column;
     background-image: url("../images/backgrounds/wooden.webp");
     background-size: 100%;
-    padding:0;
-    margin:0;
     min-height:100vh;
 }
 
-/*-----------------Header styling*/
+/*header*/
 
 .list-group-item {
     border: none;
@@ -47,14 +47,13 @@ body {
     display:flex;
     text-decoration: none;
     color: #fff;
-    height: 100%;
-    width: 100%;
+    height:100%;  
     align-items: center;
     justify-content: center;
 }
 
 .menu-main a h2 {
-    margin-bottom: 0;
+    margin-bottom:0;
     font-size:100%;
 }
 
@@ -74,8 +73,7 @@ h1 {
 }
 
 header {
-    padding: 10px 0;
-    
+    padding: 10px 0;   
 }
 
 #current {
@@ -86,18 +84,16 @@ header {
     color: #48290A;
 }
 
-#header-container hr {
+.header-container hr {
     height: 0.2rem;
     background: #fff;
-    margin: 12px auto 10px auto;
-    padding: 0;
+    margin: 12px auto 10px auto;   
     width: 75%;
     text-align: center;
     opacity: 1;
 }
 
-/*-----------------Footer Styling*/
-
+/*Footer*/
 
 .footer-container {
     background-color: #ffffff4d;
@@ -105,20 +101,15 @@ header {
     padding: 5px;
 }
 
-
-
 .footer-container .row {
     width: 100%;
 }
-
 
 .review-links img {
    border-radius: 6px;
 }
 
 .social-links img, .review-links img {
-    padding:0;
-    margin:0;
     height:18px;
 }
 
@@ -134,29 +125,28 @@ header {
     height:30px;
 }
 
-.social a{
+.social-media a{
     width:30px;   
 }
 
-.reviews a{
+.reviews-site a{
     width:70px;
 }
-
 
 .footer-container a:hover,
 .footer-container a:active {
     background-color: #fff;
 }
 
+/*-----------------HOMEPAGE STYLING*/
+/*callout*/
 
-/*-----------------Callout Styling*/
-
-#callout-container {
+.callout-container {
     background-image: url("../images/backgrounds/callout-image.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom 60% left 0px;
-    height: 60dvh;
+    height: 55dvh;
     border-bottom: 6px groove silver;
     border-top: 6px groove silver;
 }
@@ -169,24 +159,25 @@ header {
 }
 
 .callout-text h2 {
-    font-size: 180%;
+    font-size: 160%;
 }
 
 .callout-text h3 {
-    padding-top: 10px
+    padding-top: 10px;
+    font-size: 130%;
 }
 
 .spacer {
     width: 50%;
 }
 
-/*-----------------Homepage Reviews Styling*/
+/*customer reviews*/
 
-.section-container {
+.reviews-section-container {
     border-bottom: 6px groove silver;
 }
 
-#review-container {
+.review-container {
     font-family: main;
     background-color: #48290AB3;
     color: #fff;
@@ -195,15 +186,17 @@ header {
     padding:20px;
 }
 
-#review-container h2 {
+.review-container h2 {
     font-size: 220%;
 }
 
-.review {
+.customer-review {
     margin-top: 10px;
 }
 
-/*-----------------Menu Page Styling*/
+/*-----------------MENU PAGE STYLING*/
+/*layout*/
+
 .menu-wrapper {
     width: 100%;
     border-bottom: 6px groove silver;
@@ -221,33 +214,6 @@ header {
     font-family: main;
     padding: 10px;
 }
-
-.menu-container h2 {
-    font-size: 180%;
-    font-weight: 700;
-}
-
-.menu-container h3 {
-    font-size: 150%;
-}
-
-.menu-container h4 {
-    font-size: 130%;
-}
-
-.course-subtitle h4 {
-    font-size: 100%;
-    font-style: italic;
-    font-weight:bold;
-    color:#48290A;
-}
-
-.menu-container p {
-    font-size: 100%;
-    color:#48290A;
-    font-style: italic;
-}
-
 
 .title {
     grid-column: 1 / 6;
@@ -279,7 +245,35 @@ header {
     justify-self: center;
 }
 
-/*-----------------ABOUT SECTION */
+/*font details*/
+
+.menu-container h2 {
+    font-size: 180%;
+}
+
+.menu-container h3 {
+    font-size: 150%;
+}
+
+.menu-container h4 {
+    font-size: 130%;
+}
+
+.course-subtitle h4 {
+    font-size: 100%;
+    font-style: italic;
+    font-weight:bold;
+    color:#48290A;
+}
+
+.menu-container p {
+    font-size: 100%;
+    color:#48290A;
+    font-style: italic;
+}
+
+/*-----------------ABOUT PAGE STYLING*/
+/*layout*/
 
 .about-container {
     border-bottom: 6px groove silver;
@@ -306,24 +300,6 @@ header {
     background-color: #48290AB3;
 }
 
-.about-section h2 {
-    font-size: 160%;
-}
-
-.about-section h3 {
-    font-size: 140%;
-}
-
-.about-section h4 {
-    font-size: 120%;
-}
-
-.about-image img {
-    width: 250px;
-    border: 4px ridge #818589;
-    border-radius: 50%;
-}
-
 .about-info {
     display: flex;
     flex-flow: row;
@@ -333,6 +309,20 @@ header {
 
 .about-profile {
     flex: 1;
+}
+
+.about-image-text {
+    flex: 2;
+    padding: 0 10px;
+    font-size: 110%;
+}
+
+/*images*/
+
+.about-image img {
+    width: 250px;
+    border: 4px ridge #818589;
+    border-radius: 50%;
 }
 
 .profile-pic img {
@@ -346,26 +336,34 @@ header {
     height: 0.2rem;
     background: #fff;
     margin: -2px auto 10px auto;
-    padding: 0;
     width: 30%;
     text-align: center;
     opacity: 1;
 }
 
-.about-image-text {
-    flex: 2;
-    padding: 0 10px;
-    font-size: 110%;
+/*font details*/
+
+.about-section h2 {
+    font-size: 160%;
 }
 
-/*-----------------Booking Page*/
+.about-section h3 {
+    font-size: 140%;
+}
+
+.about-section h4 {
+    font-size: 120%;
+}
+
+/*-----------------BOOKING PAGE STYLING*/
 
 .bookings-wrapper {
     border-bottom: 6px groove silver;
     border-top: 6px groove silver;
 }
 
-/* -- form section*/
+/*----Form Section----*/
+/*layout*/
 
 .bookings-wrapper {
     font-family: main;
@@ -422,44 +420,6 @@ header {
     color: red;
 }
 
-.list-details li {
-    display: flex;
-    flex-wrap: wrap;  
-    align-items: center;
-}
-
-.list-details > li > label {
-    flex: 1 0 150px;
-    max-width: 376px;
-    text-align: center;
-}
-
-.list-details li {
-    font-size: 130%;
-}
-
-.list-details > li > label + * {
-    flex: 1 0 200px;
-  }
-
-.list-details > li:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-.book-button {
- width: 50%;
- margin:10px auto;
- background-color:#48290A;
- color: #fff;
- padding:8px;
- Font-Size: 180%;
-}
-
-.book-button:hover {
-    background-color:#fff;
-    border:2px solid #48290A;
-    color: #48290A;
-}
 input, textarea {
     width: 100%;
 }
@@ -467,7 +427,53 @@ input:focus, textarea:focus {
     outline:#48290A;
 }
 
-/* -- address section*/
+/*font details*/
+
+.list-details li {
+    font-size: 130%;
+}
+
+/*form section button*/
+
+.book-button {
+    width: 50%;
+    margin:10px auto;
+    background-color:#48290A;
+    color: #fff;
+    padding:8px;
+    Font-Size: 180%;
+}
+   
+.book-button:hover {
+    background-color:#fff;
+    border:2px solid #48290A;
+    color: #48290A;
+}
+
+/*------------Code adapted from 3rd party source (see README.md) */
+    .list-details li {
+        display: flex;
+        flex-wrap: wrap;  
+        align-items: center;
+    }    
+
+    .list-details > li > label {
+        flex: 1 0 150px;
+        max-width: 376px;
+        text-align: center;
+    }
+
+    .list-details > li > label + * {
+        flex: 1 0 200px;
+    }
+
+    .list-details > li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+/*-------------------3rd party code ends */
+
+/*---- Address Section----*/
+/*layout*/
 
 iframe {
     width:100%;
@@ -493,13 +499,9 @@ iframe {
 
 .address-details {
     margin:0;
-    padding:0;
+    padding:0;    
     flex:1;
     width:100%;
-}
-
-.address-details p {
-    font-size: 130%;
 }
 
 .booking-divider {
@@ -507,7 +509,6 @@ iframe {
     background: #000;
     opacity: 1;
     margin: -8px auto 14px auto;
-    padding: 0;
     width: 20%;
     text-align: center;
 }
@@ -521,7 +522,14 @@ iframe {
     margin-bottom:10px;
 }
 
-/*-----------Submit Page*/
+/*font details*/
+
+.address-details p {
+    font-size: 130%;
+}
+
+/*-----------SUBMIT AND 404 PAGE STYLING*/
+/*layout*/
 
 .utility-container {
     height: 40dvh;
@@ -538,6 +546,11 @@ iframe {
     background-size: cover;
 }
 
+.utility-footer {
+    margin-top: auto;
+}
+
+/*font details*/
 
 .utility-text h2{
     font-size: 130%;
@@ -547,11 +560,10 @@ iframe {
     font-size: 110%;
 }
 
-.utility-footer {
-    margin-top: auto;
-}
-/*-----------MEDIA QUERIES*/
+/*-------------------MEDIA QUERIES*/
+
 @media screen and (min-width:360px) {
+
     /*header*/
 
     .list-group-item {
@@ -565,11 +577,11 @@ iframe {
         height:22px;
     }
 
-    .social a{
+    .social-media a{
         width:34px;
         height:34px;
     }
-    .reviews a{
+    .reviews-site a{
         width:80px;
         height:34px;
     }
@@ -594,11 +606,12 @@ iframe {
         width:75%;
     }
 
-   
-
 }
+
 @media screen and (min-width:450px) {
-/*home page , header, footer*/
+
+    /*header*/
+
     h1 {
         font-size: 450%;
     }
@@ -608,6 +621,23 @@ iframe {
         height: 100px;
     }
 
+    /*footer*/
+
+    .social-links img, .review-links img {
+        height:24px;
+    }
+    
+    .social-media a{
+        width:36px;
+        height:36px;
+    }
+    .reviews-site a{
+        width:90px;
+        height:36px;
+    }
+
+    /*homepage*/
+
     .callout-text h2 {
         font-size: 200%;
     }
@@ -616,33 +646,11 @@ iframe {
         width: 40%;
     }
 
-    #review-container h2 {
+    .review-container h2 {
         font-size: 270%;
     }
 
-    .social-links img, .review-links img {
-        height:24px;
-    }
-    
-    .social a{
-        width:36px;
-        height:36px;
-    }
-    .reviews a{
-        width:90px;
-        height:36px;
-    }
-
-    /*submit page*/
-
-    .utility-text h2{
-        font-size: 150%;
-    }
-    .utility-text h3{
-        font-size: 120%;
-    }
-
-/*menu page*/
+    /*menu page*/
 
     .menu-container h2 {
         font-size: 200%;
@@ -660,8 +668,7 @@ iframe {
         font-size: 120%;
     }
 
-
-/*about page*/
+    /*about page*/
 
     .about-image img {
         width: 320px;
@@ -669,7 +676,6 @@ iframe {
 
     .profile-pic img {
         width: 130px;
-        height: auto;
     }
 
     .spacer-about .spacer {
@@ -688,15 +694,27 @@ iframe {
         font-size: 140%;
     }
 
-/*booking page*/
+    /*book page*/
 
-.form-personal, .form-visit, .address-details, .map-details {
-    padding-right: 41px;
-    padding-left: 41px;
+    .form-personal, .form-visit, .address-details, .map-details {
+        padding-right: 41px;
+        padding-left: 41px;
     }
+    
+    /*submit and 404 page*/
+
+    .utility-text h2{
+        font-size: 150%;
+    }
+    .utility-text h3{
+        font-size: 120%;
+    }
+    
 }
 
 @media screen and (min-width:576px) {
+
+    /*header*/
 
     .nav-wrapper {
         width: 90%;
@@ -707,9 +725,7 @@ iframe {
         font-size: 380%;
     }
 
-    #callout-container { 
-        height: 50dvh;
-    }
+    /*footer*/
 
     .social-links img, .review-links img {
         height:28px;
@@ -719,14 +735,26 @@ iframe {
         border-radius: 6px;
     }
     
-    .social a{
+    .social-media a{
         width:40px;
         height:40px;
     }
-    .reviews a{
+    .reviews-site a{
         width:104px;
         height:40px;
     }
+
+    /*homepage*/
+
+    .callout-container { 
+        height: 50dvh;
+    }
+
+    .callout-text h3 {
+        font-size: 150%;
+    }
+
+    /*menu page*/
 
     .menu-container h2 {
         font-size: 210%;
@@ -744,6 +772,7 @@ iframe {
         font-size: 120%;
     }
 
+    /*about page*/
 
     .spacer-about .spacer {
         width: 35%;
@@ -785,21 +814,23 @@ iframe {
 
     /*booking page*/
 
-.form-personal, .form-visit, .address-details, .map-details {
-    padding-right: 75px;
-    padding-left: 75px;
-}
+    .form-personal, .form-visit, .address-details, .map-details {
+        padding-right: 75px;
+        padding-left: 75px;
+    }
 
-.submit-text h2{
-    font-size: 160%;
-}
-.submit-text h3{
-    font-size: 140%;
-}
+    .submit-text h2{
+        font-size: 160%;
+    }
+    .submit-text h3{
+        font-size: 140%;
+    }
 
 }
 
 @media screen and (min-width:600px) {
+
+    /*header*/
 
     h1 {
         font-size: 480%;
@@ -810,6 +841,8 @@ iframe {
         height: 120px;
     }
 
+    /*homepage*/
+
     .callout-text h2 {
         font-size: 220%;
     }
@@ -818,13 +851,18 @@ iframe {
         width: 30%;
     }
 
-    #review-container h2 {
+    .review-container h2 {
         font-size: 300%;
     }
+
+    /*menu page*/
 
     .menu-container {
         width: 80%;
     }
+
+    /*about page*/
+
     .profile-pic img {
         width: 145px;
     }
@@ -853,7 +891,7 @@ iframe {
         font-size: 140%;
     }
 
-    /*booking page*/
+    /*book page*/
 
     .list-details > li > label {
         text-align:left;
@@ -877,7 +915,7 @@ iframe {
         margin-bottom: 20px;
     }
 
-    /*submit page*/
+    /*submit and 404 page*/
 
     .utility-text h2{
         font-size: 170%;
@@ -889,6 +927,8 @@ iframe {
 }
 
 @media screen and (min-width:768px) {
+
+    /*header*/
 
     h1 {
         font-size: 600%
@@ -903,23 +943,32 @@ iframe {
         width: 85%;
     }
 
-
-    .spacer {
-        width: 25%;
-    }
+    /*footer*/
     
     .social-links img, .review-links img {
         height:30px;
     }
 
-    .social a{
+    .social-media a{
         width:44px;
         height:44px;
     }
-    .reviews a{
+    .reviews-site a{
         width:114px;
         height:44px;
     }
+
+    /*homepage*/
+
+    .spacer {
+        width: 25%;
+    }
+
+    .callout-text h3 {
+        font-size: 160%;
+    }
+
+    /*menu page*/
 
     .menu-container h2 {
         font-size: 230%;
@@ -941,6 +990,7 @@ iframe {
         font-size: 110%;
     }
 
+    /*about page*/
 
     .spacer-about .spacer {
         width: 25%;
@@ -952,8 +1002,6 @@ iframe {
 
     .profile-pic img {
         width: 200px;
-        height: auto;
-
     }
 
     .profile-bio h4 {
@@ -966,7 +1014,6 @@ iframe {
 
     .about-image-text {
         font-size: 140%;
-        padding: 0 20px;
     }
 
     .about-section h2 {
@@ -986,7 +1033,7 @@ iframe {
         padding: 20px;
     }
 
-    /*booking page*/
+    /*book page*/
 
     .form-personal, .form-visit, .address-details, .map-details {
         padding-right: 55px;
@@ -1019,7 +1066,7 @@ iframe {
         font-size: 150%;
     }
 
-    /*submit page*/
+    /*submit and 404 page*/
 
     .utility-text h2{
         font-size: 190%;
@@ -1028,11 +1075,11 @@ iframe {
         font-size: 150%;
     }
 
-
-
 }
 
 @media screen and (min-width:900px) {
+
+    /*header*/
 
     h1 {
         font-size: 700%
@@ -1042,13 +1089,21 @@ iframe {
         width: 80%;
     }
 
+    /*homepage*/
+
     .callout-text h2 {
         font-size: 250%;
+    }
+
+    .callout-text h3 {
+        font-size: 180%;
     }
 
     .spacer {
         width: 20%;
     }
+
+    /*menu page*/
    
     .menu-container h2 {
         font-size: 250%;
@@ -1057,6 +1112,8 @@ iframe {
     .menu-container h3 {
         font-size: 200%;
     }
+
+    /*about page*/
 
     .spacer-about .spacer {
         width: 20%;
@@ -1069,17 +1126,16 @@ iframe {
 
     .about-image-text {
         font-size: 160%;
-        padding: 0 20px;
     }
 
-     /*booking page*/
+    /*book page*/
 
      .form-personal, .form-visit, .address-details, .map-details {
         padding-right: 65px;
         padding-left: 65px;
     }
 
-    /*submit page*/
+    /*submit and 404 page*/
 
     .utility-text h2{
         font-size: 210%;
@@ -1092,6 +1148,8 @@ iframe {
 
 @media screen and (min-width:936px) {
 
+    /*header*/
+
     h1 {
         font-size: 780%
     }
@@ -1099,6 +1157,8 @@ iframe {
 }
 
 @media screen and (min-width:1200px) {
+
+    /*header*/
 
     h1 {
         font-size: 480%
@@ -1108,10 +1168,9 @@ iframe {
         width:50%;
     }
 
-    #header-container hr {
+    .header-container hr {
         display:none;
     }
-
 
     .menu-main {
         font-size: 240%;
@@ -1122,13 +1181,19 @@ iframe {
         padding-left: 30px;
     }
 
+    /*homepage*/
+
     .spacer {
         width: 15%;
     }
 
+    /*menu page*/
+
     .menu-container {
         width: 70%;
     }
+
+    /*about page*/
 
     .about-image {
         flex: 2;
@@ -1142,7 +1207,6 @@ iframe {
     .about-section {
         flex-flow: row wrap;
         margin: 20px 45px;
-        padding: 20px;
     }
 
     .about-image img {
@@ -1151,8 +1215,6 @@ iframe {
 
     .profile-pic img {
         width: 200px;
-        height: auto;
-
     }
 
     .profile-bio h4 {
@@ -1166,7 +1228,6 @@ iframe {
 
     .about-image-text {
         font-size: 140%;
-        padding: 0 20px;
     }
 
     .about-section h2 {
@@ -1177,14 +1238,14 @@ iframe {
         font-size: 180%;
     }
 
-     /*booking page*/
+     /*book page*/
 
-     .booking-container, .location-container {
+    .booking-container, .location-container {
         flex-flow: row wrap;
         flex:1;
      }
 
-     .form-personal, .form-visit, .address-details, .map-details {
+    .form-personal, .form-visit, .address-details, .map-details {
         flex:1;
         padding: 30px 20px;
     }
@@ -1218,11 +1279,11 @@ iframe {
         font-size: 170%;
     }
 
-
-
 }
 
 @media screen and (min-width:1400px) {
+
+    /*header*/
 
     h1 {
         font-size: 590%
@@ -1236,10 +1297,14 @@ iframe {
     .nav-wrapper {
         width:47%;
     }
+    
+    /*homepage*/
 
     .spacer {
         width: 10%;
     }
+
+    /*menu page*/
 
     .menu-container {
         width: 60%;
@@ -1261,9 +1326,10 @@ iframe {
         font-size: 120%;
     }
 
+    /*about page*/
+
     .about-section {
         margin: 20px 75px;
-        padding: 20px;
     }
 
     .about-image img {
@@ -1272,8 +1338,6 @@ iframe {
 
     .profile-pic img {
         width: 250px;
-        height: auto;
-
     }
 
     .profile-bio h4 {
@@ -1282,11 +1346,6 @@ iframe {
 
     .profile-bio h5 {
         font-size: 190%;
-    }
-
-    .about-image-text {
-        font-size: 140%;
-        padding: 0 20px;
     }
 
     .about-section h2 {
@@ -1305,6 +1364,8 @@ iframe {
 
 @media screen and (min-width:1800px) {
 
+    /*header*/
+
     h1 {
         font-size: 700%
     }
@@ -1318,9 +1379,17 @@ iframe {
         width:41%;
     }
 
+    /*homepage*/
+
     .callout-text h2 {
         font-size: 280%;
     }
+
+    .callout-text h3 {
+        font-size: 200%;
+    }
+
+    /*menu page*/
 
     .menu-container {
         width: 50%;
@@ -1346,6 +1415,8 @@ iframe {
         font-size: 140%;
     }
 
+    /*about page*/
+
     .spacer-about .spacer {
         width: 15%;
     }
@@ -1361,8 +1432,6 @@ iframe {
 
     .profile-pic img {
         width: 200px;
-        height: auto;
-
     }
 
     .profile-bio h4 {
@@ -1375,7 +1444,6 @@ iframe {
 
     .about-image-text {
         font-size: 150%;
-        padding: 0 20px;
     }
 
     .about-section h2 {
@@ -1390,7 +1458,7 @@ iframe {
         font-size: 210%;
     }
 
-    /*submit page*/
+    /*submit and 404 page*/
 
     .utility-text h2{
         font-size: 230%;

@@ -7,27 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The booking confirmation page for Smoking Buns, a Western-themed burger restaurant in Aberystwyth">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/libraries/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
     <title>Smoking Buns</title>
 </head>
 
 <body>
-    <header class="container-fluid text-center" id="header-container">
-        <div class="row d-flex align-items-center">
-            <img class="col-3 col-sm-2 col-xl-1 logo-left" src="assets/images/logos/gun-left.svg"
-                alt="A smoking pistol sandwiched in a burger bun, pointing right">
+<!--TITLE AND NAVIGATION-->
+    <header class="container-fluid text-center header-container">
+        <div class="row d-flex align-items-center">    
+            <img class="col-3 col-sm-2 col-xl-1" src="assets/images/logos/gun-left.svg"
+                alt="A smoking pistol sandwiched in a burger bun, pointing right">            
             <h1 class="col-6 col-sm-8 col-xl-4">
                 <a id="title-main" href="index.html">Smoking Buns</a>
             </h1>
-            <img class="col-3 col-sm-2 col-xl-1 logo-right" src="assets/images/logos/gun-right.svg"
+            <img class="col-3 col-sm-2 col-xl-1" src="assets/images/logos/gun-right.svg"
                 alt="A smoking pistol sandwiched in a burger bun, pointing left">
             <hr>
             <nav class="col-12 col-xl-6 nav-wrapper">
-                <ul id="navigation" class="list-group list-group-horizontal flex-fill">
+                <ul class="list-group list-group-horizontal flex-fill">
                     <li class="col-3 list-group-item menu-main">
-                        <a href="index.html"><h2>Home</h2></a>
+                        <a id="current" href="index.html"><h2>Home</h2></a>
                     </li>
                     <li class="col-3 list-group-item menu-main">
                         <a href="menu.html"><h2>Menu</h2></a>
@@ -42,6 +43,7 @@
             </nav>
         </div>
     </header>
+<!--BOOKING CONFIRMATION SECTION-->
     <section class="container-fluid text-center utility-container">
         <div class="row h-100">
             <div class="col-12 my-auto mx-auto w-75 utility-text">
@@ -51,19 +53,20 @@
             </div>
         </div>
     </section>
-    <footer class="container-fluid footer-container utility-footer">
+<!--FOOTER-->
+    <footer class="container-fluid footer-container">
         <div class="row align-items-center">
             <div class="col-4 col-xxl-2 social-links">
-                <ul class="list-group list-group-horizontal text-center">
-                    <li class="col-4 list-group-item social">
-                        <a href="https://www.snapchat.com/" target="_blank"><img
-                                src="assets/images/logos/snapchat.webp" alt="The Snapchat Logo, which is a ghost or bell outline on a black background."></a>
+                <ul class="list-group list-group-horizontal">
+                    <li class="col-4 list-group-item social-media">
+                        <a href="https://www.snapchat.com/" target="_blank">
+                            <img src="assets/images/logos/snapchat.webp" alt="The Snapchat Logo, which is a ghost or bell outline on a black background."></a>
                     </li>
-                    <li class="col-4 list-group-item social">
+                    <li class="col-4 list-group-item social-media">
                         <a href="https://www.instagram.com/" target="_blank"><img
                                 src="assets/images/logos/insta.webp" alt="The Instagram logo, which looks like a line drawing of a camera, in black and white."></a>
                     </li>
-                    <li class="col-4 list-group-item social">
+                    <li class="col-4 list-group-item social-media">
                         <a href="https://www.facebook.com/" target="_blank"><img
                                 src="assets/images/logos/facebook.webp" alt="The facebook logo in monochrome, with a lower case white letter f on a black background"></a>
                     </li>
@@ -73,11 +76,11 @@
             </div>
             <div class="col-6 col-md-4 col-xxl-3 review-links">
                 <ul class="list-group list-group-horizontal text-center">
-                    <li class="col-6 list-group-item reviews">
+                    <li class="col-6 list-group-item reviews-site">
                         <a href="https://www.tripadvisor.com/" target="_blank"><img
                                 src="assets/images/logos/tripadvisor.webp" alt="The Tripadvisor logo, which is an owlface next to the word 'Tripadvisor', in this case in white on a black background"></a>
                     </li>
-                    <li class="col-6 list-group-item reviews">
+                    <li class="col-6 list-group-item reviews-site">
                         <a href="https://www.google.com/maps/" target="_blank"><img
                                 src="assets/images/logos/google.webp" alt="A Google logo, consisting of the the word Google in white with a black background"></a>
                     </li>

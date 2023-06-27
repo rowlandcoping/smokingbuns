@@ -80,27 +80,41 @@ Site uses semantic elements throughout, contains appropriate meta elements, clea
 _"Drive home brand identity: The website must be consistent with the restaurant's branding..."_\
 The site had a very strong and consistent Western theme throughout and showcases the venue and staff.
 
+![image](assets/images/testing/buns-logo.jpg)
+
 _"...Allow users quick access to information about what is on the menu"_\
 The website's navigation is obvious and not hidden or cluttered, and the menu.html page contains clear and comprehensive menu information.
+
+![image](assets/images/testing/menu.jpg)
 
 _"The website needs to be effective at turning customer interest into bookings and revenue"_\
 The option to book is part of the menu structure, and thus this call to action appears througout. The booking page contains all the infomration needed to plan a visit, prominently displayed.
 
+![image](assets/images/testing/booking.jpg)
+
 _"Grow social presence: The website needs to provide access to the restaruant's social accounts so that the people can share and the business can grow. It would also be useful to link review sites such as Google, Tripadvisor and Trustpilot."_\
 The footer on every page not only contains social links but also contains links to tripadvisor and google for peer review.
 
+![image](assets/images/testing/footer.jpg)
+
 _"Create positive engagement... It should be a place which users enjoy visiting and wish to return to, just like the restaurant itself!"_\
 The eyecatching logos and fun 'sheriff star' menu backgrounds along with the attractive fonts, eyecatching images and intuitive layout ought to result in people coming to visit the site even when they're not hungry!
+
+![image](assets/images/testing/fun-stuff.jpg)
 
 ### Customer User Stories
 
 ([back to top](#testing-documentation))
 
 _"Mobile Functionality: ... They need the site to look just as good on their mobile devices whilst retaining full functionality."_\
-The site was build mobile upwards, starting in all cases with a 360px screen width and then adjusting upwards to desktop screen sizes. This is reflected in some of the design choices - for example to kepe the site clean there are no transitions or features that would not be functional on mobile.
+The site was build mobile upwards, starting in all cases with a 360px screen width and then adjusting upwards to desktop screen sizes. This is reflected in some of the design choices - for example to keep the site clean there are no transitions or features that would not be functional on mobile.
+
+![image](assets/images/testing/sizes.jpg)
 
 _"Easy to Navigate... Links to various areas of the site should be obvious, responsive and consistent."_\
-The navigation is clear and obvious on all device sizes, with additional immidiacy through having no additional widgets to open. The navigation is the core of the site.
+The navigation is clear and obvious on all device sizes, with additional immediacy through having no additional widgets to open. The navigation is the core of the site.
+
+![image](assets/images/testing/buns-menu.jpg)
 
 _"What do they sell? users... want as much info as they can get online, as fast as they can get it. This includes the menu, which they want to be able to access and read quickly and in full."_\
 The main index.html callout immediately details what the restaurant sells, its theme and where it is located. Navigation is immediate and clear, with the menu.html the first option.
@@ -108,17 +122,25 @@ The main index.html callout immediately details what the restaurant sells, its t
 _"Clear branding: This userbase needs to know what is on offer, as well as getting a feel for the theme and style or the restaurant, from the very first page."_\
 The index.html styling and callout text provides and immediate overview of the restaruant and what it sells, whilst clearly communicating the theme through styling and fonts. The big picture of a tasty burger gets home what they can expect to eat when they visit!
 
+![image](assets/images/testing/callout.jpg)
+
 _"X-factor: The target audience wants, for want of a better word, cool stuff."_\
 Although more limited in scope than I would like to implement various CSS effects because of the limitations of mobile, the unique menu visuals, entertaining fonts and eye-catching theming set this website apart from others.
 
 _"Contact Information: As important as the menu, they want to know where this place is, how to get there, and how to book it."_\
 This was a trade-off, and in the end a matter of balancing the need to drive bookings against providing more general information. However the index.html Callout makes clear where the restaurant is located, which means the call to action to book is on every page via the navigation. The booking page contains full contact and booking information prominently displayed.
 
+![image](assets/images/testing/location.jpg)
+
 _"Peer review: As a social generation, it is very important what their cohorts think. Our users need validation to help their purchasing decisions, in the form of reviews and testimonials."_\
 The index.html provides immediate validation in the form of positive customer reviews, and the footer contains links to social and review platforms.
 
+![image](assets/images/testing/reviews.png)
+
 _"Venue Information: Very much on a theme, they want to see what the place looks like to make sure it's sufficiently Instagramable."_\
 The about section contains appropriate images of the venue food as well as the staff to provide all the information people need.
+
+![image](assets/images/testing/theming.jpg)
 
 ## Technical Testing
 
@@ -154,7 +176,7 @@ HEADER / FOOTER / index.html:
 
 - Footer sizing and positioning (part 3):
 - I made a final attempt to have consistancy with the hover image in the footer. I discovered the image wasn't centred in the anchor element which was causing the problwm, and solved it by settnig the anchor display property to flex and centering the content. This also meant I could consistently control the padding by setting a height and width for the anchor element, and it didn't break the layout. I am still unable to centre the anchor within the list element, but on substantial review I am not sure that it is possible when nesting images within an anchor tag within a list element without breaking the layout of the site. Once I realised this it was either rebuild it or keep what I have, and given the minimal visual impact I prefer the semantic clarity of placing the footer navigation in an unordered list.
-- During testing I have noticed that the text in the menu is not vertically centred in the anchor element, which meant that the sheriff stars looked unbalanced. Because of the bootstrap layout, I was unable to vertically center the text my any conventional means, but I discovered that if I wrapped the text in an h2 tag and set a small negative margin I could center it this way. From the research I have done I can see nothing semantically wrong with this and it looks much better!
+- During testing I have noticed that the text in the menu is not vertically centred in the anchor element, which meant that the sheriff stars looked unbalanced. Because of the bootstrap layout, I was unable to vertically center the text my any conventional means, but I discovered that if I wrapped the text in an h2 tag and set a small negative margin I could center it this way. From the research I have done I can see nothing semantically wrong with this and it looks much better.
 - On preparing to take screengrabs in Windows I discovered that the above fix rendered differently in Windows to other devices (Linux / Android) on which I had tested it. It is interesting that the way CSS displays should be dependent on OS, it seems a Linux base gives different outcomes! This makes it hard to fix. On testing in Firefox and Chrome on Windows using dev tools setting the bottom margin at 0 perfectly centers the text in the star, but until the change is pushed it's impossible to know if this will work on mobile and Linux, and of course vice versa if I did it the other way around! See screengrabs below for the issue:
 
 Android on chrome:
@@ -174,6 +196,8 @@ Android on chrome:
 ![image](assets/images/testing/fix-mobile.jpg)\
 Windows 10 on chrome:
 ![image](assets/images/testing/fix-windows.jpg)
+
+I am not sure this bug is fixable with the current layout. I don't really understand why the site renders differently on the same browser depending on the operating system - it is certainly not clear from investigating using developer tools. It is an important consideration when designing for mobile however.  If it is down to Bootstrap I would be surprised, given I chose this framework for the header and footer precisely for the support it provides for responsive elements.  I would imagine that Bootstrap elements would work better in more generic layouts and this is something I need to consider going forward. Perhaps it is more a quirk of using list elements for these navigation sections - whilst it seems to be a widely adopted standard, 'li' elements appear to pose unique difficulties in CSS that are not well documented.
 
 about.html:
 
