@@ -45,7 +45,7 @@ No errors were found.
 
 ([back to top](#testing-documentation))
 
-The Lighthouse audits I initially ran had one common theme, that I needed to add meta-descriptions and reduce image sizes across the board. The background and footer images in particular were over-sized and needed serious slimming down. On the 'about' and 'menu' page I did not have header elements in correct sequential order.
+The Lighthouse audits I initially ran had one common theme, that I needed to add meta-descriptions and reduce image sizes across the board. The background and footer images in particular were over-sized and needed serious slimming down. On the 'about' and 'menu' page I did not have heading elements in correct sequential order.
 
 IMAGES:
 
@@ -57,7 +57,7 @@ I added meta descriptions to all pages.
 
 HEADERS:
 
-I ensured that header tags were ordered sequentially, without skipping. This involved a great deal of work adjusting their associated media queries, esepecially on the 'about' page.
+I ensured that heading tags were ordered sequentially, without skipping. This involved a great deal of work adjusting their associated media queries, esepecially on the 'about' page.
 
 RESULTS:
 
@@ -88,17 +88,17 @@ The website's navigation is obvious and not hidden or cluttered, and the menu.ht
 ![image](assets/images/testing/menu.jpg)
 
 _"The website needs to be effective at turning customer interest into bookings and revenue"_\
-The option to book is part of the menu structure, and thus this call to action appears througout. The booking page contains all the infomration needed to plan a visit, prominently displayed.
+The option to book is part of the menu structure, and thus this call to action appears througout. The booking page contains all the information needed to plan a visit, prominently displayed.
 
 ![image](assets/images/testing/booking.jpg)
 
 _"Grow social presence: The website needs to provide access to the restaruant's social accounts so that the people can share and the business can grow. It would also be useful to link review sites such as Google, Tripadvisor and Trustpilot."_\
-The footer on every page not only contains social links but also contains links to tripadvisor and google for peer review.
+The footer on every page not only contains social links but also contains links to Tripadvisor and Google for peer review.
 
 ![image](assets/images/testing/footer.jpg)
 
 _"Create positive engagement... It should be a place which users enjoy visiting and wish to return to, just like the restaurant itself!"_\
-The eyecatching logos and fun 'sheriff star' menu backgrounds along with the attractive fonts, eyecatching images and intuitive layout ought to result in people coming to visit the site even when they're not hungry!
+The eye-catching logos and fun 'sheriff star' menu backgrounds along with the attractive fonts, eyecatching images and intuitive layout ought to result in people coming to visit the site even when they're not hungry!
 
 ![image](assets/images/testing/fun-stuff.jpg)
 
@@ -120,25 +120,25 @@ _"What do they sell? users... want as much info as they can get online, as fast 
 The main index.html callout immediately details what the restaurant sells, its theme and where it is located. Navigation is immediate and clear, with the menu.html the first option.
 
 _"Clear branding: This userbase needs to know what is on offer, as well as getting a feel for the theme and style or the restaurant, from the very first page."_\
-The index.html styling and callout text provides and immediate overview of the restaruant and what it sells, whilst clearly communicating the theme through styling and fonts. The big picture of a tasty burger gets home what they can expect to eat when they visit!
+The index.html styling and callout text provides an immediate overview of the restaruant and what it sells, whilst clearly communicating the theme through styling and fonts. The big picture of a tasty burger gets home what they can expect to eat when they visit!
 
 ![image](assets/images/testing/callout.jpg)
 
 _"X-factor: The target audience wants, for want of a better word, cool stuff."_\
-Although more limited in scope than I would like to implement various CSS effects because of the limitations of mobile, the unique menu visuals, entertaining fonts and eye-catching theming set this website apart from others.
+My options have been more limited in scope than I would like because of the limitations of mobile.  However, the unique menu visuals, entertaining fonts and eye-catching theming set this website apart from others.
 
 _"Contact Information: As important as the menu, they want to know where this place is, how to get there, and how to book it."_\
-This was a trade-off, and in the end a matter of balancing the need to drive bookings against providing more general information. However the index.html Callout makes clear where the restaurant is located, which means the call to action to book is on every page via the navigation. The booking page contains full contact and booking information prominently displayed.
+This was a trade-off, and in the end a matter of balancing the need to drive bookings against providing more general information. However the index.html callout makes clear where the restaurant is located, which means I have been able to focus efforts on the call to action, which is to book a table.  This call to action is displayed prominently as part of the main navigation. The booking page contains full contact information and a map of the area, in addition to the booking form.
 
 ![image](assets/images/testing/location.jpg)
 
 _"Peer review: As a social generation, it is very important what their cohorts think. Our users need validation to help their purchasing decisions, in the form of reviews and testimonials."_\
-The index.html provides immediate validation in the form of positive customer reviews, and the footer contains links to social and review platforms.
+The index.html page provides immediate validation in the form of positive customer reviews, and the footer means that links to social and review platforms are prominent throughout.
 
 ![image](assets/images/testing/reviews.png)
 
 _"Venue Information: Very much on a theme, they want to see what the place looks like to make sure it's sufficiently Instagramable."_\
-The about section contains appropriate images of the venue food as well as the staff to provide all the information people need.
+The about section contains appropriate images of the venue and details about food, staff and decor, providing all the information people need.
 
 ![image](assets/images/testing/theming.jpg)
 
@@ -148,14 +148,14 @@ The about section contains appropriate images of the venue food as well as the s
 
 ([back to top](#testing-documentation))
 
-I've documented here the major problems I encourtered during the course of building and testing the site, and the measures I have taken to overcome them.
+I've documented here the major problems I encountered during the course of building and testing the site, and the measures I have taken to overcome them.
 
-The website has been tested throughout on Firefox and Chrome, in both Linux and Windows using the responsive mode in developer tools to trigger all the break points up to my full-screen desktop resolution of 1920px. It has also been tested on a Samsung Galaxy S8 in Chrome with a CSS screen width of 360px.
+The website has been tested throughout on Firefox and Chrome, in both Linux and Windows using the responsive mode in developer tools to trigger all the break points up to my full-screen desktop resolution of 1920px. It has also been tested on a Samsung Galaxy S8 in Chrome with a CSS screen width of 360px. Although I have extended this (across multiple screens) to 3000px plus and included a 2500px break point, I have not been able to test on an HD display as nobody I know has one.
 
 GENERAL:
 
 - Horizontal scrolling issue:
-  - There was a small horizontal scroll across all pages. I traced the issue to the footer using web developer tools. One by one I eliminated all the child elements as the cause and found the source of the problem to be a bootstrap row element taking up more than the viewport's width across all screen sizes. This was fixed by setting the width of the row to 100%.
+  - There was a small horizontal scroll across all pages. I traced the issue to the footer using web developer tools. One by one I eliminated all the child elements as the cause and found the source of the problem to be a bootstrap row element taking up more than the viewport's width across all screen sizes. This was fixed by setting the width of the Bootstap row element to 100%.
 
 HEADER / FOOTER / index.html:
 
@@ -175,7 +175,8 @@ HEADER / FOOTER / index.html:
 - After discussions with my mentor I re-built the footer to stop the images scaling with the screen width to become outsized on larger desktop monitors. I achived this by setting fixed values for the image height and wrapping the container to the image. This was unfortunately not compatible with the previous fix. The solution I came upon was expanding the padding for the hover pseudo element until the background took up the desired amount of space. This is not a solution I'm particularly happy with but I think it may be the best one as long as the footer is built in Bootstrap.
 
 - Footer sizing and positioning (part 3):
-- I made a final attempt to have consistancy with the hover image in the footer. I discovered the image wasn't centred in the anchor element which was causing the problwm, and solved it by settnig the anchor display property to flex and centering the content. This also meant I could consistently control the padding by setting a height and width for the anchor element, and it didn't break the layout. I am still unable to centre the anchor within the list element, but on substantial review I am not sure that it is possible when nesting images within an anchor tag within a list element without breaking the layout of the site. Once I realised this it was either rebuild it or keep what I have, and given the minimal visual impact I prefer the semantic clarity of placing the footer navigation in an unordered list.
+- I made a final attempt to have consistancy with the hover image in the footer. I discovered the image wasn't centred in the anchor element which was causing the problem, and solved it by setting the anchor display property to flex and centering the content. This also meant I could consistently control the padding by setting a height and width for the anchor element, and it didn't break the layout. I am still unable to center the anchor within the list element horizontally, but on substantial review I am not sure that it is possible (ie when nesting images within an anchor tag within a list element) without breaking the layout of the site. Once I realised this it was either rebuild it or keep what I have, and given the minimal visual impact I prefer the semantic clarity of placing the footer navigation in an unordered list.
+
 - During testing I have noticed that the text in the menu is not vertically centred in the anchor element, which meant that the sheriff stars looked unbalanced. Because of the bootstrap layout, I was unable to vertically center the text my any conventional means, but I discovered that if I wrapped the text in an h2 tag and set a small negative margin I could center it this way. From the research I have done I can see nothing semantically wrong with this and it looks much better.
 - On preparing to take screengrabs in Windows I discovered that the above fix rendered differently in Windows to other devices (Linux / Android) on which I had tested it. It is interesting that the way CSS displays should be dependent on OS, it seems a Linux base gives different outcomes! This makes it hard to fix. On testing in Firefox and Chrome on Windows using dev tools setting the bottom margin at 0 perfectly centers the text in the star, but until the change is pushed it's impossible to know if this will work on mobile and Linux, and of course vice versa if I did it the other way around! See screengrabs below for the issue:
 
