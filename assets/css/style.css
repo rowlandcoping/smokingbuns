@@ -54,7 +54,7 @@ body {
 }
 
 .menu-main a h2 {
-    margin-bottom:-8%;
+    margin-bottom: 0;
     font-size:100%;
 }
 
@@ -559,12 +559,6 @@ iframe {
         font-size: 150%;
     }
 
-    .menu-main a h2 {
-        margin-bottom:-6%;
-    }
-
-    
-
     /*footer*/
 
     .social-links img, .review-links img {
@@ -814,10 +808,6 @@ iframe {
     .menu-main {
         font-size: 210%;
         height: 120px;
-    }
-
-    .menu-main a h2 {
-        margin-bottom:-5%;
     }
 
     .callout-text h2 {
@@ -1155,8 +1145,6 @@ iframe {
         padding: 20px;
     }
 
-
-
     .about-image img {
         width: 700px;
     }
@@ -1336,7 +1324,6 @@ iframe {
 
     .menu-container {
         width: 50%;
-
     }
 
     .menu-container h2 {
