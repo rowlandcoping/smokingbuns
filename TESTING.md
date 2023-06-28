@@ -243,6 +243,7 @@ I have tested all the links and also the responsiveness across various break poi
 | index.html responsiveness 1200px      | Displays without error at 1200px | Success |
 | index.html responsiveness 1400px      | Displays without error at 1400px | Success |
 | index.html responsiveness 1800px      | Displays without error at 1800px | Success |
+| index.html responsiveness 2500px +    | Displays without error at 2500px and over | Success |
 | menu.html Title link                  | Links to index.html              | Success |
 | menu.html Home link                   | Links to index.html              | Success |
 | menu.html Menu link                   | Links to menu.html               | Success |
@@ -263,6 +264,7 @@ I have tested all the links and also the responsiveness across various break poi
 | menu.html responsiveness 1200px       | Displays without error at 1200px | Success |
 | menu.html responsiveness 1400px       | Displays without error at 1400px | Success |
 | menu.html responsiveness 1800px       | Displays without error at 1800px | Success |
+| menu.html responsiveness 2500px +    | Displays without error at 2500px and over | Success |
 | about.html Title link                 | Links to index.html              | Success |
 | about.html Home link                  | Links to index.html              | Success |
 | about.html Menu link                  | Links to menu.html               | Success |
@@ -283,6 +285,7 @@ I have tested all the links and also the responsiveness across various break poi
 | about.html responsiveness 1200px      | Displays without error at 1200px | Success |
 | about.html responsiveness 1400px      | Displays without error at 1400px | Success |
 | about.html responsiveness 1800px      | Displays without error at 1800px | Success |
+| about.html responsiveness 2500px +    | Displays without error at 2500px and over | Success |
 | book.html Title link                  | Links to index.html              | Success |
 | book.html Home link                   | Links to index.html              | Success |
 | book.html Menu link                   | Links to menu.html               | Success |
@@ -310,6 +313,7 @@ I have tested all the links and also the responsiveness across various break poi
 | book.html responsiveness 1200px       | Displays without error at 1200px | Success |
 | book.html responsiveness 1400px       | Displays without error at 1400px | Success |
 | book.html responsiveness 1800px       | Displays without error at 1800px | Success |
+| book.html responsiveness 2500px +    | Displays without error at 2500px and over | Success |
 | submit.html Title link                | Links to index.html              | Success |
 | submit.html Home link                 | Links to index.html              | Success |
 | submit.html Menu link                 | Links to menu.html               | Success |
@@ -330,6 +334,7 @@ I have tested all the links and also the responsiveness across various break poi
 | submit.html responsiveness 1200px     | Displays without error at 1200px | Success |
 | submit.html responsiveness 1400px     | Displays without error at 1400px | Success |
 | submit.html responsiveness 1800px     | Displays without error at 1800px | Success |
+| submit.html responsiveness 2500px +    | Displays without error at 2500px and over | Success |
 | 404.html Title link                   | Links to index.html              | Success |
 | 404.html Home link                    | Links to index.html              | Success |
 | 404.html Menu link                    | Links to menu.html               | Success |
@@ -350,5 +355,6 @@ I have tested all the links and also the responsiveness across various break poi
 | 404.html responsiveness 1200px        | Displays without error at 1200px | Success |
 | 404.html responsiveness 1400px        | Displays without error at 1400px | Success |
 | 404.html responsiveness 1800px        | Displays without error at 1800px | Success |
+| 404.html responsiveness 2500px +    | Displays without error at 2500px and over | Success |
 
 ([return to README](README.md))

@@ -238,7 +238,7 @@ I have not added any css transitions or effects, for the main reason that I don'
 
 In addition to basic Bootstrap classes, I relied heavily upon media queries to hone page design and layout as the website scaled to different screen sizes. Given that the venerable Samsung Galaxy S8 has a CSS screen width of 360 pixels, In order to be safe I designed the site with page sizes from 320px to 1800px in mind.  
 
-NB: On reading again the requirements and reviewing how the site scaled up I decided to add another media query at 2500px
+NB: On reading again the requirements and reviewing how the site scaled up I decided to add another media query at 2500px in order to support displays up to 3840px.  It is hard for me to test this fully with a max screen width of 1920px but it ought to scale much better now.
 
 Generally speaking as the pages scaled up, I increased margins and padding, and increased font and image sizes to maintain optimal look and feel.  On desktop I used Bootstrap to change the position of content on the page in the header.  I also used Flexbox to adjust the layout for desktop on the 'About' and 'Book' pages.
 
@@ -272,7 +272,7 @@ If you wish to deploy this website yourself, here is how to go about it.
 - From the forked repository select 'Settings'
 - From the settings page select 'Pages' from the 'Code and automation' section of the left menu.
 - Select 'deploy from a branch' from the 'source menu' and then select the 'main' branch of the forked repo, along with 'root' as the folder.
-- Press save.  The site will now be deplyed from your own forked repository!
+- Press save.  The site will now be deployed from your own forked repository!
 
 2:  Using source files
 
