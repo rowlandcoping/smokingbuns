@@ -15,9 +15,18 @@ body {
     flex-direction: column;
     background-image: url("../images/backgrounds/wooden.webp");
     background-size: 100%;
+    padding:0;
+    margin:0;
     min-height:100vh;
 }
 
+.header-container {
+    border-bottom: 6px groove silver;
+}
+
+.footer-container {
+    border-top: 6px groove silver;
+}
 /*header*/
 
 .list-group-item {
@@ -99,6 +108,7 @@ header {
     background-color: #ffffff4d;
     height: 100%;
     padding: 5px;
+    margin-top: auto;
 }
 
 .footer-container .row {
@@ -147,7 +157,7 @@ header {
     background-size: cover;
     background-position: bottom 60% left 0px;
     height: 55dvh;
-    border-bottom: 6px groove silver;
+    
     border-top: 6px groove silver;
 }
 
@@ -173,10 +183,6 @@ header {
 
 /*customer reviews*/
 
-.reviews-section-container {
-    border-bottom: 6px groove silver;
-}
-
 .review-container {
     font-family: main;
     background-color: #48290AB3;
@@ -199,8 +205,6 @@ header {
 
 .menu-wrapper {
     width: 100%;
-    border-bottom: 6px groove silver;
-    border-top: 6px groove silver;
 }
 
 .menu-container {
@@ -276,8 +280,8 @@ header {
 /*layout*/
 
 .about-container {
-    border-bottom: 6px groove silver;
-    border-top: 6px groove silver;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .spacer-about {
@@ -356,40 +360,19 @@ header {
 }
 
 /*-----------------BOOKING PAGE STYLING*/
-
-.bookings-wrapper {
-    border-bottom: 6px groove silver;
-    border-top: 6px groove silver;
-}
-
-/*----Form Section----*/
-/*layout*/
+/*general*/
 
 .bookings-wrapper {
     font-family: main;
+    display: flex;
+    flex-flow: column;
+    margin:auto 0;
 }
 
-.form-wrapper {
+.form-wrapper, .location-wrapper {
     width: 85%;
     margin: 40px auto;
     background-image:url("../images/backgrounds/parchment.webp");
-    padding-bottom: 20px;
-}
-
-.booking-container {
-    display: flex;
-    flex-flow: column;
-}
-
-.button-wrap {
-    display:flex;
-    width: 100%;
-    margin: 0 auto;
-    text-decoration: none;
-}
-
-.form-wrapper h2 {
-    margin-top: 20px;
 }
 
 .form-wrapper h2, .location-wrapper h2 {
@@ -401,14 +384,22 @@ header {
     background-color: #48290AB3;    
 }
 
-.form-personal, .form-visit {
-    padding:20px;
-}
-
 .form-personal h3, .form-visit h3, .map-details h3, .address-details h3 {
     text-align: center;
     padding-bottom: 10px;
-    font-size: 160%
+    font-size: 160%;
+}
+
+/*----Form Section----*/
+/*layout*/
+
+.booking-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.form-personal, .form-visit {
+    padding:20px;
 }
 
 .form-personal ul, .form-visit ul{
@@ -435,9 +426,16 @@ input:focus, textarea:focus {
 
 /*form section button*/
 
+.button-wrap {
+    display:flex;
+    width: 100%;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
 .book-button {
     width: 50%;
-    margin:10px auto;
+    margin:10px auto 30px auto;
     background-color:#48290A;
     color: #fff;
     padding:8px;
@@ -480,11 +478,6 @@ iframe {
     height:100%;
 }
 
-.location-wrapper {
-    width:85%;
-    margin: 40px auto;
-    background-image:url("../images/backgrounds/parchment.webp");
-}
 .location-container {
     display: flex;
     flex-flow: column;
@@ -533,8 +526,6 @@ iframe {
 
 .utility-container {
     height: 40dvh;
-    border-bottom: 6px groove silver;
-    border-top: 6px groove silver;
     font-family: main;
     color:#48290A;
 }
@@ -786,10 +777,6 @@ iframe {
         width: 140px;
     }
 
-    .profile-bio h4 {
-        font-size: 170%;
-    }
-
     .about-image-text {
         font-size: 125%;
         padding: 0 20px;
@@ -885,10 +872,6 @@ iframe {
     
     .about-section h4 {
         font-size: 160%;
-    }
-
-    .profile-bio h5 {
-        font-size: 140%;
     }
 
     /*book page*/
@@ -1002,14 +985,6 @@ iframe {
 
     .profile-pic img {
         width: 200px;
-    }
-
-    .profile-bio h4 {
-        font-size: 220%;
-    }
-
-    .profile-bio h5 {
-        font-size: 170%;
     }
 
     .about-image-text {
@@ -1217,15 +1192,6 @@ iframe {
         width: 200px;
     }
 
-    .profile-bio h4 {
-        font-size: 220%;
-        padding-top: 5px;
-    }
-
-    .profile-bio h5 {
-        font-size: 170%;
-    }
-
     .about-image-text {
         font-size: 140%;
     }
@@ -1247,13 +1213,13 @@ iframe {
 
     .form-personal, .form-visit, .address-details, .map-details {
         flex:1;
-        padding: 30px 20px;
+        padding: 20px 20px;
     }
 
     .address-details, .map-details {
         background-image: none;
         height:325px;
-        padding-top: 10px;
+        margin-bottom:20px;
     }
     .location-wrapper {
         margin: 40px auto;
@@ -1340,14 +1306,6 @@ iframe {
         width: 250px;
     }
 
-    .profile-bio h4 {
-        font-size: 250%;
-    }
-
-    .profile-bio h5 {
-        font-size: 190%;
-    }
-
     .about-section h2 {
         font-size: 280%;
     }
@@ -1417,29 +1375,32 @@ iframe {
 
     /*about page*/
 
-    .spacer-about .spacer {
-        width: 15%;
+    .about-container {
+        flex-flow: row wrap;
+    }
+    .about-section {
+        flex-flow: column;
+        margin: 40px 20px;
+    }
+    .about-info{
+        flex-flow: row;
     }
 
     .about-section {
-        margin: 20px 200px;
-        padding: 40px;
+        flex:1;
+    }
+
+   .spacer-about .spacer {
+        display:none;
     }
 
     .about-image img {
-        width: 700px;
+        width: 400px;
+        margin-bottom:20px
     }
 
     .profile-pic img {
         width: 200px;
-    }
-
-    .profile-bio h4 {
-        font-size: 250%;
-    }
-
-    .profile-bio h5 {
-        font-size: 190%;
     }
 
     .about-image-text {
@@ -1451,11 +1412,100 @@ iframe {
     }
 
    .about-section h3 {
+        font-size: 210%;
+    }
+    
+    .about-section h4 {
+        font-size: 190%;
+    }
+
+    /*book page*/
+
+    .bookings-wrapper {
+        flex-flow: row wrap;
+    }
+
+    .form-wrapper, .location-wrapper {
+        flex:1;
+    }
+
+    .form-wrapper {
+        margin:20px 30px 20px 60px;
+    }
+
+    .location-wrapper {
+        margin:20px 60px 20px 30px;
+    }
+
+    /*submit and 404 page*/
+
+    .utility-text h2{
+        font-size: 230%;
+    }
+    .utility-text h3{
+        font-size: 180%;
+    }
+}
+
+@media screen and (min-width:2500px) {
+
+    /*header*/
+
+    h1 {
+        font-size:1000%
+    }
+
+    .menu-main {
+        font-size: 330%;
+        height: 190px;
+    }
+
+    .nav-wrapper {
+        width:35%;
+    }
+
+    /*homepage*/
+   
+    .callout-text h2 {
+        font-size: 320%;
+    }
+
+    .callout-text h3 {
+        font-size: 220%;
+    }
+
+    /*about page*/
+
+    .about-section {
+
+        margin: 20px 45px;
+    }
+
+    .about-section {
+        margin: 40px 20px;
+        padding: 40px;
+    }
+
+    .about-image img {
+        width: 700px;
+    }
+
+   .about-section h3 {
         font-size: 230%;
     }
     
     .about-section h4 {
         font-size: 210%;
+    }
+
+    /*book page*/
+
+    .form-wrapper {
+        margin:20px 60px 20px 120px;
+    }
+
+    .location-wrapper {
+        margin:20px 120px 20px 60px;
     }
 
     /*submit and 404 page*/
