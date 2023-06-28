@@ -27,6 +27,16 @@ body {
 .footer-container {
     border-top: 6px groove silver;
 }
+
+.form-wrapper h2, .location-wrapper h2, .menu-container h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    font-size: 200%;
+    background-color: #48290AB3;    
+}
+
 /*header*/
 
 .list-group-item {
@@ -216,7 +226,7 @@ header {
     grid-auto-flow: row;
     background-image: url("../images/backgrounds/parchment.webp");
     font-family: main;
-    padding: 10px;
+    padding-bottom:20px;
 }
 
 .title {
@@ -373,15 +383,6 @@ header {
     width: 85%;
     margin: 40px auto;
     background-image:url("../images/backgrounds/parchment.webp");
-}
-
-.form-wrapper h2, .location-wrapper h2 {
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
-    padding-top: 10px;
-    font-size: 200%;
-    background-color: #48290AB3;    
 }
 
 .form-personal h3, .form-visit h3, .map-details h3, .address-details h3 {
