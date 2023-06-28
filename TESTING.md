@@ -18,7 +18,8 @@
 ### Technical Testing
 
 [Error Testing](#error-testing)\
-[Manual Testing](#manual-testing)
+[Manual Testing](#manual-testing)\
+[Unresolved Bugs](#unresolved-bugs)
 
 ## Code Validation
 
@@ -161,44 +162,20 @@ HEADER / FOOTER / index.html:
 
 - Background Hover Image not centered in element
 
-  - There were a number of issues centering the background hover image (sheriff star) over the text of the menu options. This was eventually solved by setting the width of the image to 100% and the height to auto, to keep the aspect ratio. I foudn that I was then able to adjust the size of the image by setting a fixed height for the parent element. Final adjustments were made by adjusting the size of the menu text. All these values are then adjusted according to screen width.
+  - There were a number of issues centering the background hover image (sheriff star) over the text of the menu options. This was eventually solved by setting the width of the image to 100% and the height to auto, to keep the aspect ratio. I found that I was then able to adjust the size of the image by setting a fixed height for the parent element. Final adjustments were made by adjusting the size of the menu text. All these values are then adjusted according to screen width.
 
 - Callout image positioning:
 
   - I found that on larger screen sizes the hero image in the callout section focussed on the chips rather than the burger as intented. This was overcome in 2 ways - firstly by changing the absolute positioning of 0 to the bottom of the element to a percentage, to ensure the image was focussed on the correct area even as the screen size grew. I also reduced the size of the image so that you could see more of it on larger screen sizes.
 
 - Footer sizing and positioning (part 1):
-
-  - I found that the background change on hover wasn't encompassing the whole height of the element. I fixed this by changing the display property of the container to flex. I was also then able to justify and align the various icons.
+    - I found that the background change on hover wasn't encompassing the whole height of the element. I fixed this by changing the display property of the container to flex. I was also then able to justify and align the various icons.
 
 - Footer sizing and positioning (part 2):
-- After discussions with my mentor I re-built the footer to stop the images scaling with the screen width to become outsized on larger desktop monitors. I achived this by setting fixed values for the image height and wrapping the container to the image. This was unfortunately not compatible with the previous fix. The solution I came upon was expanding the padding for the hover pseudo element until the background took up the desired amount of space. This is not a solution I'm particularly happy with but I think it may be the best one as long as the footer is built in Bootstrap.
+    - After discussions with my mentor I re-built the footer to stop the images scaling with the screen width to become outsized on larger desktop monitors. I achived this by setting fixed values for the image height and wrapping the container to the image. This was unfortunately not compatible with the previous fix. The solution I came upon was expanding the padding for the hover pseudo element until the background took up the desired amount of space. This is not a solution I'm particularly happy with but I think it may be the best one as long as the footer is built in Bootstrap.
 
 - Footer sizing and positioning (part 3):
-- I made a final attempt to have consistancy with the hover image in the footer. I discovered the image wasn't centred in the anchor element which was causing the problem, and solved it by setting the anchor display property to flex and centering the content. This also meant I could consistently control the padding by setting a height and width for the anchor element, and it didn't break the layout. I am still unable to center the anchor within the list element horizontally, but on substantial review I am not sure that it is possible (ie when nesting images within an anchor tag within a list element) without breaking the layout of the site. Once I realised this it was either rebuild it or keep what I have, and given the minimal visual impact I prefer the semantic clarity of placing the footer navigation in an unordered list.
-
-- During testing I have noticed that the text in the menu is not vertically centred in the anchor element, which meant that the sheriff stars looked unbalanced. Because of the bootstrap layout, I was unable to vertically center the text my any conventional means, but I discovered that if I wrapped the text in an h2 tag and set a small negative margin I could center it this way. From the research I have done I can see nothing semantically wrong with this and it looks much better.
-- On preparing to take screengrabs in Windows I discovered that the above fix rendered differently in Windows to other devices (Linux / Android) on which I had tested it. It is interesting that the way CSS displays should be dependent on OS, it seems a Linux base gives different outcomes! This makes it hard to fix. On testing in Firefox and Chrome on Windows using dev tools setting the bottom margin at 0 perfectly centers the text in the star, but until the change is pushed it's impossible to know if this will work on mobile and Linux, and of course vice versa if I did it the other way around! See screengrabs below for the issue:
-
-Android on chrome:
-![image](assets/images/testing/star-mobile.jpg)\
-Windows 10 on chrome:
-![image](assets/images/testing/star-windows.jpg)
-
-I decided that the zero margin fix was the best option for a number of reasons:
-
-- On Linux and mobile it is not perfect but acceptable.
-- Setting the margin at zero is a more consistent solution and doesn't require amends via media queries.
-- The assessors of this project will most likely be viewing this on Windows devices where it renders perfectly.
-
-Here are the screengrabs post-fix:
-
-Android on chrome:
-![image](assets/images/testing/fix-mobile.jpg)\
-Windows 10 on chrome:
-![image](assets/images/testing/fix-windows.jpg)
-
-I am not sure this bug is fixable with the current layout. I don't really understand why the site renders differently on the same browser depending on the operating system - it is certainly not clear from investigating using developer tools. It is an important consideration when designing for mobile however.  If it is down to Bootstrap I would be surprised, given I chose this framework for the header and footer precisely for the support it provides for responsive elements.  I would imagine that Bootstrap elements would work better in more generic layouts and this is something I need to consider going forward. Perhaps it is more a quirk of using list elements for these navigation sections - whilst it seems to be a widely adopted standard, 'li' elements appear to pose unique difficulties in CSS that are not well documented.
+    - I made a final attempt to have consistancy with the hover image in the footer. I discovered the image wasn't centred in the anchor element which was causing the problem, and solved it by setting the anchor display property to flex and centering the content. This also meant I could consistently control the padding by setting a height and width for the anchor element, and it didn't break the layout. I am still unable to center the anchor within the list element horizontally, but on substantial review I am not sure that it is possible (ie when nesting images within an anchor tag within a list element) without breaking the layout of the site. Once I realised this it was either rebuild it or keep what I have, and given the minimal visual impact I prefer the semantic clarity of placing the footer navigation in an unordered list.
 
 about.html:
 
@@ -214,6 +191,43 @@ SUBMISSION PAGE:
 
 - Footer was stranded halfway up the page, relative/absolute positioning did not solve the problem.
   - Setting the body display properties to flex and the footer's top margin to auto solved this.
+
+### Unresolved Bugs
+([back to top](#testing-documentation))
+
+NAVIGATION MENU ALIGNMENT
+
+- Navigation Alignment part 1: During testing I have noticed that the text in the menu was not vertically centred in the anchor element, which means that the sheriff stars looked unbalanced. Because of the bootstrap layout, I was unable to vertically center the text by any conventional means, but I discovered that if I wrapped the text in an h2 tag and set a small negative margin I could manually control vertical alignment for various break points. From the research I have done I can see nothing semantically wrong with this and it looks much better.
+
+- Navigation Alignment part 2: On preparing to take screengrabs in Windows I discovered that the above fix rendered differently in Windows to the other devices (Linux / Android) on which I had tested it. It is interesting that the way CSS displays should be dependent on OS; it seems a Linux base gives different outcomes. This makes it hard to fix. On testing in Firefox and Chrome on Windows using dev tools, setting the bottom margin at 0 perfectly centers the text in the star, but until the change is pushed it's impossible to know if this will work on mobile and Linux, and of course vice versa if I did it the other way around! 
+
+  See screengrabs below for illustration of the issue:
+
+  Android on chrome:
+  
+  ![image](assets/images/testing/star-mobile.jpg)
+
+  Windows 10 on chrome:
+    
+  ![image](assets/images/testing/star-windows.jpg)
+
+- After further testing I decided that the zero margin fix was the best option for a number of reasons:
+
+    1: On Linux and mobile it is not perfect but acceptable.\
+    2: Setting the margin at zero is a more consistent solution and doesn't require amends via media queries.\
+    3: The assessors of this project will most likely be viewing this on Windows devices where it renders perfectly.
+
+  Here are the screengrabs post-fix:
+
+  Android on chrome:
+  
+  ![image](assets/images/testing/fix-mobile.jpg)
+
+  Windows 10 on chrome:
+  
+  ![image](assets/images/testing/fix-windows.jpg)
+
+I am not sure that this bug is fixable with the current layout. I don't really understand why the site renders differently on the same browser depending on the operating system - it is certainly not clear from investigating using developer tools. It is an important consideration when designing for mobile however.  If it is down to Bootstrap I would be surprised, given I chose this framework for the header and footer precisely for the support it provides for responsive elements.  I would imagine that Bootstrap elements would work better in more generic layouts and this is something I need to consider going forward. Perhaps it is more a quirk of using list elements for these navigation sections - whilst it seems to be a widely adopted standard, 'li' elements appear to pose unique difficulties in CSS that are not well documented.
 
 ### Manual Testing
 

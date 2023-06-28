@@ -176,8 +176,8 @@ layer menu, with every page on the site available through a single tap or click.
  ### Design Choices
 
   - This is imagined as a site predominently used on mobile and will be programmed with Bootstrap with that in mind, therefore I began with the mobile layout and scaled from there.
-  - I have attempted to keep the layout as consistent as possible with some amends for the landscape format of most desktop devices, keeping in mind people may well access the site on multoiple devices and familiarity is important.
-  - In line with the gathered requirements, the menu is prominent on the screen and visibile at all times; nothing is hidden behind sub-menus or drop-downs.
+  - I have attempted to keep the layout as consistent as possible with some amends for the landscape format of most desktop devices, keeping in mind people may well access the site on multiple devices and familiarity is important.
+  - In line with the gathered requirements, the menu is prominent on the screen and visible at all times; nothing is hidden behind sub-menus or drop-downs.
   - I have kept the content of each page very simple and precisely on point with the menu descriptions.  The only doubt is the 'about' section which for me doesn't describe the content well enough.  Unfortunately longer alternatives may break the layout.
   - Main content layout on each page is consistent with no more than two vertical sections.
   - The homepage is kept the simplest of all; as the landing point it is intended to provide instant value with clear descriptions of what the site is about, re-inforced by the visual style and independent reviews.
@@ -203,9 +203,9 @@ Please find the wireframes [HERE](WIREFRAMES.md).
 
 Because most of the backgrounds consist of images there is a very limied color palate on the site, outlined below:
 
-#48290A (dark brown):  Background transparencies, text and spacers.
-#fff (white): Text, logos and spacers.
-#000 (black): Text.
+#48290A (dark brown):  Background transparencies, text and spacers.\
+#fff (white): Text, logos and spacers.\
+#000 (black): Text.\
 silver: borders / dividers.
 
 ### Color - backgrounds
@@ -216,7 +216,7 @@ The color scheme is intended to be evocative of the Wild West. For me the idea o
 
 To keep things simple and readable I opted for white text against the dark brown background.  This is inverted to black text upon the various noticeboard sections.
 
-The main font was chosen for its legibility above some of the alternatives.  It is intended to represent a classic Western Style script and to be instantly recognisable as such.  The title font is a more eloborate extension of the theme - because the size of the title area using a more intricate font does not affect its legibility and I think adds greatly to the look and feel.  All fonts are stored locally with future-proofing in mind.  Additionally I feel like using fonts outside of Google significantly increased my options.
+The main font was chosen for its legibility above some of the alternatives.  It is intended to represent a classic Western Style script and to be instantly recognisable as such.  The title font is a more eloborate extension of the theme - because of the larger font size using a more intricate font does not affect its legibility and I think adds greatly to the look and feel.  All fonts are stored locally with future-proofing in mind.  Additionally I feel like using fonts outside of Google significantly increased my options.
 
 ### Images
 
@@ -242,7 +242,7 @@ NB: On reading again the requirements and reviewing how the site scaled up I dec
 
 Generally speaking as the pages scaled up, I increased margins and padding, and increased font and image sizes to maintain optimal look and feel.  On desktop I used Bootstrap to change the position of content on the page in the header.  I also used Flexbox to adjust the layout for desktop on the 'About' and 'Book' pages.
 
-## Testing
+## Testing Documentation
 ([back to top](#smoking-buns))
 
 Please find all testing documentation [HERE](TESTING.md).
@@ -285,6 +285,15 @@ Because this website is built using nothing but html and css you can deploy it i
 NB If you wish you could also deploy these files by copying and pasting them to the 'www' folder of your own web host, but keep in mind that the method of deployment will vary depending on the web hosting package you use.
 
 NNB If you are using a Linux operating system running Apache you can simply save the files in your local '/var/www/html' folder and deploy by typing 'localhost' into a browser window. Please see instructions for installing Apache [HERE](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview) if you haven't already.
+
+THE 404 PAGE:
+
+On Github the server is pre-configured to display a 404.html page whenever a page is not found, but that may not be the case in all deployments.  Depending on the server you are deploying from, there are a number of steps you may need to take.  In Apache, one way is using an .htaccess file, however it is preferable where possible to directly configure the server.  In most cases this is straightforward; I have sourced guides below to the more popular servers:
+  - Click [HERE](https://www.msnoob.com/how-to-redirect-404-error-page-to-another-url-in-iis-server.html) for Microsoft IIS Server.
+  - Click [HERE](https://www.ionos.com/digitalguide/server/configuration/configure-apache-to-use-custom-error-pages/) for Apache servers.
+  - Click [HERE](https://www.cyberciti.biz/faq/howto-nginx-customizing-404-403-error-page/) for NGINX servers.
+
+
 
 ### Continuing This Project
 
@@ -385,10 +394,13 @@ Many thanks to my mentor Mitko Bachvarov for all the help and advice he has offe
 ## Technical Information
 ([back to top](#smoking-buns))
 
-Version Control: git and github\
+Version Control: Git and Github\
 Languages: HTML and CSS\
 Libraries: Bootstrap 5.3.0\
-Development Environment:  VS Code on Windows and Linux
+Development Environment: VS Code on Windows and Linux\
+Wireframes: Balsamiq\
+Image Creation: Inkscape\
+Image Editing: GIMP
 
 
 
