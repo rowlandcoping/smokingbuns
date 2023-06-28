@@ -167,8 +167,7 @@ header {
     background-size: cover;
     background-position: bottom 60% left 0px;
     height: 55dvh;
-    
-    border-top: 6px groove silver;
+    border-bottom: 6px groove silver;
 }
 
 .callout-text {
