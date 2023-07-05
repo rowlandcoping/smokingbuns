@@ -43,7 +43,7 @@ targeted at diners in their 20s-30s looking for a memorable dining experience.
 The business owner, Smoke Brannigan, is a first time restauranteur with a clear vision for his business.  After an initial meeting he has outlined his requirements:
 
  - Grow online presence: The website must be highly compliant and SEO friendly, to provide as strong an online presence as possible.  
- This is particularly important given the number of real or fake dierectory sites out there which might potentially steal search rankings.
+ This is particularly important given the number of real or fake directory sites out there which might potentially steal search rankings.
  - Drive home brand identity: The website must be consistent with the restaurant's branding to enhance the customer experience and help 
  build a memorable brand.  The owner is very proud of the theming inside and wants to showcase it online.
  - Provide menu information:  Allow users quick access to information about what is on the menu.
@@ -56,7 +56,7 @@ The business owner, Smoke Brannigan, is a first time restauranteur with a clear 
  ### 4) Customer - User Story
 
 The customer base will be people looking for a unique, high quality dining experience. It is anticipated that users of the website will have found it
- either through google or searching a review platform (particularly that on google maps), with the intention of dining out. As such their requirements are clear:
+ either through google or searching a review platform (particularly that on Google Maps), with the intention of dining out. As such their requirements are clear:
 
   - Mobile Functionality: The majority of users will be accessing the website on the go, either actively seeking a 
   restautant table in the immediate future or looking a day or two ahead. Indeed, many users in their 20s will 
@@ -97,7 +97,7 @@ Whilst brand and theming are obviously key to the success of the project, the ov
 
 - With load times on mobile in mind I am of a mind to reduce dependencies as much as possible - so for example importing fonts, icons and libraries into the site structure rather than relying on a CDN.  For the site owner it also reduces risk of new versions of libraries etc deprecating and ultimately invalidating existing code. When it comes to bootstrap in particular I will need to further my knowledge before attempting this!
 - More elaborate menu links (as part of a homepage callout): I have several design ideas as to what this might look like and the type of transitions or css tricks that might make it happen.  Whilst it is not an essential element  I think it would add the interactivity and pizzaz that the target demographic craves, and help re-inforce the restaurant's brand identity.
-- more interactive menu elements: whilst not essential to get the core message across, adding another layer of engagement to the menu and focring users to linger there might well lead to the dwell time to pick out a favourite and decide they're going to eat it.
+- More interactive menu elements: whilst not essential to get the core message across, adding another layer of engagement to the menu and focring users to linger there might well lead to the dwell time to pick out a favourite and decide they're going to eat it.
 
 ### Future improvements
 
@@ -167,8 +167,8 @@ layer menu, with every page on the site available through a single tap or click.
 
  ### Contact (additional)
 
- - Could add a google map widget, or failing that I like the idea of a map drawn in the western style.  My imagework may or may not be up to that!
- - May be worth adding the social links again, but it ought not be necessary because I expect them to be very prominent in the footer.
+ - Could add a Google Map widget, or failing that I like the idea of a map drawn in the western style.  My imagework may or may not be up to that!
+ - May be worth adding the social links again, but it should not be necessary because I expect them to be very prominent in the footer.
 
  ## UX - Skeleton
  ([back to top](#smoking-buns))
@@ -232,15 +232,15 @@ I immediately settled on a sheriff star to act as a visual indicator of a state 
 
 Within the footer I opted for a white background in an active/hover state, to provie a contrast to both the black icons and the background wood effect/transparency.
 
-I have not added any css transitions or effects, for the main reason that I don't believe they would add a lot of value to the target audience, ie users on mobile devices with smaller screens. I also think the look and feel of the site has a strong enough identity already.
+I have not added any CSS transitions or effects, for the main reason that I don't believe they would add a lot of value to the target audience, ie users on mobile devices with smaller screens. I also think the look and feel of the site has a strong enough identity already.
 
 ### Responsiveness
 
 In addition to basic Bootstrap classes, I relied heavily upon media queries to hone page design and layout as the website scaled to different screen sizes. Given that the venerable Samsung Galaxy S8 has a CSS screen width of 360 pixels, In order to be safe I designed the site with page sizes from 320px to 1800px in mind.  
 
-NB: On reading again the requirements and reviewing how the site scaled up I decided to add another media query at 2500px in order to support displays up to 3840px.  It is hard for me to test this fully with a max screen width of 1920px but it ought to scale much better now.
+Generally speaking as the pages scaled up, I increased margins and padding, and increased font and image sizes to maintain optimal look and feel.  On desktop I used Bootstrap to change the position of content on the page.  The Header and Footer were also structured using Bootstrap.  I used Flexbox to adjust the desktop layout for the 'About' and 'Book' pages.
 
-Generally speaking as the pages scaled up, I increased margins and padding, and increased font and image sizes to maintain optimal look and feel.  On desktop I used Bootstrap to change the position of content on the page in the header.  I also used Flexbox to adjust the layout for desktop on the 'About' and 'Book' pages.
+NB: On reviewing the requirements and how the site scaled up I decided to add additional media queries at 2500px, 3200px and 3840px in order to support HD displays. I do not have access to an HD display on which to test this thoroughly but it looks a lot in various developer tools.
 
 ## Testing Documentation
 ([back to top](#smoking-buns))
@@ -292,8 +292,6 @@ On Github the server is pre-configured to display a 404.html page whenever a pag
   - Click [HERE](https://www.msnoob.com/how-to-redirect-404-error-page-to-another-url-in-iis-server.html) for Microsoft IIS Server.
   - Click [HERE](https://www.ionos.com/digitalguide/server/configuration/configure-apache-to-use-custom-error-pages/) for Apache servers.
   - Click [HERE](https://www.cyberciti.biz/faq/howto-nginx-customizing-404-403-error-page/) for NGINX servers.
-
-
 
 ### Continuing This Project
 
@@ -384,7 +382,7 @@ I used [this guide](https://webdesign.tutsplus.com/tutorials/building-responsive
 Many thanks to my mentor Mitko Bachvarov for all the help and advice he has offered, including:
 
 - advising on the proper syntax for git commits.
-- suggesting css methods that might be appropriate for certain pages based on my wireframes.
+- suggesting CSS methods that might be appropriate for certain pages based on my wireframes.
 - suggesting the elegent solution for form submission on a static site.
 - advising on the footer look and feel.
 - advising on the correct testing format.

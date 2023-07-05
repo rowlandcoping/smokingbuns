@@ -58,7 +58,7 @@ I added meta descriptions to all pages.
 
 HEADERS:
 
-I ensured that heading tags were ordered sequentially, without skipping. This involved a great deal of work adjusting their associated media queries, esepecially on the 'about' page.
+I ensured that heading tags were ordered sequentially, without skipping. This involved a great deal of work adjusting their associated media queries, especially on the 'about' page.
 
 RESULTS:
 
@@ -79,7 +79,7 @@ _"Grow online presence: The website must be highly compliant and SEO friendly...
 Site uses semantic elements throughout, contains appropriate meta elements, clean code and looks great on any device.
 
 _"Drive home brand identity: The website must be consistent with the restaurant's branding..."_\
-The site had a very strong and consistent Western theme throughout and showcases the venue and staff.
+The site has a very strong and consistent Western theme throughout and showcases the venue and staff.
 
 ![image](assets/images/testing/buns-logo.jpg)
 
@@ -108,12 +108,12 @@ The eye-catching logos and fun 'sheriff star' menu backgrounds along with the at
 ([back to top](#testing-documentation))
 
 _"Mobile Functionality: ... They need the site to look just as good on their mobile devices whilst retaining full functionality."_\
-The site was build mobile upwards, starting in all cases with a 360px screen width and then adjusting upwards to desktop screen sizes. This is reflected in some of the design choices - for example to keep the site clean there are no transitions or features that would not be functional on mobile.
+The site has been built mobile upwards, starting in all cases with a 360px screen width and then adjusting upwards to desktop screen sizes. This is reflected in some of the design choices - for example to keep the site clean there are no transitions or features that would not be functional on mobile.
 
 ![image](assets/images/testing/sizes.jpg)
 
 _"Easy to Navigate... Links to various areas of the site should be obvious, responsive and consistent."_\
-The navigation is clear and obvious on all device sizes, with additional immediacy through having no additional widgets to open. The navigation is the core of the site.
+The navigation is clear and obvious on all device sizes, with additional immediacy through having no widgets to open. The navigation is the core of the site.
 
 ![image](assets/images/testing/buns-menu.jpg)
 
@@ -139,7 +139,7 @@ The index.html page provides immediate validation in the form of positive custom
 ![image](assets/images/testing/reviews.png)
 
 _"Venue Information: Very much on a theme, they want to see what the place looks like to make sure it's sufficiently Instagramable."_\
-The about section contains appropriate images of the venue and details about food, staff and decor, providing all the information people need.
+The about section contains appropriate images of the venue and details about food, staff and décor, providing all the information people need.
 
 ![image](assets/images/testing/theming.jpg)
 
@@ -151,7 +151,7 @@ The about section contains appropriate images of the venue and details about foo
 
 I've documented here the major problems I encountered during the course of building and testing the site, and the measures I have taken to overcome them.
 
-The website has been tested throughout on Firefox and Chrome, in both Linux and Windows using the responsive mode in developer tools to trigger all the break points up to my full-screen desktop resolution of 1920px. It has also been tested on a Samsung Galaxy S8 in Chrome with a CSS screen width of 360px. Although I have extended this (across multiple screens) to 3000px plus and included a 2500px break point, I have not been able to test on an HD display as nobody I know has one.
+The website has been tested throughout on Firefox and Chrome, in both Linux and Windows using the responsive mode in developer tools to trigger all the break points up to my full-screen desktop resolution of 1920px. It has also been tested on a Samsung Galaxy S8 in Chrome with a CSS screen width of 360px. Although I have extended this to 3840px plus and included a multiple break points for HD displays, I have not been able to test on an HD display as nobody I know has one.
 
 GENERAL:
 
@@ -175,7 +175,7 @@ HEADER / FOOTER / index.html:
     - After discussions with my mentor I re-built the footer to stop the images scaling with the screen width to become outsized on larger desktop monitors. I achived this by setting fixed values for the image height and wrapping the container to the image. This was unfortunately not compatible with the previous fix. The solution I came upon was expanding the padding for the hover pseudo element until the background took up the desired amount of space. This is not a solution I'm particularly happy with but I think it may be the best one as long as the footer is built in Bootstrap.
 
 - Footer sizing and positioning (part 3):
-    - I made a final attempt to have consistancy with the hover image in the footer. I discovered the image wasn't centred in the anchor element which was causing the problem, and solved it by setting the anchor display property to flex and centering the content. This also meant I could consistently control the padding by setting a height and width for the anchor element, and it didn't break the layout. I am still unable to center the anchor within the list element horizontally, but on substantial review I am not sure that it is possible (ie when nesting images within an anchor tag within a list element) without breaking the layout of the site. Once I realised this it was either rebuild it or keep what I have, and given the minimal visual impact I prefer the semantic clarity of placing the footer navigation in an unordered list.
+    - I made a final attempt to have consistancy with the hover image in the footer. I discovered the image wasn't centered in the anchor element which was causing the problem, and solved it by setting the anchor display property to flex and centering the content. This also meant I could consistently control the padding by setting a height and width for the anchor element, and it didn't break the layout. I am still unable to center the anchor within the list element horizontally, but on substantial review I am not sure that it is possible (ie when nesting images within an anchor tag within a list element) without breaking the layout of the site. Once I realised this it was either rebuild it or keep what I have, and given the minimal visual impact I prefer the semantic clarity of placing the footer navigation in an unordered list.
 
 about.html:
 
@@ -197,7 +197,7 @@ SUBMISSION PAGE:
 
 NAVIGATION MENU ALIGNMENT
 
-- Navigation Alignment part 1: During testing I have noticed that the text in the menu was not vertically centred in the anchor element, which means that the sheriff stars looked unbalanced. Because of the bootstrap layout, I was unable to vertically center the text by any conventional means, but I discovered that if I wrapped the text in an h2 tag and set a small negative margin I could manually control vertical alignment for various break points. From the research I have done I can see nothing semantically wrong with this and it looks much better.
+- Navigation Alignment part 1: During testing I have noticed that the text in the menu was not vertically centred in the anchor element, which means that the sheriff stars looked unbalanced. Because of the Bootstrap layout, I was unable to vertically center the text by any conventional means, but I discovered that if I wrapped the text in an h2 tag and set a small negative margin I could manually control vertical alignment for various break points. From the research I have done I can see nothing semantically wrong with this and it looks much better.
 
 - Navigation Alignment part 2: On preparing to take screengrabs in Windows I discovered that the above fix rendered differently in Windows to the other devices (Linux / Android) on which I had tested it. It is interesting that the way CSS displays should be dependent on OS; it seems a Linux base gives different outcomes. This makes it hard to fix. On testing in Firefox and Chrome on Windows using dev tools, setting the bottom margin at 0 perfectly centers the text in the star, but until the change is pushed it's impossible to know if this will work on mobile and Linux, and of course vice versa if I did it the other way around! 
 
@@ -227,13 +227,17 @@ NAVIGATION MENU ALIGNMENT
   
   ![image](assets/images/testing/fix-windows.jpg)
 
-I am not sure that this bug is fixable with the current layout. I don't really understand why the site renders differently on the same browser depending on the operating system - it is certainly not clear from investigating using developer tools. It is an important consideration when designing for mobile however.  If it is down to Bootstrap I would be surprised, given I chose this framework for the header and footer precisely for the support it provides for responsive elements.  I would imagine that Bootstrap elements would work better in more generic layouts and this is something I need to consider going forward. Perhaps it is more a quirk of using list elements for these navigation sections - whilst it seems to be a widely adopted standard, 'li' elements appear to pose unique difficulties in CSS that are not well documented.
+I am not sure that this bug is fixable with the current layout. I don't really understand why the site renders differently on the same browser depending on the operating system - it is certainly not clear from investigating using developer tools. It is an important consideration when designing for mobile however.  If it is down to Bootstrap I would be surprised, given I chose this framework for the header and footer precisely for the support it provides for responsive elements.  I would imagine that Bootstrap elements would work better in more generic layouts and this is something I need to consider going forward. Perhaps it is more a quirk of using list elements for these navigation sections - whilst it is a widely adopted standard, 'li' elements appear to pose unique difficulties in CSS that are not well documented.
 
 ### Manual Testing
 
 ([back to top](#testing-documentation))
 
-I have tested all the links and also the responsiveness across various break points on the deployed site, to ensure nothing in the layout is broken, outlined in the table below. These tests were carried out in Chrome on Linux:
+I have tested all the links on each page in Chrome on Linux to ensure that none of them are broken.
+
+I have also tested responsiveness across various break points on the deployed site to ensure the site displays as expected on different screen sizes. These tests were carried out using developer tools on Firefox and Chrome in both Windows and Linux.  I have also tested the 360px resolution using a Samsung Galaxy S8.
+
+Each test is outlined in the table below:
 
 | Feature Tested                        | Expected Outcome                 | Result  |
 | ------------------------------------- | -------------------------------- | ------- |
@@ -257,7 +261,9 @@ I have tested all the links and also the responsiveness across various break poi
 | index.html responsiveness 1200px      | Displays without error at 1200px | Success |
 | index.html responsiveness 1400px      | Displays without error at 1400px | Success |
 | index.html responsiveness 1800px      | Displays without error at 1800px | Success |
-| index.html responsiveness 2500px +    | Displays without error at 2500px and over | Success |
+| index.html responsiveness 2500px      | Displays without error at 2500px | Success |
+| index.html responsiveness 3200px      | Displays without error at 3200px | Success |
+| index.html responsiveness 3840px      | Displays without error at 3840px | Success |
 | menu.html Title link                  | Links to index.html              | Success |
 | menu.html Home link                   | Links to index.html              | Success |
 | menu.html Menu link                   | Links to menu.html               | Success |
@@ -278,7 +284,9 @@ I have tested all the links and also the responsiveness across various break poi
 | menu.html responsiveness 1200px       | Displays without error at 1200px | Success |
 | menu.html responsiveness 1400px       | Displays without error at 1400px | Success |
 | menu.html responsiveness 1800px       | Displays without error at 1800px | Success |
-| menu.html responsiveness 2500px +    | Displays without error at 2500px and over | Success |
+| menu.html responsiveness 2500px       | Displays without error at 2500px | Success |
+| menu.html responsiveness 3200px       | Displays without error at 3200px | Success |
+| menu.html responsiveness 3840px       | Displays without error at 3840px | Success |
 | about.html Title link                 | Links to index.html              | Success |
 | about.html Home link                  | Links to index.html              | Success |
 | about.html Menu link                  | Links to menu.html               | Success |
@@ -299,7 +307,9 @@ I have tested all the links and also the responsiveness across various break poi
 | about.html responsiveness 1200px      | Displays without error at 1200px | Success |
 | about.html responsiveness 1400px      | Displays without error at 1400px | Success |
 | about.html responsiveness 1800px      | Displays without error at 1800px | Success |
-| about.html responsiveness 2500px +    | Displays without error at 2500px and over | Success |
+| about.html responsiveness 2500px      | Displays without error at 2500px | Success |
+| about.html responsiveness 3200px      | Displays without error at 3200px | Success |
+| about.html responsiveness 3840px      | Displays without error at 3840px | Success |
 | book.html Title link                  | Links to index.html              | Success |
 | book.html Home link                   | Links to index.html              | Success |
 | book.html Menu link                   | Links to menu.html               | Success |
@@ -327,7 +337,9 @@ I have tested all the links and also the responsiveness across various break poi
 | book.html responsiveness 1200px       | Displays without error at 1200px | Success |
 | book.html responsiveness 1400px       | Displays without error at 1400px | Success |
 | book.html responsiveness 1800px       | Displays without error at 1800px | Success |
-| book.html responsiveness 2500px +    | Displays without error at 2500px and over | Success |
+| book.html responsiveness 2500px       | Displays without error at 2500px | Success |
+| book.html responsiveness 3200px       | Displays without error at 3200px | Success |
+| book.html responsiveness 3840px       | Displays without error at 3840px | Success |
 | submit.html Title link                | Links to index.html              | Success |
 | submit.html Home link                 | Links to index.html              | Success |
 | submit.html Menu link                 | Links to menu.html               | Success |
@@ -348,7 +360,9 @@ I have tested all the links and also the responsiveness across various break poi
 | submit.html responsiveness 1200px     | Displays without error at 1200px | Success |
 | submit.html responsiveness 1400px     | Displays without error at 1400px | Success |
 | submit.html responsiveness 1800px     | Displays without error at 1800px | Success |
-| submit.html responsiveness 2500px +    | Displays without error at 2500px and over | Success |
+| submit.html responsiveness 2500px     | Displays without error at 2500px | Success |
+| submit.html responsiveness 3200px     | Displays without error at 3200px | Success |
+| submit.html responsiveness 3840px     | Displays without error at 3840px | Success |
 | 404.html Title link                   | Links to index.html              | Success |
 | 404.html Home link                    | Links to index.html              | Success |
 | 404.html Menu link                    | Links to menu.html               | Success |
@@ -369,6 +383,8 @@ I have tested all the links and also the responsiveness across various break poi
 | 404.html responsiveness 1200px        | Displays without error at 1200px | Success |
 | 404.html responsiveness 1400px        | Displays without error at 1400px | Success |
 | 404.html responsiveness 1800px        | Displays without error at 1800px | Success |
-| 404.html responsiveness 2500px +    | Displays without error at 2500px and over | Success |
+| 404.html responsiveness 2500px        | Displays without error at 2500px | Success |
+| 404.html responsiveness 3200px        | Displays without error at 3200px | Success |
+| 404.html responsiveness 3840px        | Displays without error at 3840px | Success |
 
 ([return to README](README.md))
