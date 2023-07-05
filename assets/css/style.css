@@ -228,6 +228,11 @@ header {
     padding-bottom:20px;
 }
 
+.course-title, .food-item, .food-description, .course-subtitle {
+    padding-right:20px;
+    padding-left:20px;
+}
+
 .title {
     grid-column: 1 / 6;
 }
@@ -604,12 +609,12 @@ iframe {
     /*header*/
 
     h1 {
-        font-size: 450%;
+        font-size: 440%;
     }
 
     .menu-main {
         font-size: 180%;
-        height: 100px;
+        height: 103px;
     }
 
     /*footer*/
@@ -1329,8 +1334,8 @@ iframe {
     }
 
     .menu-main {
-        font-size: 305%;
-        height: 190px;
+        font-size: 300%;
+        height: 178px;
     }
 
     .nav-wrapper {
@@ -1455,8 +1460,8 @@ iframe {
     }
 
     .menu-main {
-        font-size: 430%;
-        height: 240px;
+        font-size: 400%;
+        height: 237px;
     }
 
     .nav-wrapper {
@@ -1582,6 +1587,11 @@ iframe {
 
     /*book page*/
 
+    .form-wrapper, .location-wrapper {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
     .form-personal, .form-visit, .address-details, .map-details {
         padding: 40px;
     }
@@ -1640,8 +1650,8 @@ iframe {
     }
 
     .menu-main {
-        font-size: 550%;
-        height: 320px;
+        font-size: 540%;
+        height: 315px;
     }
 
     .nav-wrapper {
@@ -1719,12 +1729,12 @@ iframe {
     /*about page*/
 
     .about-section {
-        margin: 150px 50px;
+        margin: 100px 50px;
         padding: 40px;
     }
 
     .about-image img {
-        width: 900px;
+        width: 850px;
     }
 
     .profile-pic img {
