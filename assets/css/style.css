@@ -525,7 +525,7 @@ iframe {
 /*layout*/
 
 .utility-container {
-    height: 40dvh;
+    height: 60dvh;
     font-family: main;
     color:#48290A;
 }
@@ -1330,11 +1330,11 @@ iframe {
 
     .menu-main {
         font-size: 305%;
-        height: 170px;
+        height: 190px;
     }
 
     .nav-wrapper {
-        width:41%;
+        width:43%;
     }
 
     /*homepage*/
@@ -1440,11 +1440,350 @@ iframe {
     /*submit and 404 page*/
 
     .utility-text h2{
-        font-size: 230%;
+        font-size: 250%;
     }
     .utility-text h3{
-        font-size: 180%;
+        font-size: 200%;
     }
+}
+
+@media screen and (min-width:2500px) {
+    /*header*/
+
+    h1 {
+        font-size:1000%;
+    }
+
+    .menu-main {
+        font-size: 430%;
+        height: 240px;
+    }
+
+    .nav-wrapper {
+        width:41%;
+    }
+
+    /*footer*/
+
+    .social-links img, .review-links img {
+        height:75px;
+    }
+
+    .social-media a{
+        width:100px;
+        height:100px;
+        margin:15px 0;
+    }
+    .reviews-site a{
+        width:280px;
+        height:100px;
+        margin:15px 0;
+    }
+
+    /*homepage*/
+   
+    .callout-text h2 {
+        font-size: 550%;
+    }
+
+    .callout-text h3 {
+        font-size: 450%;
+    }
+
+    .review-container h2 {
+        font-size: 500%;
+    }
+
+    .review-container h3 {
+        font-size: 350%;
+    }
+
+    .spacer {
+        width:17%;
+        margin-bottom:30px;
+    }
+
+    /*menu page*/
+
+    .course-subtitle {
+        margin-top: 0;
+    }
+    
+    .food-item {
+        margin: 10px 0;
+    }
+    
+    .food-description {
+        line-height: 1.1em;
+    }
+
+    .menu-container {
+        width: 70%;
+        margin:100px auto;
+        padding-bottom:100px;
+    }
+
+    .menu-container h2 {
+        font-size: 600%;
+    }
+
+    .menu-container h3 {
+        font-size: 500%;
+    }
+
+    .menu-container h4 {
+        font-size: 400%;
+    }
+
+    .course-subtitle h4 {
+        font-size: 300%;
+    }
+
+    .menu-container p {
+        font-size: 250%;
+    }
+
+    .spacer-menu {            
+        width:110%;
+        margin-top: 20px;
+    }
+
+    /*about page*/
+
+    .about-section {
+        margin: 100px 30px;
+        padding: 30px;
+    }
+
+    .about-image img {
+        width: 700px;
+    }
+
+    .profile-pic img {
+        width: 250px;
+        margin-bottom:15px;
+    }
+
+    .about-image-text {
+        font-size: 200%;
+    }
+
+    .about-section h2 {
+        font-size: 450%;
+    }
+
+    .about-section h3 {
+        font-size: 250%;
+    }
+    
+    .about-section h4 {
+        font-size: 225%;
+    }
+
+    /*book page*/
+
+    .form-personal, .form-visit, .address-details, .map-details {
+        padding: 40px;
+    }
+
+    .address-details, .map-details {
+        height:600px;
+        margin-bottom:20px;
+    }
+
+    .form-wrapper h2, .location-wrapper h2 {
+        font-size:500%
+    }
+
+    .form-personal h3, .form-visit h3, .map-details h3, .address-details h3 {
+        font-size:340%;
+        margin: 0 70px;
+    }
+
+    .booking-container ul {
+        font-size: 150%;
+    }
+
+    .address-details p {
+        font-size: 275%;
+    }
+
+    .booking-divider {
+        height:6px;
+        margin-bottom: 20px;
+    }
+
+    .book-button {
+        padding-top: 20px;
+        Font-Size: 350%;
+    }
+       
+    .book-button:hover {
+        border:6px solid #48290A;
+    }
+
+    /*submit and 404 page*/
+
+    .utility-text h2{
+        font-size: 500%;
+    }
+    .utility-text h3{
+        font-size: 400%;
+    }
+}
+
+@media screen and (min-width:3200px) {
+     /*header*/
+
+     h1 {
+        font-size:1300%
+    }
+
+    .menu-main {
+        font-size: 550%;
+        height: 320px;
+    }
+
+    .nav-wrapper {
+        width:42%;
+    }
+
+    /*homepage*/
+   
+    .callout-text h2 {
+        font-size: 600%;
+    }
+
+    .callout-text h3 {
+        font-size: 500%;
+    }
+
+    .review-container h2 {
+        font-size: 500%;
+    }
+
+    .review-container h3 {
+        font-size: 400%;
+    }
+
+    .spacer {
+        width:13%;
+        margin:20px 0;
+    }
+
+    /*menu page*/
+
+    .course-subtitle {
+        margin-top: 0px;
+    }
+    
+    .food-item {
+        margin: 15px 0;
+    }
+    
+    .food-description {
+        line-height: 1.3em;
+    }
+
+    .menu-container {
+        width: 60%;
+        margin:100px auto;
+        padding-bottom:100px;
+    }
+
+    .menu-container h2 {
+        font-size: 600%;
+    }
+
+    .menu-container h3 {
+        font-size: 500%;
+    }
+
+    .menu-container h4 {
+        font-size: 400%;
+    }
+
+    .course-subtitle h4 {
+        font-size: 375%;
+    }
+
+    .menu-container p {
+        font-size: 300%;
+    }
+
+    .spacer-menu {            
+        width:120%;
+        margin-top: 20px;
+    }
+
+    /*about page*/
+
+    .about-section {
+        margin: 150px 50px;
+        padding: 40px;
+    }
+
+    .about-image img {
+        width: 900px;
+    }
+
+    .profile-pic img {
+        width: 250px;
+        margin-bottom:30px;
+    }
+
+    .about-image-text {
+        font-size: 250%;
+    }
+
+    .about-section h2 {
+        font-size: 600%;
+    }
+
+    .about-section h3 {
+        font-size: 310%;
+    }
+    
+    .about-section h4 {
+        font-size: 285%;
+    }
+
+    /*book page*/
+
+    .form-personal, .form-visit, .address-details, .map-details {
+        padding: 50px;
+    }
+
+    .address-details, .map-details {
+        height:700px;
+    }
+
+    .form-wrapper h2, .location-wrapper h2 {
+        font-size:600%
+    }
+
+    .form-personal h3, .form-visit h3, .map-details h3, .address-details h3 {
+        font-size: 425%;
+        margin: 0 100px;
+    }
+
+    .booking-container ul {
+        font-size: 175%;
+    }
+
+    .address-details p {
+        font-size: 300%;
+    }
+
+    .booking-divider {
+        height:8px;
+        margin-bottom: 40px;
+    }
+
+    .book-button {
+        font-Size: 325%;
+    }
+       
 }
 
 @media screen and (min-width:3840px) {
@@ -1473,12 +1812,10 @@ iframe {
     .social-media a{
         width:150px;
         height:150px;
-        margin:15px 0;
     }
     .reviews-site a{
         width:380px;
         height:150px;
-        margin:15px 0;
     }
 
     /*homepage*/
@@ -1585,12 +1922,11 @@ iframe {
     /*book page*/
 
     .form-personal, .form-visit, .address-details, .map-details {
-        padding: 60px 60px;
+        padding: 60px;
     }
 
     .address-details, .map-details {
         height:900px;
-        margin-bottom:20px;
     }
 
     .form-wrapper h2, .location-wrapper h2 {
@@ -1599,7 +1935,6 @@ iframe {
 
     .form-personal h3, .form-visit h3, .map-details h3, .address-details h3 {
         font-size: 600%;
-        margin: 0 100px;
     }
 
     .booking-container ul {
@@ -1610,27 +1945,18 @@ iframe {
         font-size: 340%;
     }
 
-    .booking-divider {
-        height:8px;
-        margin-bottom: 40px;
-    }
-
     .book-button {
         padding-top: 30px;
-        Font-Size: 500%;
+        font-size: 500%;
     }
        
-    .book-button:hover {
-        border:4px;
-    }
-
     /*submit and 404 page*/
 
-    .utility-text h2{
+    .utility-text h2 {
         font-size: 700%;
         margin-bottom:30px;
     }
-    .utility-text h3{
+    .utility-text h3 {
         font-size: 600%;
         margin:40px 0;
     }
